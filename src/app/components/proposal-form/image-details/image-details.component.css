@@ -1,0 +1,30 @@
+/* Styles for input fields to ensure they are properly aligned and visible */
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styles for buttons to ensure they are properly aligned and visible */
+button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styles for the "Hide" button */
+button.hide-button {
+  background-color: gray;
+  color: darkblue;
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 8pt;
+  position: absolute;
+  left: 73px;
+  top: 155px;
+}

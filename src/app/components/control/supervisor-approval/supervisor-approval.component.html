@@ -1,0 +1,23 @@
+<div class="supervisor-approval-container">
+  <h2>Supervisor Approval</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="policySelection">Select Policy for Approval:</label>
+      <select id="policySelection" [(ngModel)]="selectedPolicy" name="policySelection" required>
+        <option *ngFor="let policy of policies" [value]="policy.id">{{ policy.name }}</option>
+      </select>
+    </div>
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+    <div class="form-group">
+      <label for="supervisorAuth">Supervisor Authentication:</label>
+      <input type="password" id="supervisorAuth" [(ngModel)]="supervisorPassword" name="supervisorAuth" required />
+    </div>
+    <div *ngIf="authErrorMessage" class="error-message">
+      {{ authErrorMessage }}
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <button (click)="onSave()" [disabled]="!isSaveEnabled" class="btn btn-success">Save</button>
+</div>

@@ -1,0 +1,17 @@
+<div class="membership-details">
+  <!-- Membership Number Field -->
+  <div class="form-group" style="position: absolute; top: 32px; left: 85px;">
+    <label for="membershipNo" class="form-label" style="font-weight: bold; text-align: center;">Membership No</label>
+    <input type="text" id="membershipNo" class="form-control" [value]="membershipNo | uppercase" readonly style="background-color: white; text-transform: uppercase;" />
+  </div>
+
+  <!-- Populate Button -->
+  <div class="form-group">
+    <button (click)="populateMembershipDetails()" class="btn btn-primary">Populate</button>
+  </div>
+
+  <!-- Membership Details Section -->
+  <div class="membership-details-section">
+    <app-membership-sum-assured [sumAssured]="sumAssured"></app-membership-sum-assured>
+  </div>
+</div>

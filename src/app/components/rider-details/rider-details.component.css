@@ -1,0 +1,92 @@
+/* Interest Rate Input Field */
+.interest-rate-input {
+  background-color: white;
+}
+
+.interest-rate-label {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Text Item Field */
+.text-item-field {
+  background-color: white;
+}
+
+.text-item-prompt {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* RIDER_COVER_CODE Field */
+.rider-cover-code {
+  background-color: white;
+  text-transform: uppercase;
+}
+
+.rider-cover-code-prompt {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Checkbox Styles */
+.checkbox {
+  /* Add necessary styles for the checkbox */
+}
+
+/* RIDER_COVER1_SA Field */
+.rider-cover1-sa {
+  /* Update visual attributes of the RIDER_COVER1_SA field */
+}
+
+/* Delete Button and Error Messages */
+.delete-button {
+  /* Style the delete button */
+}
+
+.error-message {
+  /* Style the error messages */
+}
+
+/* Cover Description Field */
+.cover-description-field {
+  text-align: right;
+  max-length: 500;
+}
+
+/* Total Rider Investment Field */
+.total-rider-investment-field {
+  font-style: italic;
+  text-align: center;
+}
+
+/* All Riders Checkbox */
+.all-riders-checkbox {
+  /* Style the 'All Riders' checkbox */
+}
+
+/* General Styles for Rider Details Component */
+.rider-details-component {
+  /* Define the styles for the rider details component */
+}
+
+/* Tabbed Interface Styles */
+.tabbed-interface {
+  /* CSS styles for tabbed interface */
+}
+
+/* Text Field Styles */
+.text-field {
+  text-transform: uppercase;
+  max-length: 200;
+  read-only: true;
+}
+
+/* Interest Rate Field and Prompt */
+.interest-rate-field {
+  /* CSS styles for the interest rate field */
+}
+
+.loanint-rt-prompt {
+  /* CSS styles for the prompt 'LoanInt. Rt' */
+}

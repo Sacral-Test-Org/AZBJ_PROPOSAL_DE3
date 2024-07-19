@@ -1,0 +1,42 @@
+/* Styles for the upload request component */
+
+.upload-request-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.upload-request-field {
+  margin-bottom: 15px;
+}
+
+.upload-request-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.upload-request-value {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.upload-request-dropdown {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.upload-request-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.upload-request-checkbox label {
+  margin-left: 5px;
+}

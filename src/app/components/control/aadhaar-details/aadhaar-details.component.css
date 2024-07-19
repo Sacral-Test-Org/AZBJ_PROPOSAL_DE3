@@ -1,0 +1,65 @@
+/* Styles for Aadhaar details component */
+
+/* Container for Aadhaar details */
+.aadhaar-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Aadhaar details form */
+.aadhaar-details-form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form fields */
+.aadhaar-details-form .form-field {
+  margin-bottom: 15px;
+}
+
+/* Labels */
+.aadhaar-details-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Input fields */
+.aadhaar-details-form input[type="text"],
+.aadhaar-details-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+.aadhaar-details-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.aadhaar-details-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Warning message */
+.warning-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}

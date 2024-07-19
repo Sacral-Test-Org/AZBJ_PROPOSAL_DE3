@@ -1,0 +1,43 @@
+<div class="multiple-nominee-container">
+  <h2>Manage Multiple Nominees</h2>
+  <button (click)="onMultipleNomineeClick()">Multiple Nominee</button>
+  <div *ngIf="nomineeDetails">
+    <h3>Nominee Details</h3>
+    <div *ngFor="let nominee of nomineeDetails">
+      <div>
+        <label>Name:</label>
+        <span>{{ nominee.nominee_name }}</span>
+      </div>
+      <div>
+        <label>Birthplace:</label>
+        <span>{{ nominee.nominee_birthplace }}</span>
+      </div>
+      <div>
+        <label>Date of Birth:</label>
+        <span>{{ nominee.nominee_dob | date }}</span>
+      </div>
+      <div>
+        <label>Relation:</label>
+        <span>{{ nominee.nominee_relation }}</span>
+      </div>
+      <div>
+        <label>Gender:</label>
+        <span>{{ nominee.nominee_gender }}</span>
+      </div>
+      <div *ngIf="nominee.isMinor">
+        <h4>Appointee Details</h4>
+        <div>
+          <label>Appointee Name:</label>
+          <input type="text" [(ngModel)]="nominee.appointee_name" />
+        </div>
+        <div>
+          <label>Appointee Relation:</label>
+          <input type="text" [(ngModel)]="nominee.appointee_relation" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="errorMessage">
+    <p class="error">{{ errorMessage }}</p>
+  </div>
+</div>

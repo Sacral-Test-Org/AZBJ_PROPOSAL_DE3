@@ -1,0 +1,55 @@
+<div class="form-group">
+  <label for="gender">Gender:</label>
+  <select id="gender" class="form-control" [(ngModel)]="gender" (ngModelChange)="onGenderChange($event)" style="background-color: white; color: black; font-weight: bold; text-transform: uppercase;">
+    <option *ngFor="let option of genderOptions" [value]="option">{{ option }}</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="updateSpouseName">Update Spouse Name:</label>
+  <input type="checkbox" id="updateSpouseName" [(ngModel)]="updateSpouseName" (change)="onUpdateSpouseNameChange($event)" />
+</div>
+
+<div class="form-group">
+  <label for="correctFatherName">Correction in Father Name in Master CP:</label>
+  <input type="checkbox" id="correctFatherName" [(ngModel)]="correctFatherName" (change)="onCorrectFatherNameChange($event)" />
+</div>
+
+<div class="form-group">
+  <label for="mergeOption">Merge Option:</label>
+  <select id="mergeOption" class="form-control" [(ngModel)]="mergeOption" (ngModelChange)="onMergeOptionChange($event)">
+    <option *ngFor="let option of mergeOptions" [value]="option">{{ option }}</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="updateOccupation">Update Occupation in Master CP:</label>
+  <input type="checkbox" id="updateOccupation" [(ngModel)]="updateOccupation" (change)="onUpdateOccupationChange($event)" />
+</div>
+
+<div class="form-group">
+  <label for="updateName">Update Name in Master CP:</label>
+  <input type="checkbox" id="updateName" [(ngModel)]="updateName" (change)="onUpdateNameChange($event)" />
+</div>
+
+<div class="form-group">
+  <label for="ageProofValidation">Age Proof Validation:</label>
+  <input type="checkbox" id="ageProofValidation" [(ngModel)]="ageProofValidation" (change)="onAgeProofValidationChange($event)" />
+  <div *ngIf="ageProofValidationError" class="error-message">{{ ageProofValidationError }}</div>
+</div>
+
+<div class="form-group">
+  <button (click)="applyAndSave()">Apply and Save</button>
+</div>
+
+<div class="form-group">
+  <label for="manualSearch">Manual Search:</label>
+  <input type="text" id="dateOfBirth" placeholder="Date of Birth" [(ngModel)]="dateOfBirth" />
+  <input type="text" id="gender" placeholder="Gender" [(ngModel)]="gender" />
+  <input type="text" id="firstName" placeholder="First Name" [(ngModel)]="firstName" />
+  <input type="text" id="lastName" placeholder="Last Name" [(ngModel)]="lastName" />
+</div>
+
+<div class="form-group">
+  <button (click)="exit()">Exit</button>
+</div>

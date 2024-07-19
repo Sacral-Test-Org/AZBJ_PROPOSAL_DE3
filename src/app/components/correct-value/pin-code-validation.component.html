@@ -1,0 +1,20 @@
+<div>
+  <label for="pinCode">Pin Code:</label>
+  <input 
+    type="text" 
+    id="pinCode" 
+    [(ngModel)]="pinCode" 
+    (focus)="onPinCodeFocus()" 
+    (dblclick)="onPinCodeDoubleClick()" 
+    (blur)="validatePinCode()"
+  />
+</div>
+
+<div *ngIf="countryName === 'INDIA'">
+  <h3>Valid Pin Codes, States, and Districts</h3>
+  <ul>
+    <li *ngFor="let item of validPinCodes">
+      {{ item.pincode }} - {{ item.state }} - {{ item.district }}
+    </li>
+  </ul>
+</div>

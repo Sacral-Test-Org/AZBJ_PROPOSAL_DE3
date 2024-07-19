@@ -1,0 +1,15 @@
+<div class="signature-confidence-container">
+  <h2>Signature Confidence Details</h2>
+  <div class="details">
+    <label for="documentName">Document Name:</label>
+    <input type="text" id="documentName" [value]="documentName" readonly>
+  </div>
+  <div class="details">
+    <label for="signatureConfidence">Signature Confidence Percentage:</label>
+    <input type="text" id="signatureConfidence" [value]="signatureConfidence" readonly>
+  </div>
+  <div class="buttons">
+    <button (click)="onExit()" style="position: absolute; left: 306px; top: 272px; width: 110px; height: 20px; background-color: gray; color: black; font-family: Tahoma; font-size: 10px; font-style: normal;">Exit</button>
+    <button (click)="onMasterSignature()" style="position: absolute; left: 426px; top: 272px; width: 150px; height: 20px; background-color: gray; color: black; font-family: Tahoma; font-size: 10px; font-style: normal;">Master Signature</button>
+  </div>
+</div>

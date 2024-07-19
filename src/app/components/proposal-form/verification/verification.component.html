@@ -1,0 +1,25 @@
+<div class="verification-container">
+  <h2>Document Verification</h2>
+  
+  <div class="verification-section">
+    <h3>PAN Card Verification</h3>
+    <label for="panNumber">PAN Number:</label>
+    <input type="text" id="panNumber" [(ngModel)]="panNumber" />
+    <button (click)="verifyPan()">Verify PAN</button>
+    <button (click)="cancelPanVerification()">Cancel</button>
+    <div *ngIf="panVerificationStatus">
+      <p>Status: {{ panVerificationStatus }}</p>
+    </div>
+  </div>
+
+  <div class="verification-section">
+    <h3>Aadhar Card Verification</h3>
+    <label for="aadharNumber">Aadhar Number:</label>
+    <input type="text" id="aadharNumber" [(ngModel)]="aadharNumber" />
+    <button (click)="verifyAadhar()">Verify Aadhar</button>
+    <button (click)="cancelAadharVerification()">Cancel</button>
+    <div *ngIf="aadharVerificationStatus">
+      <p>Status: {{ aadharVerificationStatus }}</p>
+    </div>
+  </div>
+</div>

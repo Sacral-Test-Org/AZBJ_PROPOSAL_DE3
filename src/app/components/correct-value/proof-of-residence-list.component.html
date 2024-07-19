@@ -1,0 +1,6 @@
+<div *ngIf="isFieldVisible" class="proof-of-residence-container">
+  <label for="proofOfResidence">Proof of Residence:</label>
+  <select id="proofOfResidence" [(ngModel)]="selectedProofOfResidence">
+    <option *ngFor="let proof of proofOfResidenceList" [value]="proof">{{ proof }}</option>
+  </select>
+</div>

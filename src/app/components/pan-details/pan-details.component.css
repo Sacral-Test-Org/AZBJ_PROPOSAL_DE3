@@ -1,0 +1,52 @@
+/* Styles for the PAN details component */
+
+/* Center-align all input fields */
+input {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Style for the container to ensure vertical orientation */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Style for the scrollbar */
+.container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Style for the input fields to ensure maximum length */
+input[maxlength="100"] {
+  max-width: 100%;
+}
+
+input[maxlength="2000"] {
+  max-width: 100%;
+}
+
+input[maxlength="2"] {
+  max-width: 50px;
+}

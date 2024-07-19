@@ -1,0 +1,16 @@
+/* Styles for the premium finance field */
+
+.premium-finance-field {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.premium-finance-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}

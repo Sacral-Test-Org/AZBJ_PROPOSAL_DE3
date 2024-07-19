@@ -1,0 +1,18 @@
+<div class="validation-results">
+  <h2>Validation Results</h2>
+  <div *ngIf="validationErrors.length > 0">
+    <h3>Errors:</h3>
+    <ul>
+      <li *ngFor="let error of validationErrors">{{ error }}</li>
+    </ul>
+  </div>
+  <div *ngIf="validationWarnings.length > 0">
+    <h3>Warnings:</h3>
+    <ul>
+      <li *ngFor="let warning of validationWarnings">{{ warning }}</li>
+    </ul>
+  </div>
+  <div *ngIf="validationErrors.length === 0 && validationWarnings.length === 0">
+    <p>No validation issues found. The form is ready for submission.</p>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div>
+  <label for="riderCover1Sa">Rider Cover Sum Assured:</label>
+  <input 
+    type="number" 
+    id="riderCover1Sa" 
+    name="riderCover1Sa" 
+    [(ngModel)]="riderCover1Sa" 
+    (focus)="loadImageData()" 
+    (keydown.arrowleft)="navigateToPrevious()" 
+    (keydown.arrowright)="navigateToNext()" 
+    [ngClass]="getVisualAttributes()"
+  />
+</div>

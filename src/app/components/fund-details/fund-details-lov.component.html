@@ -1,0 +1,6 @@
+<div class="lov-container">
+  <h3>Select Fund</h3>
+  <ul>
+    <li *ngFor="let fund of funds" (click)="selectFund(fund)">{{ fund.fund_full_name }}</li>
+  </ul>
+</div>

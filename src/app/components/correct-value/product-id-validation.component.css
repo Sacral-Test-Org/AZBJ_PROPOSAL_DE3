@@ -1,0 +1,85 @@
+/* Styles for the Product ID Validation Component */
+
+/* Container for the product ID validation form */
+.product-id-validation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the form fields */
+.product-id-validation-form input,
+.product-id-validation-form select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for the form labels */
+.product-id-validation-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Style for the buttons */
+.product-id-validation-form button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.product-id-validation-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Style for the error messages */
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Style for the success messages */
+.success-message {
+  color: green;
+  font-size: 0.9em;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Style for the navigation buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Style for the portfolio strategy field */
+.portfolio-strategy-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Style for the unit link tab */
+.unit-link-tab {
+  display: none;
+}
+
+.unit-link-tab.active {
+  display: block;
+}

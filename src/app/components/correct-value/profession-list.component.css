@@ -1,0 +1,45 @@
+/* Styles for the profession list component */
+
+.profession-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.profession-list {
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.profession-list-header {
+  background-color: #f5f5f5;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.profession-list-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.profession-list-item:hover {
+  background-color: #f0f0f0;
+}
+
+.profession-list-item:last-child {
+  border-bottom: none;
+}
+
+.profession-list-item.active {
+  background-color: #e0e0e0;
+}

@@ -1,0 +1,35 @@
+export class FamilyDetails {
+  type: string;
+  name: string;
+  age: number;
+  healthStatus: string;
+  ageAtDeath: number;
+  causeOfDeath: string;
+  memberId: string;
+  memberName: string;
+  imageData: any;
+  memberNumber: string;
+  proposalType: string;
+  numberOfPages: number;
+  policyTypes: string[];
+  fieldData: any;
+  imageUrl: string;
+  imageExists: boolean;
+  familyMemberId: string;
+  familyMemberName: string;
+  familyMemberImage: string;
+  relationship: string;
+  companyName: string;
+  sumAssured: number;
+  premium: number;
+  gender: string;
+  dob: string;
+  height: number;
+  weight: number;
+  bmi: number;
+  ageProof: string;
+  ageProofId: string;
+  relationToPolicyholder: string;
+  partnerId: string;
+  otherDetails: string;
+}

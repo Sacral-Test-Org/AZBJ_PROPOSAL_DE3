@@ -1,0 +1,25 @@
+/* Styles for Image Area */
+.image-area {
+  display: none; /* Initially hidden */
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+/* Styles for Nominee Details */
+.nominee-details {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.nominee-details h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.nominee-details p {
+  font-size: 1em;
+  margin: 5px 0;
+}

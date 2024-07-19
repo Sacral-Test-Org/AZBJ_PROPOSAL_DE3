@@ -1,0 +1,49 @@
+/* Styles for the CRPF/Defence Questions Component */
+
+/* General container styling */
+.crpf-defence-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.crpf-defence-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Question list styling */
+.crpf-defence-questions {
+  width: 100%;
+  max-width: 600px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.crpf-defence-questions li {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Question text styling */
+.crpf-defence-question-text {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Error message styling */
+.crpf-defence-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}

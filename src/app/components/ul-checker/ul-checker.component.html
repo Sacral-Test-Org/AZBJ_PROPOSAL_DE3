@@ -1,0 +1,37 @@
+<div class="address-section">
+  <label>
+    <input type="checkbox" [(ngModel)]="isSameAsLA" (change)="onSameAsLAChecked()" /> Same as LA
+  </label>
+  <div class="address-fields">
+    <label>Country Name: <input type="text" [(ngModel)]="policyHolderAddress.countryName" /></label>
+    <label>Door Number: <input type="text" [(ngModel)]="policyHolderAddress.doorNumber" /></label>
+    <label>Building Name: <input type="text" [(ngModel)]="policyHolderAddress.buildingName" /></label>
+    <label>Plot Number: <input type="text" [(ngModel)]="policyHolderAddress.plotNumber" /></label>
+    <label>Pin Code: <input type="text" [(ngModel)]="policyHolderAddress.pinCode" /></label>
+    <label>Address Line 4: <input type="text" [(ngModel)]="policyHolderAddress.addressLine4" /></label>
+    <label>Address Line 5: <input type="text" [(ngModel)]="policyHolderAddress.addressLine5" /></label>
+    <label>Area: <input type="text" [(ngModel)]="policyHolderAddress.area" /></label>
+    <label>Area Free Text: <input type="text" [(ngModel)]="policyHolderAddress.areaFreeText" /></label>
+    <label>Address Line 3: <input type="text" [(ngModel)]="policyHolderAddress.addressLine3" /></label>
+    <label>Place Free Text: <input type="text" [(ngModel)]="policyHolderAddress.placeFreeText" /></label>
+    <label>Residence Proof: <input type="text" [(ngModel)]="policyHolderAddress.residenceProof" /></label>
+    <label>Mobile Door Number: <input type="text" [(ngModel)]="policyHolderAddress.mobileDoorNumber" /></label>
+    <label>Mobile Building Name: <input type="text" [(ngModel)]="policyHolderAddress.mobileBuildingName" /></label>
+    <label>Mobile Plot Number: <input type="text" [(ngModel)]="policyHolderAddress.mobilePlotNumber" /></label>
+    <label>Mobile Area: <input type="text" [(ngModel)]="policyHolderAddress.mobileArea" /></label>
+    <label>Mobile Area Free Text: <input type="text" [(ngModel)]="policyHolderAddress.mobileAreaFreeText" /></label>
+    <label>Mobile Address Line 3: <input type="text" [(ngModel)]="policyHolderAddress.mobileAddressLine3" /></label>
+    <label>Mobile Place Free Text: <input type="text" [(ngModel)]="policyHolderAddress.mobilePlaceFreeText" /></label>
+    <label>Mobile Address Line 4: <input type="text" [(ngModel)]="policyHolderAddress.mobileAddressLine4" /></label>
+    <label>Mobile Address Line 5: <input type="text" [(ngModel)]="policyHolderAddress.mobileAddressLine5" /></label>
+    <label>Mobile Pin Code: <input type="text" [(ngModel)]="policyHolderAddress.mobilePinCode" /></label>
+    <label>Mobile Country Name: <input type="text" [(ngModel)]="policyHolderAddress.mobileCountryName" /></label>
+    <label>Mobile Phone: <input type="text" [(ngModel)]="policyHolderAddress.mobilePhone" /></label>
+    <label>Email: <input type="text" [(ngModel)]="policyHolderAddress.email" /></label>
+    <label>Mobile Residence Proof: <input type="text" [(ngModel)]="policyHolderAddress.mobileResidenceProof" /></label>
+  </div>
+</div>
+
+<div class="fund-apportionment-section">
+  <app-fund-apportionment></app-fund-apportionment>
+</div>

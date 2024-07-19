@@ -1,0 +1,40 @@
+/* Gender Dropdown Styles */
+.gender-dropdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Checkbox Styles */
+.checkbox {
+  margin: 10px 0;
+}
+
+/* Father's Name Field Styles */
+.father-name-field {
+  margin: 10px 0;
+}
+
+/* Update Name in Master CP Checkbox Styles */
+.update-name-checkbox {
+  margin: 10px 0;
+}
+
+/* Input Field Styles */
+.input-field {
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Error Message Styles */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

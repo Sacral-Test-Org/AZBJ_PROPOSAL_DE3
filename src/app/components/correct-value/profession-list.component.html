@@ -1,0 +1,12 @@
+<div>
+  <label for="profession">Profession:</label>
+  <input id="profession" name="profession" (dblclick)="showProfessionList()" readonly>
+</div>
+
+<div *ngIf="professionListVisible" class="profession-list">
+  <ul>
+    <li *ngFor="let profession of professions" (click)="selectProfession(profession)">
+      {{ profession.occ_desc }}
+    </li>
+  </ul>
+</div>

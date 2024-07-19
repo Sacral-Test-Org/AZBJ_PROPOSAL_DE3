@@ -1,0 +1,43 @@
+<div class="cp-search-result">
+  <h2>CP Search Result</h2>
+  <div *ngFor="let partner of partners; let i = index">
+    <div>
+      <input type="checkbox" id="chk_cp_{{i+1}}" [(ngModel)]="partner.checked" (change)="onCheckboxChange(partner, i)" />
+      <label for="chk_cp_{{i+1}}">Select</label>
+    </div>
+    <div>
+      <label>Partner ID:</label>
+      <span>{{partner.partnerId}}</span>
+    </div>
+    <div>
+      <label>First Name:</label>
+      <span>{{partner.firstName}}</span>
+    </div>
+    <div>
+      <label>Middle Name:</label>
+      <span>{{partner.middleName}}</span>
+    </div>
+    <div>
+      <label>Last Name:</label>
+      <span>{{partner.lastName}}</span>
+    </div>
+    <div>
+      <label>Father's Name:</label>
+      <span>{{partner.fatherName}}</span>
+    </div>
+    <div>
+      <label>Spouse's Name:</label>
+      <span>{{partner.spouseName}}</span>
+    </div>
+    <div>
+      <label>Occupation:</label>
+      <span>{{partner.occupation}}</span>
+    </div>
+  </div>
+  <div>
+    <button (click)="viewPolicyDetails()">Policy Details</button>
+  </div>
+  <div>
+    <button (click)="applyAndSave()">Apply and Save</button>
+  </div>
+</div>

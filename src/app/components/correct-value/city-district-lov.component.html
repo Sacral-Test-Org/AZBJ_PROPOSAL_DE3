@@ -1,0 +1,16 @@
+<div class="city-district-lov">
+  <label for="cityDistrictInput" class="city-district-label">City/District</label>
+  <input 
+    id="cityDistrictInput" 
+    type="text" 
+    maxlength="40" 
+    (input)="this.value = this.value.toUpperCase()" 
+    (focus)="showListOfValues()" 
+    style="background-color: white; color: black; position: absolute; top: 100px; left: 100px;" 
+  />
+  <div *ngIf="showValues" class="values-list">
+    <ul>
+      <li *ngFor="let value of values" (click)="selectValue(value)">{{ value }}</li>
+    </ul>
+  </div>
+</div>

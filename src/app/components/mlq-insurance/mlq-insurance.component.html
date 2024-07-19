@@ -1,0 +1,21 @@
+<div>
+  <label for="premium">Premium</label>
+  <input type="text" id="premium" [(ngModel)]="premium" (ngModelChange)="checkFields()" />
+</div>
+<div>
+  <label for="sumAssured">Sum Assured</label>
+  <input type="text" id="sumAssured" [(ngModel)]="sumAssured" (ngModelChange)="checkFields()" />
+</div>
+<div>
+  <label for="companyName">Company Name</label>
+  <input type="text" id="companyName" [(ngModel)]="companyName" (ngModelChange)="checkFields()" />
+</div>
+<div>
+  <label for="relation">Relation</label>
+  <select id="relation" [(ngModel)]="relation">
+    <option value="5">5</option>
+    <option value="8">8</option>
+    <option value="LA">LA</option>
+    <option value="No">No</option>
+  </select>
+</div>

@@ -1,0 +1,48 @@
+/* Styling for the City/District List of Values (LOV) component */
+
+/* Ensure the list of values is visually appealing and matches the overall design of the form */
+
+/* Container for the LOV */
+.lov-container {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Individual items in the LOV */
+.lov-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Highlight item on hover */
+.lov-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Selected item styling */
+.lov-item.selected {
+  background-color: #dcdcdc;
+}
+
+/* Styling for the input field */
+.city-district-input {
+  background-color: white;
+  color: black;
+  padding: 8px;
+  border: 1px solid #ccc;
+  width: calc(100% - 16px);
+  text-transform: uppercase;
+}
+
+/* Styling for the prompt */
+.city-district-prompt {
+  display: inline-block;
+  margin-right: 8px;
+  text-align: right;
+  width: 100px;
+}

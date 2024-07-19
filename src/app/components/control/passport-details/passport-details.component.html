@@ -1,0 +1,12 @@
+<div class="passport-details">
+  <h2>Passport Details</h2>
+  <div *ngIf="passportNumber">
+    <p><strong>Passport Number:</strong> {{ passportNumber }}</p>
+    <p><strong>Date of Birth:</strong> {{ dateOfBirth | date }}</p>
+    <p><strong>Age:</strong> {{ age }}</p>
+    <p><strong>Gender:</strong> {{ gender }}</p>
+  </div>
+  <div *ngIf="!passportNumber">
+    <p>No passport details found for the insured person or policyholder.</p>
+  </div>
+</div>

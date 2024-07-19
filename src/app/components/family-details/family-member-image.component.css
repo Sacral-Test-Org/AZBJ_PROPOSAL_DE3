@@ -1,0 +1,24 @@
+/* Purpose: To style the family member image component. */
+/* Dependencies: None */
+/* Interconnections: Interacts with family-member-image.component.html to apply styles. */
+/* Properties: CSS styles for the family member image component. */
+
+/* Container for the family member image */
+.family-member-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+/* Style for the image itself */
+.family-member-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}

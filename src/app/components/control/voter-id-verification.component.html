@@ -1,0 +1,38 @@
+<div class="voter-id-verification">
+  <h2>Voter ID Verification</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="insuredPersonName">Insured Person Name:</label>
+      <input type="text" id="insuredPersonName" [(ngModel)]="insuredPersonName" name="insuredPersonName" required>
+    </div>
+    <div class="form-group">
+      <label for="policyholderName">Policyholder Name:</label>
+      <input type="text" id="policyholderName" [(ngModel)]="policyholderName" name="policyholderName" required>
+    </div>
+    <div class="form-group">
+      <label for="insuredPersonDOB">Insured Person Date of Birth:</label>
+      <input type="date" id="insuredPersonDOB" [(ngModel)]="insuredPersonDOB" name="insuredPersonDOB" required>
+    </div>
+    <div class="form-group">
+      <label for="policyholderDOB">Policyholder Date of Birth:</label>
+      <input type="date" id="policyholderDOB" [(ngModel)]="policyholderDOB" name="policyholderDOB" required>
+    </div>
+    <div class="form-group">
+      <label for="insuredPersonAddress">Insured Person Address:</label>
+      <textarea id="insuredPersonAddress" [(ngModel)]="insuredPersonAddress" name="insuredPersonAddress" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="policyholderAddress">Policyholder Address:</label>
+      <textarea id="policyholderAddress" [(ngModel)]="policyholderAddress" name="policyholderAddress" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="insuredPersonState">Insured Person State:</label>
+      <input type="text" id="insuredPersonState" [(ngModel)]="insuredPersonState" name="insuredPersonState" required>
+    </div>
+    <div class="form-group">
+      <label for="samePerson">Are Insured Person and Policyholder the same?</label>
+      <input type="checkbox" id="samePerson" [(ngModel)]="samePerson" name="samePerson">
+    </div>
+    <button type="submit">Verify Voter ID</button>
+  </form>
+</div>

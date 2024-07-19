@@ -1,0 +1,11 @@
+<div>
+  <input 
+    type="text" 
+    [value]="fundName" 
+    readonly 
+    (focus)="loadImageData()" 
+    (keydown.enter)="navigateToApportionment()" 
+    [ngClass]="applyVisualAttributes()"
+  />
+  <img [src]="imageSrc" alt="Fund Image" *ngIf="imageSrc" />
+</div>

@@ -1,0 +1,51 @@
+/* Styles for the Surrogate Income Proof Detail Component */
+
+/* Container for the detailed view */
+.detail-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Header style */
+.detail-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Content style */
+.detail-content {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Error message style */
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Navigation button styles */
+.nav-button {
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+
+.nav-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

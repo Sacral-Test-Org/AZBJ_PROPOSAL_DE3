@@ -1,0 +1,30 @@
+/* Styles for the IP Age Proof list item */
+
+.age-proof-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.age-proof-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.age-proof-select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.age-proof-select:focus {
+  border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.age-proof-option {
+  font-size: 16px;
+  padding: 5px;
+}

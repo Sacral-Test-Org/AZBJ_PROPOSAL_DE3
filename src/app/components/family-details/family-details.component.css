@@ -1,0 +1,215 @@
+/* src/app/components/family-details/family-details.component.css */
+
+/* General Styles for Family Details Component */
+.family-details-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for Help Information and Shortcut Input Elements */
+.help-info {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.shortcut-input {
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* Styles for Form Elements */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form-group input[type="number"]::-webkit-outer-spin-button,
+.form-group input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Styles for Buttons */
+.button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.button-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.button-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Styles for Delete Button and Confirmation Prompt */
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirmation-prompt {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for Age Input Field */
+.age-input {
+  background-color: #fff;
+  color: #000;
+  position: relative;
+}
+
+/* Styles for Close Button */
+.close-button {
+  display: none;
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styles for Cause of Death Field and Visual Attributes */
+.cause-of-death-field {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* Styles for Member Number Field */
+.member-number-field {
+  text-align: left;
+  text-transform: uppercase;
+  display: none;
+}
+
+/* Styles for Navigation Buttons and Image Display Area */
+.navigation-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.image-display-area {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+/* Styles for List of Family Members */
+.family-members-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.family-members-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Styles for Error Messages */
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Styles for Membership Details */
+.membership-number,
+.sum-assured {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.populate-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styles for Insurance Details */
+.insurance-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.insurance-details .form-group {
+  margin-bottom: 15px;
+}
+
+.insurance-details .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.insurance-details .form-group input,
+.insurance-details .form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Styles for Gender Dropdown Field */
+.gender-dropdown {
+  text-transform: uppercase;
+  max-length: 6;
+}

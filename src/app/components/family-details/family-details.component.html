@@ -1,0 +1,54 @@
+<div class="family-details">
+  <h2>Family Details</h2>
+  <form>
+    <!-- Health Status Field -->
+    <div class="form-group">
+      <label for="healthStatus">Health Status</label>
+      <input type="text" id="healthStatus" name="healthStatus" [(ngModel)]="familyDetails.healthStatus" (blur)="updateHealthStatus()" />
+    </div>
+
+    <!-- Age Field -->
+    <div class="form-group" *ngIf="isAgeFieldVisible">
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" [(ngModel)]="familyDetails.age" [min]="0" (blur)="validateAge()" />
+    </div>
+
+    <!-- Cause of Death Field -->
+    <div class="form-group">
+      <label for="causeOfDeath">Cause of Death</label>
+      <input type="text" id="causeOfDeath" name="causeOfDeath" [(ngModel)]="familyDetails.causeOfDeath" (blur)="loadCauseOfDeathImage()" />
+    </div>
+
+    <!-- Help Button -->
+    <div class="form-group">
+      <button type="button" (click)="openHelp()">Help</button>
+    </div>
+
+    <!-- Family Member List -->
+    <div class="family-member-list">
+      <h3>Family Members</h3>
+      <ul>
+        <li *ngFor="let member of familyMembers">
+          {{ member.name }} - {{ member.age }} - {{ member.healthStatus }}
+          <button type="button" (click)="editMember(member)">Edit</button>
+          <button type="button" (click)="deleteMember(member)">Delete</button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Add New Member -->
+    <div class="form-group">
+      <button type="button" (click)="addNewMember()">Add New Member</button>
+    </div>
+
+    <!-- Close Button -->
+    <div class="form-group">
+      <button type="button" (click)="close()" [disabled]="isCloseButtonDisabled" [hidden]="isCloseButtonHidden">Close</button>
+    </div>
+
+    <!-- Image Display Area -->
+    <div class="image-display" *ngIf="imageSrc">
+      <img [src]="imageSrc" alt="Family Member Image" />
+    </div>
+  </form>
+</div>

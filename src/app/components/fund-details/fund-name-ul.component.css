@@ -1,0 +1,31 @@
+/* Styles for the FUND_NAME_UL field */
+
+/* Make the field read-only */
+.fund-name-ul {
+  pointer-events: none;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Style for the field when focused */
+.fund-name-ul:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/* Style for the field when double-clicked */
+.fund-name-ul:active {
+  background-color: #e6e6e6;
+}
+
+/* Style for the field when navigating to the next item */
+.fund-name-ul.next-item {
+  background-color: #ffffff;
+  border-color: #ccc;
+  box-shadow: none;
+}

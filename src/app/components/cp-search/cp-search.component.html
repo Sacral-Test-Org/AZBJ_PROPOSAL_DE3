@@ -1,0 +1,91 @@
+<div class="cp-search-form">
+  <h2>Customer Profile Search</h2>
+  <form>
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" [(ngModel)]="firstName">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" [(ngModel)]="lastName">
+    </div>
+    <div class="form-group">
+      <label for="dateOfBirth">Date of Birth:</label>
+      <input type="text" id="dateOfBirth" name="dateOfBirth" [(ngModel)]="dateOfBirth" placeholder="DD/MM/YYYY">
+    </div>
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" [(ngModel)]="gender">
+        <option value="IP">IP</option>
+        <option value="5">5</option>
+        <option value="8">8</option>
+        <option value="10">10</option>
+        <option value="SL">SL</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="fatherName">Father Name:</label>
+      <input type="text" id="fatherName" name="fatherName" [(ngModel)]="fatherName">
+    </div>
+    <div class="form-group">
+      <label for="spouseName">Spouse Name:</label>
+      <input type="text" id="spouseName" name="spouseName" [(ngModel)]="spouseName">
+    </div>
+    <div class="form-group">
+      <label for="policyRef">Policy Reference:</label>
+      <input type="text" id="policyRef" name="policyRef" [(ngModel)]="policyRef">
+    </div>
+    <div class="form-group">
+      <button type="button" (click)="manualSearch()">Manual Search</button>
+      <button type="button" (click)="clear()">Clear</button>
+      <button type="button" (click)="applyAndSave()">Apply and Save</button>
+    </div>
+    <div class="form-group">
+      <label>Number of Records Found: {{ numberOfRecords }}</label>
+    </div>
+    <div class="form-group">
+      <label>Update Fields in Master Customer Profile:</label>
+      <div>
+        <input type="checkbox" id="updateName" name="updateName" [(ngModel)]="updateName">
+        <label for="updateName">Update Name in Master CP</label>
+      </div>
+      <div>
+        <input type="checkbox" id="updateOccupation" name="updateOccupation" [(ngModel)]="updateOccupation">
+        <label for="updateOccupation">Update Occupation in Master CP</label>
+      </div>
+      <div>
+        <input type="checkbox" id="updateFatherName" name="updateFatherName" [(ngModel)]="updateFatherName">
+        <label for="updateFatherName">Correction in Father Name in Master CP</label>
+      </div>
+      <div>
+        <input type="checkbox" id="updateHusbandName" name="updateHusbandName" [(ngModel)]="updateHusbandName">
+        <label for="updateHusbandName">Update Husband Name in Master CP</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Validation Options:</label>
+      <div>
+        <input type="checkbox" id="signature" name="signature" [(ngModel)]="signature">
+        <label for="signature">Signature</label>
+      </div>
+      <div>
+        <input type="checkbox" id="ageProof" name="ageProof" [(ngModel)]="ageProof">
+        <label for="ageProof">Age Proof</label>
+      </div>
+      <div>
+        <input type="checkbox" id="addressProof" name="addressProof" [(ngModel)]="addressProof">
+        <label for="addressProof">Address Proof</label>
+      </div>
+      <div>
+        <input type="radio" id="signatureRadio" name="validationRadio" [(ngModel)]="validationRadio" value="signature">
+        <label for="signatureRadio">Signature</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Customer Profile Images:</label>
+      <div *ngFor="let image of customerImages">
+        <img [src]="image" alt="Customer Image">
+      </div>
+    </div>
+  </form>
+</div>

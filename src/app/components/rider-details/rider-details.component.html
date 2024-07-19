@@ -1,0 +1,79 @@
+<div class="rider-details">
+  <!-- Interest Rate Input Field -->
+  <div class="form-group">
+    <label for="interestRate" class="form-label" style="font-weight: bold; text-align: center;">LoanInt. Rt</label>
+    <input type="number" id="interestRate" class="form-control" style="background-color: white;" (keydown.enter)="navigateToNext('CV_CHK_DEL')" />
+  </div>
+
+  <!-- Rider Cover Details Field -->
+  <div class="form-group">
+    <label for="coverDescription" class="form-label" style="font-weight: bold; text-align: center;">Cover Description</label>
+    <input type="text" id="coverDescription" class="form-control" maxlength="200" style="background-color: white; text-transform: uppercase;" readonly />
+  </div>
+
+  <!-- Rider Cover Code Field -->
+  <div class="form-group">
+    <label for="riderCoverCode" class="form-label" style="font-weight: bold; text-align: center;">Cover Code</label>
+    <select id="riderCoverCode" class="form-control" style="background-color: white; text-transform: uppercase;" (keydown.enter)="navigateToNext('RIDER_COVER1')">
+      <option value="5">5</option>
+      <option value="8">8</option>
+      <option value="10">10</option>
+      <option value="No">No</option>
+    </select>
+  </div>
+
+  <!-- Checkbox for Deletion -->
+  <div class="form-group">
+    <label for="deleteRider" class="form-label">Delete</label>
+    <input type="checkbox" id="deleteRider" (change)="toggleDelete($event)" />
+  </div>
+
+  <!-- Rider Details Table -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Cover Code</th>
+        <th>Cover Description</th>
+        <th>Sum Assured (SA)</th>
+        <th>Benefit Term (BT)</th>
+        <th>Premium Term (PT)</th>
+        <th>Interest Rate</th>
+        <th>Entry Age</th>
+        <th>Total Rider Sum Assured</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Example row, this should be dynamically generated -->
+      <tr>
+        <td>Example Code</td>
+        <td>Example Description</td>
+        <td>100000</td>
+        <td>10</td>
+        <td>5</td>
+        <td>8</td>
+        <td>30</td>
+        <td>200000</td>
+        <td><input type="checkbox" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Populate Button -->
+  <button (click)="populateRiderDetails()">POPULATE</button>
+
+  <!-- Delete Button -->
+  <button (click)="deleteRiderDetails()">Delete</button>
+
+  <!-- All Riders Checkbox -->
+  <div class="form-group">
+    <label for="allRiders" class="form-label">All Riders</label>
+    <input type="checkbox" id="allRiders" (change)="toggleAllRiders($event)" />
+  </div>
+
+  <!-- Total Rider Invest Field -->
+  <div class="form-group">
+    <label for="totalRiderInvest" class="form-label">Total Rider Invest</label>
+    <input type="number" id="totalRiderInvest" class="form-control" min="0" maxlength="15" />
+  </div>
+</div>

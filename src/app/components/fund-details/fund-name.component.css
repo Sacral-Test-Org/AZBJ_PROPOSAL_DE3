@@ -1,0 +1,22 @@
+.fund-name-field {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.fund-name-field:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.fund-name-field.empty {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.fund-name-field.lov {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}

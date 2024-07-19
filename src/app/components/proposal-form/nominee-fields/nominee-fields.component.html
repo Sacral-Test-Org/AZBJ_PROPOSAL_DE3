@@ -1,0 +1,32 @@
+<div>
+  <div>
+    <label for="nomineeName">Nominee Name:</label>
+    <input type="text" id="nomineeName" [(ngModel)]="nomineeName" [disabled]="isNomineeDisabled" />
+    <span *ngIf="isNomineeDisabled && proposalType === 'K' || proposalType === 'PS' || proposalType === 'H' || proposalType === 'E'">
+      Nomination not allowed for this policy
+    </span>
+  </div>
+  <div>
+    <label for="nomineeBirthplace">Nominee Birthplace:</label>
+    <input type="text" id="nomineeBirthplace" [(ngModel)]="nomineeBirthplace" [disabled]="isNomineeDisabled" />
+  </div>
+  <div>
+    <label for="nomineeDOB">Nominee Date of Birth:</label>
+    <input type="date" id="nomineeDOB" [(ngModel)]="nomineeDOB" [disabled]="isNomineeDisabled" />
+  </div>
+  <div>
+    <label for="nomineeRelation">Nominee Relation:</label>
+    <input type="text" id="nomineeRelation" [(ngModel)]="nomineeRelation" [disabled]="isNomineeDisabled" />
+  </div>
+  <div *ngIf="proposalType === 'I'">
+    <label for="multiNominee">Multi Nominee:</label>
+    <input type="checkbox" id="multiNominee" [(ngModel)]="multiNominee" />
+  </div>
+  <div>
+    <label for="assignFlag">Assign Flag:</label>
+    <input type="text" id="assignFlag" [(ngModel)]="assignFlag" [disabled]="isAssignFlagDisabled" />
+  </div>
+  <div *ngIf="errorMessage">
+    <span>{{ errorMessage }}</span>
+  </div>
+</div>

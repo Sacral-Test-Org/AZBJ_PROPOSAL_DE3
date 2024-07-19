@@ -1,0 +1,83 @@
+<div>
+  <h3>Insurance Amount</h3>
+  <div *ngIf="insuranceAmount">
+    <p>{{ insuranceAmount }}</p>
+  </div>
+  <div *ngIf="!insuranceAmount">
+    <p>No insurance amount available.</p>
+  </div>
+</div>
+
+<script>
+import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { NgxLoggerLevel, LoggerService } from 'ngx-logger';
+
+@Component({
+  selector: 'app-insurance-amount',
+  templateUrl: './insurance-amount.component.html',
+  styleUrls: ['./insurance-amount.component.css']
+})
+export class InsuranceAmountComponent implements OnInit {
+  insuranceAmount: string;
+
+  constructor(private http: HttpClient, private logger: LoggerService) {}
+
+  ngOnInit(): void {
+    this.loadInsuranceAmount();
+  }
+
+  loadInsuranceAmount(): void {
+    const currentItem = 'PREV_POLICYNO'; // Example item, replace with actual logic
+    const currentBlock = 'AZBJ_PREVIOUS_POLICY1'; // Example block, replace with actual logic
+    const proposalType = 'someProposalType'; // Example proposal type, replace with actual logic
+
+    const query = `SELECT MAX(strip_no) as strip_no
+                   FROM azbj_strip_field_mapping a
+                   WHERE block_name = '${currentBlock}'
+                     AND field_name = '${currentItem}'
+                     AND proposal_type = '${proposalType}'
+                     AND EXISTS
+                            (SELECT 1
+                               FROM azbj_proposal_stripes b
+                              WHERE a.proposal_type = b.proposal_type
+                                AND INSTR(stripe_string, '~' || a.strip_no || '~') > 0)`;
+
+    this.http.post('/api/query', { query }).subscribe(
+      (response: any) => {
+        const stripNo = response.strip_no;
+        if (stripNo) {
+          this.retrieveImage(stripNo);
+        } else {
+          this.logger.error('No strip number found');
+        }
+      },
+      (error) => {
+        this.logger.error('Error executing query', error);
+      }
+    );
+  }
+
+  retrieveImage(stripNo: number): void {
+    const fileName = `image_${stripNo}.png`; // Example file name logic
+    this.http.get(`/api/images/${fileName}`, { responseType: 'blob' }).subscribe(
+      (response) => {
+        const reader = new FileReader();
+        reader.onload = () => {
+          this.insuranceAmount = reader.result as string;
+        };
+        reader.readAsDataURL(response);
+      },
+      (error) => {
+        this.logger.error('Error retrieving image', error);
+      }
+    );
+  }
+}
+</script>
+
+<style>
+div {
+  text-align: center;
+}
+</style>

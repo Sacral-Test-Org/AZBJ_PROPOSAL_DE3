@@ -1,0 +1,7 @@
+<div class="money-back-option">
+  <label for="moneyBackOption">Money Back Option:</label>
+  <select id="moneyBackOption" name="moneyBackOption" [(ngModel)]="selectedOption" (change)="onOptionChange($event)" title="[Self/Policyholder/Other]">
+    <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+  </select>
+  <small class="hint">[Self/Policyholder/Other]</small>
+</div>

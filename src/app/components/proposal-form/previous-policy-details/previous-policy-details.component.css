@@ -1,0 +1,110 @@
+/* Styling for Policy/Proposal Numbers */
+.policy-number {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for Insurance Company */
+.insurance-company {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for Amount of Insurance */
+.amount-of-insurance {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for Status */
+.status {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for IP Type */
+.ip-type {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Form Field Styling */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* Read-Only Styling */
+.read-only {
+  background-color: #f9f9f9;
+  color: #aaa;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Delete Button Styling */
+button.delete {
+  background-color: gray;
+  color: black;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .form-field {
+    flex-direction: column;
+  }
+}
+
+/* Image Display Area */
+.image-display {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Highlighting and Borders for Visual Attributes */
+.highlight {
+  border: 2px solid #4CAF50;
+}
+
+/* Styles for Prompt */
+.prompt {
+  font-size: 16px;
+  margin-top: 20px;
+}

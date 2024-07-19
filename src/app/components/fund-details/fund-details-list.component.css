@@ -1,0 +1,97 @@
+/* Styles for the fund details list component */
+
+/* Container for the fund details list */
+.fund-details-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Table for displaying fund details */
+.fund-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Table header */
+.fund-details-table th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Table cells */
+.fund-details-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Input fields for apportionment percentage */
+.apportionment-input {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Checkbox for marking a fund for deletion */
+.delete-checkbox {
+  margin-left: 10px;
+}
+
+/* Button for deleting selected funds */
+.delete-button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Button hover effect */
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Total apportionment display */
+.total-apportionment {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Filter section for available funds */
+.filter-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Filter input fields */
+.filter-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Filter button */
+.filter-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Filter button hover effect */
+.filter-button:hover {
+  background-color: #45a049;
+}

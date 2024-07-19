@@ -1,0 +1,17 @@
+<div>
+  <label for="industryCode">Industry Code:</label>
+  <input id="industryCode" [(ngModel)]="industryCode" (ngModelChange)="fetchProfessions()" />
+</div>
+
+<div>
+  <label for="professionDesc">Profession Description:</label>
+  <input id="professionDesc" [(ngModel)]="selectedProfession" (dblclick)="showProfessionList()" readonly />
+</div>
+
+<div *ngIf="showList">
+  <ul>
+    <li *ngFor="let profession of professions" (click)="selectProfession(profession)">
+      {{ profession.occ_desc }}
+    </li>
+  </ul>
+</div>

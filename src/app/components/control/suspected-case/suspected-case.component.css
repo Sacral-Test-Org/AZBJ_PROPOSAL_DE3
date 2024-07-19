@@ -1,0 +1,42 @@
+/* Suspected Case Component Styles */
+
+.suspected-case-container {
+  padding: 20px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  color: #721c24;
+}
+
+.suspected-case-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.suspected-case-content {
+  font-size: 16px;
+}
+
+.suspected-case-footer {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.suspected-case-button {
+  background-color: #f5c6cb;
+  border: none;
+  color: #721c24;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.suspected-case-button:hover {
+  background-color: #f1b0b7;
+}

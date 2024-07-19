@@ -1,0 +1,19 @@
+<div *ngIf="agents && agents.length">
+  <table>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let agent of agents">
+        <td>{{ agent.code }}</td>
+        <td>{{ agent.name }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div *ngIf="!agents || !agents.length">
+  <p>No agents found.</p>
+</div>

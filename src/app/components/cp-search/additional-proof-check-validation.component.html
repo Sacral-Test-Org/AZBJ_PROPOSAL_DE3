@@ -1,0 +1,9 @@
+<div class="additional-proof-check">
+  <label>
+    <input type="checkbox" [(ngModel)]="additionalProofCheck" /> Additional Proof
+  </label>
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+  <button (click)="checkPolicyDetails()">Check Policy Details</button>
+</div>

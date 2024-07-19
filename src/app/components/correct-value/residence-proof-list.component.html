@@ -1,0 +1,7 @@
+<div *ngIf="isVisible" class="residence-proof-list">
+  <label for="residenceProof">Residence Proof Information:</label>
+  <select id="residenceProof" multiple [(ngModel)]="selectedProofs">
+    <option *ngFor="let proof of residenceProofs" [value]="proof">{{ proof }}</option>
+  </select>
+  <button (click)="updateResidenceProof()">Update</button>
+</div>

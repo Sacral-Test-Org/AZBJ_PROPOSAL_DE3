@@ -1,0 +1,49 @@
+/* Styles for Referal Id Validation Component */
+
+/* Container for the Referal Id input and messages */
+.referal-id-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+/* Style for the input field */
+.referal-id-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style for error messages */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Style for warning messages */
+.warning-message {
+  color: orange;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Style for the LOV container */
+.lov-container {
+  margin-top: 10px;
+}
+
+/* Style for the LOV items */
+.lov-item {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect for LOV items */
+.lov-item:hover {
+  background-color: #f0f0f0;
+}

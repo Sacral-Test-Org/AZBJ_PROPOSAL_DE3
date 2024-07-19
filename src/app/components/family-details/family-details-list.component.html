@@ -1,0 +1,30 @@
+<div class="family-details-container">
+  <h2>Family Details</h2>
+  <button (click)="onHelp()">Help</button>
+  <table>
+    <thead>
+      <tr>
+        <th>Member Number</th>
+        <th>Member Name</th>
+        <th>Age</th>
+        <th>Health Status</th>
+        <th>Cause of Death</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let member of familyMembers">
+        <td>{{ member.memberNumber }}</td>
+        <td>{{ member.memberName }}</td>
+        <td>{{ member.age }}</td>
+        <td>{{ member.healthStatus }}</td>
+        <td>{{ member.causeOfDeath }}</td>
+        <td>
+          <button (click)="onEdit(member)">Edit</button>
+          <button (click)="onDelete(member)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button (click)="onAddNew()">Add New Member</button>
+</div>

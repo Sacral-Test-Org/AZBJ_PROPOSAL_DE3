@@ -1,0 +1,25 @@
+<div class="insurance-details">
+  <label for="relationship">Relationship:</label>
+  <select id="relationship" [(ngModel)]="relationship">
+    <option *ngFor="let rel of relationships" [value]="rel">{{ rel }}</option>
+  </select>
+
+  <label for="companyName">Company Name:</label>
+  <input id="companyName" type="text" [(ngModel)]="companyName" maxlength="100" />
+
+  <label for="sumAssured">Sum Assured:</label>
+  <input id="sumAssured" type="number" [(ngModel)]="sumAssured" />
+
+  <label for="premium">Premium:</label>
+  <input id="premium" type="number" [(ngModel)]="premium" />
+</div>
+
+<script>
+  document.querySelectorAll('.insurance-details input, .insurance-details select').forEach(item => {
+    item.addEventListener('click', event => {
+      if (event.target.tagName !== 'BUTTON') {
+        event.target.focus();
+      }
+    });
+  });
+</script>

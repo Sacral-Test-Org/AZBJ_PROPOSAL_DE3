@@ -1,0 +1,8 @@
+<div>
+  <label for="relationshipType">Relationship Type:</label>
+  <select id="relationshipType" (change)="onRelationshipTypeChange($event)">
+    <option *ngFor="let relationship of relationshipTypes" [value]="relationship">
+      {{ relationship }}
+    </option>
+  </select>
+</div>

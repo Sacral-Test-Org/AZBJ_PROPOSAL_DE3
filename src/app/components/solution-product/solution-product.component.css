@@ -1,0 +1,95 @@
+/* Styling for the validation message and enabled/disabled state of the sum assured field */
+.validation-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.sum-assured-enabled {
+  background-color: white;
+  color: black;
+}
+
+.sum-assured-disabled {
+  background-color: #f0f0f0;
+  color: #a0a0a0;
+}
+
+/* Styling for the premium frequency field in the SOLUTION_PRODUCT block on the COVER_SOLUTION tab page */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.control-label {
+  text-align: right;
+  font-weight: bold;
+}
+
+.form-control {
+  text-transform: uppercase;
+}
+
+/* Styling for the new field for selecting the percentage increase in SA */
+.percentage-increase-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.percentage-increase-field label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Styling for the premium field */
+.premium-field {
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+}
+
+.premium-field-label {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Styling for the SPW Flag and SPW Percentage fields */
+.spw-flag-field,
+.spw-percentage-field {
+  margin-bottom: 15px;
+}
+
+/* Styling for the dropdown list and its prompt */
+.annuity-frequency-dropdown {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.annuity-frequency-dropdown label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Styling for the dynamic list of renewal payment methods */
+.renewal-payment-methods {
+  margin-bottom: 15px;
+}
+
+/* Styling for the "Money Back Option" field */
+.money-back-option-field {
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+}
+
+.money-back-option-label {
+  text-align: right;
+  font-weight: bold;
+  font-size: 800;
+}
+
+/* Styling for the payment method selection dropdown */
+.payment-method-dropdown {
+  margin-bottom: 15px;
+}

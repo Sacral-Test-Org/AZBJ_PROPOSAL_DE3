@@ -1,0 +1,57 @@
+<div>
+  <h2>Manage Assignment Flag for Policies</h2>
+  <form>
+    <div>
+      <label>
+        <input type="checkbox" [(ngModel)]="assignmentFlag" (change)="onAssignmentFlagChange()" />
+        Assignment Flag
+      </label>
+    </div>
+    <div>
+      <label>
+        <input type="checkbox" [(ngModel)]="eiaFlag" (change)="onEiaFlagChange()" />
+        Electronic Insurance Account (eIA)
+      </label>
+    </div>
+  </form>
+  <div *ngIf="message" class="message">
+    {{ message }}
+  </div>
+</div>
+
+<script>
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-assignment-flag',
+  templateUrl: './assignment-flag.component.html',
+  styleUrls: ['./assignment-flag.component.css']
+})
+export class AssignmentFlagComponent {
+  assignmentFlag: boolean = false;
+  eiaFlag: boolean = false;
+  message: string = '';
+
+  onAssignmentFlagChange() {
+    if (this.assignmentFlag) {
+      if (this.eiaFlag) {
+        this.assignmentFlag = false;
+        this.message = 'eIA is not allowed for assignment cases.';
+      }
+    } else {
+      if (confirm('Are you sure you want to remove the assignment flag?')) {
+        this.assignmentFlag = false;
+      } else {
+        this.assignmentFlag = true;
+      }
+    }
+  }
+
+  onEiaFlagChange() {
+    if (this.eiaFlag && this.assignmentFlag) {
+      this.assignmentFlag = false;
+      this.message = 'eIA is not allowed for assignment cases.';
+    }
+  }
+}
+</script>

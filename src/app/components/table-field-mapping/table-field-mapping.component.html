@@ -1,0 +1,54 @@
+<div class="table-field-mapping">
+  <form>
+    <div class="form-group">
+      <label for="columnName">Column Name</label>
+      <input type="text" id="columnName" [(ngModel)]="tableFieldMapping.columnName" name="columnName" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="fieldName">Field Name</label>
+      <input type="text" id="fieldName" [(ngModel)]="tableFieldMapping.fieldName" name="fieldName" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="blockName">Block Name</label>
+      <input type="text" id="blockName" [(ngModel)]="tableFieldMapping.blockName" name="blockName" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="leadSubCode">Lead Sub Code</label>
+      <input type="text" id="leadSubCode" [(ngModel)]="tableFieldMapping.leadSubCode" name="leadSubCode" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="subName">Sub Name</label>
+      <input type="text" id="subName" [(ngModel)]="tableFieldMapping.subName" name="subName" class="form-control" (dblclick)="showSubNameLOV()" />
+    </div>
+    <div class="form-group">
+      <label for="referralId">Referral ID</label>
+      <input type="text" id="referralId" [(ngModel)]="tableFieldMapping.referralId" name="referralId" class="form-control" (dblclick)="showReferralIdLOV()" />
+    </div>
+    <div class="form-group">
+      <label for="referralName">Referral Name</label>
+      <input type="text" id="referralName" [(ngModel)]="tableFieldMapping.referralName" name="referralName" class="form-control" (dblclick)="showReferralNameLOV()" />
+    </div>
+    <div class="form-group">
+      <label for="employeeId">Employee ID</label>
+      <input type="text" id="employeeId" [(ngModel)]="tableFieldMapping.employeeId" name="employeeId" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="icCode">IC Code</label>
+      <input type="text" id="icCode" [(ngModel)]="tableFieldMapping.icCode" name="icCode" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="manualBBU">Manual BBU</label>
+      <input type="checkbox" id="manualBBU" [(ngModel)]="tableFieldMapping.manualBBU" name="manualBBU" (change)="toggleManualBBU()" />
+    </div>
+    <div class="form-group" *ngIf="tableFieldMapping.manualBBU">
+      <label for="bbuReason">BBU Reason</label>
+      <select id="bbuReason" [(ngModel)]="tableFieldMapping.bbuReason" name="bbuReason" class="form-control" disabled>
+        <option *ngFor="let reason of bbuReasons" [value]="reason">{{ reason }}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <button type="button" class="btn btn-primary" (click)="viewNomineeDetails()" hidden>Nominee Details</button>
+      <button type="button" class="btn btn-primary" (click)="viewFamilyDetails()" hidden>Family Details</button>
+    </div>
+  </form>
+</div>

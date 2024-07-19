@@ -1,0 +1,54 @@
+<div>
+  <label for="subIcPan">Sub IC Pan</label>
+  <input id="subIcPan" type="text" maxlength="30" (dblclick)="showList()" (input)="toUpperCase($event)" />
+  <ul *ngIf="showValues">
+    <li *ngFor="let value of values" (click)="selectValue(value)">{{ value }}</li>
+  </ul>
+</div>
+
+<script>
+  import { Component } from '@angular/core';
+
+  @Component({
+    selector: 'app-sub-ic-pan-list',
+    templateUrl: './sub-ic-pan-list.component.html',
+    styleUrls: ['./sub-ic-pan-list.component.css']
+  })
+  export class SubIcPanListComponent {
+    values: string[] = ['5', '8', 'LA', 'No'];
+    showValues: boolean = false;
+
+    showList() {
+      this.showValues = true;
+    }
+
+    selectValue(value: string) {
+      const input = document.getElementById('subIcPan') as HTMLInputElement;
+      input.value = value;
+      this.showValues = false;
+    }
+
+    toUpperCase(event: Event) {
+      const input = event.target as HTMLInputElement;
+      input.value = input.value.toUpperCase();
+    }
+  }
+</script>
+
+<style>
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: -1px; /* Prevent double borders */
+  }
+
+  li:hover {
+    background-color: #ddd;
+  }
+</style>

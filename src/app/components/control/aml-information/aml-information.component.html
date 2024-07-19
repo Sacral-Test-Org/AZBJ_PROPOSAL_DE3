@@ -1,0 +1,51 @@
+<div class="aml-information">
+  <form>
+    <div class="form-group">
+      <label for="documentType">Document Type</label>
+      <input type="text" id="documentType" name="documentType" [(ngModel)]="aml.documentType" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="requestCode">Request Code</label>
+      <input type="text" id="requestCode" name="requestCode" [(ngModel)]="aml.requestCode" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="documentDescription">Document Description</label>
+      <input type="text" id="documentDescription" name="documentDescription" [(ngModel)]="aml.documentDescription" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="information">Information</label>
+      <input type="text" id="information" name="information" [(ngModel)]="aml.information" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="proofType">Proof Type</label>
+      <select id="proofType" name="proofType" [(ngModel)]="aml.proofType" class="form-control">
+        <option *ngFor="let proof of proofTypes" [value]="proof.type">{{ proof.type }}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="documentId">Document ID</label>
+      <input type="text" id="documentId" name="documentId" [(ngModel)]="aml.documentId" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="documentDate">Document Date</label>
+      <input type="date" id="documentDate" name="documentDate" [(ngModel)]="aml.documentDate" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="oldPolicyReference">Old Policy Reference</label>
+      <input type="text" id="oldPolicyReference" name="oldPolicyReference" [(ngModel)]="aml.oldPolicyReference" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="proofDescription">Proof Description</label>
+      <input type="text" id="proofDescription" name="proofDescription" [(ngModel)]="aml.proofDescription" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+      <label for="documentRemarks">Document Remarks</label>
+      <textarea id="documentRemarks" name="documentRemarks" [(ngModel)]="aml.documentRemarks" class="form-control" maxlength="300"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="value">Value</label>
+      <input type="text" id="value" name="value" [(ngModel)]="aml.value" class="form-control" [readonly]="!isValueEditable" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

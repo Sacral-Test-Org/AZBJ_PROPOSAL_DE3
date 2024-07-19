@@ -1,0 +1,9 @@
+<div>
+  <label for="premiumFinance">Premium Finance:</label>
+  <select id="premiumFinance" (change)="validateSelection($event)">
+    <option value="IP">IP</option>
+    <option value="PH">PH</option>
+    <option value="JL">Joint Life</option>
+  </select>
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+</div>

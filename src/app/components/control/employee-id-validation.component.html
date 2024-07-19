@@ -1,0 +1,5 @@
+<div class="employee-id-validation">
+  <label for="employeeId">Employee ID:</label>
+  <input type="text" id="employeeId" [(ngModel)]="employeeId" (ngModelChange)="validateEmployeeId()" />
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+</div>

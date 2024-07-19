@@ -1,0 +1,303 @@
+<div class="solution-product">
+  <h2>Manage Solution Product Details</h2>
+  <form>
+    <!-- Frequency -->
+    <div class="form-group">
+      <label for="frequency" class="control-label text-right">Frequency</label>
+      <select id="frequency" class="form-control">
+        <option *ngFor="let option of frequencyOptions" [value]="option">{{ option }}</option>
+      </select>
+    </div>
+
+    <!-- Accumulate -->
+    <div class="form-group">
+      <label for="accumulate" class="control-label text-right">Accumulate</label>
+      <input type="checkbox" id="accumulate" class="form-control" [(ngModel)]="accumulate">
+    </div>
+
+    <!-- Insurance for All -->
+    <div class="form-group">
+      <label for="insuranceForAll" class="control-label text-right">Insurance for All</label>
+      <input type="checkbox" id="insuranceForAll" class="form-control" [(ngModel)]="insuranceForAll">
+    </div>
+
+    <!-- Fully Vaccinated Flag -->
+    <div class="form-group">
+      <label for="fullyVaccinatedFlag" class="control-label text-right">Fully Vaccinated Flag</label>
+      <input type="checkbox" id="fullyVaccinatedFlag" class="form-control" [(ngModel)]="fullyVaccinatedFlag" [readonly]="true">
+    </div>
+
+    <!-- Auto Pay Rebate Flag -->
+    <div class="form-group">
+      <label for="autoPayRebateFlag" class="control-label text-right">Auto Pay Rebate Flag</label>
+      <input type="checkbox" id="autoPayRebateFlag" class="form-control" [(ngModel)]="autoPayRebateFlag" [readonly]="true">
+    </div>
+
+    <!-- Salaried Rebate Flag -->
+    <div class="form-group">
+      <label for="salariedRebateFlag" class="control-label text-right">Salaried Rebate Flag</label>
+      <input type="checkbox" id="salariedRebateFlag" class="form-control" [(ngModel)]="salariedRebateFlag" [readonly]="true">
+    </div>
+
+    <!-- Income Period -->
+    <div class="form-group">
+      <label for="incomePeriod" class="control-label text-right">Income Period</label>
+      <input type="number" id="incomePeriod" class="form-control" [(ngModel)]="incomePeriod">
+    </div>
+
+    <!-- Payout Frequency -->
+    <div class="form-group">
+      <label for="payoutFrequency" class="control-label text-right">Payout Frequency</label>
+      <select id="payoutFrequency" class="form-control">
+        <option *ngFor="let option of payoutFrequencyOptions" [value]="option">{{ option }}</option>
+      </select>
+    </div>
+
+    <!-- Death Benefit Option -->
+    <div class="form-group">
+      <label for="deathBenefitOption" class="control-label text-right">Death Benefit Option</label>
+      <input type="text" id="deathBenefitOption" class="form-control" [(ngModel)]="deathBenefitOption">
+    </div>
+
+    <!-- Cash Bonus -->
+    <div class="form-group">
+      <label for="cashBonus" class="control-label text-right">Cash Bonus</label>
+      <input type="number" id="cashBonus" class="form-control" [(ngModel)]="cashBonus">
+    </div>
+
+    <!-- Deferred Period -->
+    <div class="form-group">
+      <label for="deferredPeriod" class="control-label text-right">Deferred Period</label>
+      <input type="number" id="deferredPeriod" class="form-control" [(ngModel)]="deferredPeriod">
+    </div>
+
+    <!-- Worksite Rebate Flag -->
+    <div class="form-group">
+      <label for="worksiteRebateFlag" class="control-label text-right">Worksite Rebate Flag</label>
+      <input type="checkbox" id="worksiteRebateFlag" class="form-control" [(ngModel)]="worksiteRebateFlag">
+    </div>
+
+    <!-- Life Stage Upgrade Flag -->
+    <div class="form-group">
+      <label for="lifeStageUpgradeFlag" class="control-label text-right">Life Stage Upgrade Flag</label>
+      <input type="checkbox" id="lifeStageUpgradeFlag" class="form-control" [(ngModel)]="lifeStageUpgradeFlag">
+    </div>
+
+    <!-- Number of Premium Holidays -->
+    <div class="form-group">
+      <label for="numberOfPremiumHolidays" class="control-label text-right">Number of Premium Holidays</label>
+      <input type="number" id="numberOfPremiumHolidays" class="form-control" [(ngModel)]="numberOfPremiumHolidays">
+    </div>
+
+    <!-- Death Benefit Percentage -->
+    <div class="form-group">
+      <label for="deathBenefitPercentage" class="control-label text-right">Death Benefit Percentage</label>
+      <input type="number" id="deathBenefitPercentage" class="form-control" [(ngModel)]="deathBenefitPercentage">
+    </div>
+
+    <!-- GMI -->
+    <div class="form-group">
+      <label for="gmi" class="control-label text-right">GMI</label>
+      <input type="number" id="gmi" class="form-control" [(ngModel)]="gmi">
+      <div *ngIf="gmiWarning" class="alert alert-warning">Please enter a valid GMI value.</div>
+    </div>
+
+    <!-- Add/Delete Loyalty -->
+    <div class="form-group">
+      <label for="addDeleteLoyalty" class="control-label text-right">Add/Delete Loyalty</label>
+      <input type="checkbox" id="addDeleteLoyalty" class="form-control" [(ngModel)]="addDeleteLoyalty">
+    </div>
+
+    <!-- Payout Date -->
+    <div class="form-group">
+      <label for="payoutDate" class="control-label text-right">Payout Date</label>
+      <input type="date" id="payoutDate" class="form-control" [(ngModel)]="payoutDate">
+    </div>
+
+    <!-- ADB Percentage -->
+    <div class="form-group">
+      <label for="adbPercentage" class="control-label text-right">ADB Percentage</label>
+      <input type="number" id="adbPercentage" class="form-control" [(ngModel)]="adbPercentage">
+    </div>
+
+    <!-- EMR2 Value -->
+    <div class="form-group">
+      <label for="emr2Value" class="control-label text-right">EMR2 Value</label>
+      <input type="number" id="emr2Value" class="form-control" [(ngModel)]="emr2Value">
+    </div>
+
+    <!-- EMR1 Value -->
+    <div class="form-group">
+      <label for="emr1Value" class="control-label text-right">EMR1 Value</label>
+      <input type="number" id="emr1Value" class="form-control" [(ngModel)]="emr1Value">
+    </div>
+
+    <!-- EMR2 -->
+    <div class="form-group">
+      <label for="emr2" class="control-label text-right">EMR2</label>
+      <input type="text" id="emr2" class="form-control" [(ngModel)]="emr2">
+    </div>
+
+    <!-- EMR1 -->
+    <div class="form-group">
+      <label for="emr1" class="control-label text-right">EMR1</label>
+      <input type="text" id="emr1" class="form-control" [(ngModel)]="emr1">
+    </div>
+
+    <!-- Vesting Age -->
+    <div class="form-group">
+      <label for="vestingAge" class="control-label text-right">Vesting Age</label>
+      <input type="number" id="vestingAge" class="form-control" [(ngModel)]="vestingAge">
+    </div>
+
+    <!-- Annuity Option -->
+    <div class="form-group">
+      <label for="annuityOption" class="control-label text-right">Annuity Option</label>
+      <input type="text" id="annuityOption" class="form-control" [(ngModel)]="annuityOption">
+    </div>
+
+    <!-- Annuity Type -->
+    <div class="form-group">
+      <label for="annuityType" class="control-label text-right">Annuity Type</label>
+      <input type="text" id="annuityType" class="form-control" [(ngModel)]="annuityType">
+    </div>
+
+    <!-- Pension Option -->
+    <div class="form-group">
+      <label for="pensionOption" class="control-label text-right">Pension Option</label>
+      <input type="text" id="pensionOption" class="form-control" [(ngModel)]="pensionOption">
+    </div>
+
+    <!-- Percentage Increase in SA -->
+    <div class="form-group">
+      <label for="percentageIncreaseInSA" class="control-label text-right">Percentage Increase in SA</label>
+      <select id="percentageIncreaseInSA" class="form-control">
+        <option *ngFor="let option of percentageIncreaseOptions" [value]="option">{{ option }}</option>
+      </select>
+    </div>
+
+    <!-- SPW Flag -->
+    <div class="form-group">
+      <label for="spwFlag" class="control-label text-right">SPW Flag</label>
+      <input type="checkbox" id="spwFlag" class="form-control" [(ngModel)]="spwFlag">
+    </div>
+
+    <!-- SPW Percentage -->
+    <div class="form-group">
+      <label for="spwPercentage" class="control-label text-right">SPW Percentage</label>
+      <input type="number" id="spwPercentage" class="form-control" [(ngModel)]="spwPercentage" [disabled]="!spwFlag">
+    </div>
+
+    <!-- SPW Frequency -->
+    <div class="form-group">
+      <label for="spwFrequency" class="control-label text-right">SPW Frequency</label>
+      <input type="number" id="spwFrequency" class="form-control" [(ngModel)]="spwFrequency">
+    </div>
+
+    <!-- IB Amount -->
+    <div class="form-group">
+      <label for="ibAmount" class="control-label text-right">IB Amount</label>
+      <input type="number" id="ibAmount" class="form-control" [(ngModel)]="ibAmount">
+    </div>
+
+    <!-- Product ID -->
+    <div class="form-group">
+      <label for="productId" class="control-label text-right">Product ID</label>
+      <input type="text" id="productId" class="form-control" [(ngModel)]="productId">
+    </div>
+
+    <!-- Package Description -->
+    <div class="form-group">
+      <label for="packageDescription" class="control-label text-right">Package Description</label>
+      <input type="text" id="packageDescription" class="form-control" [(ngModel)]="packageDescription" (focus)="fetchPackageList()">
+    </div>
+
+    <!-- Package Code -->
+    <div class="form-group">
+      <label for="packageCode" class="control-label text-right">Package Code</label>
+      <select id="packageCode" class="form-control" (change)="clearFundDetails()">
+        <option *ngFor="let package of packageList" [value]="package.code">{{ package.description }}</option>
+      </select>
+    </div>
+
+    <!-- Premium -->
+    <div class="form-group">
+      <label for="premium" class="control-label text-right">Premium</label>
+      <input type="number" id="premium" class="form-control" [(ngModel)]="premium" (blur)="navigateToFrequencyField()">
+    </div>
+
+    <!-- Sum Assured -->
+    <div class="form-group">
+      <label for="sumAssured" class="control-label text-right">Sum Assured</label>
+      <input type="number" id="sumAssured" class="form-control" [(ngModel)]="sumAssured" [disabled]="isSumAssuredDisabled">
+    </div>
+
+    <!-- Multiplier -->
+    <div class="form-group">
+      <label for="multiplier" class="control-label text-right">Multiplier</label>
+      <input type="number" id="multiplier" class="form-control" [(ngModel)]="multiplier">
+    </div>
+
+    <!-- Benefit Term -->
+    <div class="form-group">
+      <label for="benefitTerm" class="control-label text-right">Benefit Term</label>
+      <input type="number" id="benefitTerm" class="form-control" [(ngModel)]="benefitTerm" (blur)="navigateToRiderDetails()">
+    </div>
+
+    <!-- Premium Term -->
+    <div class="form-group">
+      <label for="premiumTerm" class="control-label text-right">Premium Term</label>
+      <input type="number" id="premiumTerm" class="form-control" [(ngModel)]="premiumTerm" (blur)="navigateToRiderDetails()">
+    </div>
+
+    <!-- Money Booster -->
+    <div class="form-group">
+      <label for="moneyBooster" class="control-label text-right">Money Booster</label>
+      <input type="number" id="moneyBooster" class="form-control" [(ngModel)]="moneyBooster">
+    </div>
+
+    <!-- Nominee Age -->
+    <div class="form-group">
+      <label for="nomineeAge" class="control-label text-right">Nominee Age</label>
+      <input type="number" id="nomineeAge" class="form-control" [(ngModel)]="nomineeAge">
+    </div>
+
+    <!-- Solution ID -->
+    <div class="form-group">
+      <label for="solutionId" class="control-label text-right">Solution ID</label>
+      <input type="text" id="solutionId" class="form-control" [(ngModel)]="solutionId">
+    </div>
+
+    <!-- Solution Multiplier -->
+    <div class="form-group">
+      <label for="solutionMultiplier" class="control-label text-right">Solution Multiplier</label>
+      <input type="number" id="solutionMultiplier" class="form-control" [(ngModel)]="solutionMultiplier">
+    </div>
+
+    <!-- Annuity Frequency -->
+    <div class="form-group">
+      <label for="annuityFrequency" class="control-label text-right">Annuity Frequency</label>
+      <select id="annuityFrequency" class="form-control" [disabled]="true">
+        <option *ngFor="let option of annuityFrequencyOptions" [value]="option">{{ option }}</option>
+      </select>
+    </div>
+
+    <!-- Money Back Option -->
+    <div class="form-group" style="position: absolute; top: 39px; left: 745px; width: 95px; height: 14px;">
+      <label for="moneyBackOption" class="control-label text-right" style="font-weight: bold; font-size: 800;">Money Back Option</label>
+      <select id="moneyBackOption" class="form-control" [(ngModel)]="moneyBackOption" style="background-color: white; color: black; text-transform: uppercase;" title="[Self/Policyholder/Other]">
+        <option value="5">5</option>
+        <option value="8">8</option>
+        <option value="10">10</option>
+        <option value="Self">Self</option>
+        <option value="Policyholder">Policyholder</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <!-- Ok Button -->
+    <div class="form-group">
+      <button type="button" class="btn btn-primary" (click)="onOkButtonClick()">Ok</button>
+    </div>
+  </form>
+</div>

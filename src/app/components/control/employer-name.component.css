@@ -1,0 +1,39 @@
+/* Styles for Employer Name Field */
+
+/* Initially hidden and disabled */
+.hidden {
+  display: none;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Visible and enabled state */
+.visible {
+  display: block;
+}
+.enabled {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* Additional styling for the Employer Name field */
+.employer-name {
+  width: 100%;
+  padding: 8px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for the list of values */
+.employer-name-list {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: #fff;
+}

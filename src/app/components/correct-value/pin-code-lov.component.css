@@ -1,0 +1,66 @@
+/* Styles for the Pin Code List of Values (LOV) */
+
+.lov-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.lov-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+}
+
+.lov-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.lov-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lov-list-item {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.lov-list-item:hover {
+  background-color: #f0f0f0;
+}
+
+.lov-list-item:last-child {
+  border-bottom: none;
+}
+
+.lov-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ccc;
+}
+
+.lov-footer button {
+  padding: 6px 12px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.lov-footer button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,12 @@
+<div class="age-proof-validation">
+  <h2>Age Proof Validation</h2>
+  <div *ngIf="globalViewImageCount === 0 && partnerId">
+    <p>Age proof check is set to 'NA'. Please check the policy details at least once.</p>
+  </div>
+  <div *ngIf="signatureCheck !== 'Y' || ageProofCheck !== 'Y' || addressProofCheck !== 'Y'">
+    <p>Error: Please select all required questions (Signature, Age Proof, Address Proof).</p>
+  </div>
+  <div *ngIf="signatureCheck === 'Y' && ageProofCheck === 'Y' && addressProofCheck === 'Y'">
+    <p>All checks are validated correctly. No further action is required.</p>
+  </div>
+</div>

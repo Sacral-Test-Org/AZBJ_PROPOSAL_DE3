@@ -1,0 +1,6 @@
+<div class="insurance-company-image-container">
+  <img [src]="imageSrc" alt="Insurance Company Image" *ngIf="imageSrc; else noImage" />
+  <ng-template #noImage>
+    <p>No image available for the selected insurance company.</p>
+  </ng-template>
+</div>

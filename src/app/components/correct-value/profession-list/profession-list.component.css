@@ -1,0 +1,23 @@
+/* Styles for the list of professions */
+
+.profession-list-container {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.profession-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.profession-item:hover {
+  background-color: #f0f0f0;
+}
+
+.profession-item.active {
+  background-color: #e0e0e0;
+}

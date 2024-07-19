@@ -1,0 +1,60 @@
+<div class="fund-details-update">
+  <h2>Update Fund Details</h2>
+  <form (ngSubmit)="onSubmit()" #fundForm="ngForm">
+    <div class="form-group">
+      <label for="fundId">Fund ID</label>
+      <input 
+        type="text" 
+        id="fundId" 
+        name="fundId" 
+        class="form-control" 
+        [(ngModel)]="fund.fundId" 
+        #fundId="ngModel" 
+        required 
+        pattern="[A-Z]+" 
+        (input)="fundId.value = fundId.value.toUpperCase()">
+      <div *ngIf="fundId.invalid && (fundId.dirty || fundId.touched)" class="alert alert-danger">
+        <div *ngIf="fundId.errors?.required">Fund ID is required.</div>
+        <div *ngIf="fundId.errors?.pattern">Fund ID must be uppercase letters only.</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="fundName">Fund Name</label>
+      <input 
+        type="text" 
+        id="fundName" 
+        name="fundName" 
+        class="form-control" 
+        [(ngModel)]="fund.fundName" 
+        #fundName="ngModel" 
+        required 
+        pattern="[A-Z ]+" 
+        (input)="fundName.value = fundName.value.toUpperCase()">
+      <div *ngIf="fundName.invalid && (fundName.dirty || fundName.touched)" class="alert alert-danger">
+        <div *ngIf="fundName.errors?.required">Fund Name is required.</div>
+        <div *ngIf="fundName.errors?.pattern">Fund Name must be uppercase letters and spaces only.</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="apportionment">Apportionment Percentage</label>
+      <input 
+        type="number" 
+        id="apportionment" 
+        name="apportionment" 
+        class="form-control" 
+        [(ngModel)]="fund.apportionment" 
+        #apportionment="ngModel" 
+        required 
+        min="0" 
+        max="100">
+      <div *ngIf="apportionment.invalid && (apportionment.dirty || apportionment.touched)" class="alert alert-danger">
+        <div *ngIf="apportionment.errors?.required">Apportionment Percentage is required.</div>
+        <div *ngIf="apportionment.errors?.min || apportionment.errors?.max">Apportionment Percentage must be between 0 and 100.</div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="fundForm.invalid">Update Fund</button>
+  </form>
+</div>

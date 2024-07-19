@@ -1,0 +1,185 @@
+<div class="control-container">
+  <h2>Control Component</h2>
+
+  <div class="checkbox-container">
+    <label>
+      <input type="checkbox" id="icOwnPolicyCheckbox" (change)="onICOwnPolicyChange()" /> IC's Own Policy
+    </label>
+  </div>
+
+  <div class="commission-field" *ngIf="isCommissionVisible">
+    <label for="commissionField">Commission:</label>
+    <input type="text" id="commissionField" [(ngModel)]="commissionValue" />
+  </div>
+
+  <div class="policy-type-dropdown">
+    <label for="policyType">Select Insurance Policy Type:</label>
+    <select id="policyType" (change)="handlePolicyTypeChange($event)">
+      <option value="IP">IP</option>
+      <option value="PH">PH</option>
+      <option value="8">8</option>
+      <option value="10">10</option>
+      <option value="SL">SL</option>
+    </select>
+  </div>
+
+  <div class="image-display">
+    <img [src]="imageSrc" alt="Policy Type Image" *ngIf="imageSrc" />
+  </div>
+
+  <div class="error-codes">
+    <h3>Error Codes</h3>
+    <table>
+      <tr>
+        <th>ERR CODE</th>
+        <th>ERR DESCRIPTION</th>
+      </tr>
+      <tr *ngFor="let error of errorCodes">
+        <td>{{ error.code }}</td>
+        <td>{{ error.description }}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="receipt-details">
+    <h3>Receipt Details</h3>
+    <table>
+      <tr>
+        <th>Receipt Number</th>
+        <th>Amount</th>
+        <th>Date Received</th>
+        <th>Cheque Status</th>
+        <th>Premium Payer</th>
+        <th>Branch Code</th>
+        <th>Branch Name</th>
+        <th>Branch State</th>
+      </tr>
+      <tr *ngFor="let receipt of receiptDetails">
+        <td>{{ receipt.receiptNumber }}</td>
+        <td>{{ receipt.amount }}</td>
+        <td>{{ receipt.dateReceived }}</td>
+        <td>{{ receipt.chequeStatus }}</td>
+        <td>{{ receipt.premiumPayer }}</td>
+        <td>{{ receipt.branchCode }}</td>
+        <td>{{ receipt.branchName }}</td>
+        <td>{{ receipt.branchState }}</td>
+      </tr>
+    </table>
+  </div>
+
+  <button (click)="proceed()">Proceed</button>
+
+  <div class="mailing-address">
+    <label>
+      <input type="checkbox" id="sameAsResidenceCheckbox" (change)="onSameAsResidenceChange()" /> Same as Residence Address
+    </label>
+    <div *ngIf="isMailingAddressVisible">
+      <label for="mailingAddress">Mailing Address:</label>
+      <input type="text" id="mailingAddress" [(ngModel)]="mailingAddress" />
+    </div>
+  </div>
+
+  <div class="pan-approval">
+    <h3>PAN Approval Details</h3>
+    <label for="ipPanIssuanceDate">IP PAN Issuance Date:</label>
+    <input type="date" id="ipPanIssuanceDate" [(ngModel)]="ipPanIssuanceDate" />
+    <label for="phPanIssuanceDate">PH PAN Issuance Date:</label>
+    <input type="date" id="phPanIssuanceDate" [(ngModel)]="phPanIssuanceDate" />
+    <label for="ageProof">Age Proof:</label>
+    <input type="text" id="ageProof" [(ngModel)]="ageProof" />
+    <label for="ageProofId">Age Proof ID:</label>
+    <input type="text" id="ageProofId" [(ngModel)]="ageProofId" />
+    <label for="panIssuanceDate">PAN Issuance Date:</label>
+    <input type="date" id="panIssuanceDate" [(ngModel)]="panIssuanceDate" />
+    <label for="uwReason">UW Reason:</label>
+    <input type="text" id="uwReason" [(ngModel)]="uwReason" />
+    <label for="supervisorComments">Supervisor Comments:</label>
+    <input type="text" id="supervisorComments" [(ngModel)]="supervisorComments" />
+    <button (click)="supervisorApproval()">Supervisor Approval</button>
+    <button (click)="exit()">EXIT</button>
+  </div>
+
+  <div class="employee-id-validation">
+    <h3>Employee ID Validation</h3>
+    <label for="employeeId">Employee ID:</label>
+    <input type="text" id="employeeId" [(ngModel)]="employeeId" />
+    <div *ngIf="employeeIdError" class="error-message">{{ employeeIdError }}</div>
+  </div>
+
+  <div class="status-field">
+    <label for="statusField">Status:</label>
+    <input type="text" id="statusField" [(ngModel)]="statusField" />
+  </div>
+
+  <div class="aadhar-verification">
+    <button (click)="verifyPHAdhaar()">Verify PH Aadhaar</button>
+  </div>
+
+  <div class="enrichment-details">
+    <button (click)="showEnrichmentDetails()">Enrichment Details</button>
+  </div>
+
+  <div class="multiple-nominee">
+    <button (click)="showMultipleNominee()">Multiple Nominee</button>
+  </div>
+
+  <div class="signature-decision">
+    <h3>Signature Decision</h3>
+    <label for="signatureDecision">Select Decision:</label>
+    <select id="signatureDecision" [(ngModel)]="signatureDecision">
+      <option value="8">Approved</option>
+      <option value="LA">Pending</option>
+      <option value="No">Rejected</option>
+    </select>
+  </div>
+
+  <div class="partner-type-selection">
+    <label for="partnerType">Select Partner Type:</label>
+    <select id="partnerType" [(ngModel)]="partnerType" (change)="onPartnerTypeChange()">
+      <option value="IP">IP</option>
+      <option value="PH">PH</option>
+      <option value="5">5</option>
+      <option value="8">8</option>
+      <option value="10">10</option>
+      <option value="SL">SL</option>
+    </select>
+  </div>
+
+  <div class="bi-number">
+    <label for="biNumber">BI Number:</label>
+    <input type="text" id="biNumber" [(ngModel)]="biNumber" />
+  </div>
+
+  <div class="bi-date">
+    <label for="biDate">BI Date:</label>
+    <input type="date" id="biDate" [(ngModel)]="biDate" />
+  </div>
+
+  <div class="bi-received-date">
+    <label for="biReceivedDate">BI Received Date:</label>
+    <input type="date" id="biReceivedDate" [(ngModel)]="biReceivedDate" />
+  </div>
+
+  <div class="consent-information">
+    <h3>Consent Information</h3>
+    <label for="consent">Select Consent:</label>
+    <select id="consent" [(ngModel)]="consent">
+      <option value="5">5</option>
+      <option value="8">8</option>
+      <option value="10">10</option>
+      <option value="SL">SL</option>
+    </select>
+  </div>
+
+  <div class="save-shortcut">
+    <button (click)="saveShortcut()">Save Shortcut</button>
+  </div>
+
+  <div class="all-images-shortcut">
+    <button (click)="viewAllImages()">All Images Shortcut</button>
+  </div>
+
+  <div class="exit-button">
+    <button (click)="exit()">Exit</button>
+  </div>
+</div>

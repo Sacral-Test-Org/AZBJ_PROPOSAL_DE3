@@ -1,0 +1,23 @@
+<div class="nominee-relationship">
+  <label for="relationship" class="relationship-label" style="font-family: 'MS Sans Serif'; font-weight: bold;">Relation to Nominee:</label>
+  <select id="relationship" name="relationship" class="relationship-dropdown" style="text-transform: uppercase;" (keydown.enter)="navigateToNextItem()">
+    <option *ngFor="let relation of relationships" [value]="relation">{{ relation }}</option>
+  </select>
+</div>
+
+<script>
+  import { Component } from '@angular/core';
+
+  @Component({
+    selector: 'app-nominee-relationship',
+    templateUrl: './nominee-relationship.component.html',
+    styleUrls: ['./nominee-relationship.component.css']
+  })
+  export class NomineeRelationshipComponent {
+    relationships: string[] = ['IP', '5', '8', '10', 'N', '1', 'SL'];
+
+    navigateToNextItem() {
+      // Logic to navigate to the next item in the form
+    }
+  }
+</script>

@@ -1,0 +1,40 @@
+/* Styles for the result component */
+
+/* General styles for the result container */
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Styles for the exit button */
+.exit-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.exit-button:hover {
+  background-color: #ff1a1a;
+}
+
+/* Styles for the PDF and image windows */
+.pdf-window, .image-window {
+  width: 80%;
+  height: 500px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  display: none; /* Initially hidden */
+}
+
+/* Styles to display the PDF and image windows when needed */
+.pdf-window.show, .image-window.show {
+  display: block;
+}

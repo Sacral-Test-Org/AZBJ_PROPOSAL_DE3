@@ -1,0 +1,518 @@
+/* Styles for the checkbox and commission field */
+#icOwnPolicyCheckbox {
+  margin-right: 10px;
+}
+
+#commissionField {
+  display: none;
+  margin-top: 10px;
+}
+
+/* Styles for error codes and descriptions section */
+#errorCodesSection {
+  margin-top: 20px;
+}
+
+#errorCodesSection .errorCode {
+  font-weight: bold;
+}
+
+#errorCodesSection .errorDescription {
+  margin-left: 10px;
+}
+
+/* Styles for receipt details UI */
+#receiptDetails {
+  margin-top: 20px;
+}
+
+#receiptDetails .receipt {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#receiptDetails .selectedReceipt {
+  background-color: #f0f0f0;
+}
+
+/* Styles for the 'Proceed' button */
+#proceedButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#proceedButton:hover {
+  background-color: #45a049;
+}
+
+/* Styles for error messages and field states */
+.errorMessage {
+  color: red;
+  font-weight: bold;
+}
+
+.fieldEnabled {
+  background-color: #fff;
+}
+
+.fieldDisabled {
+  background-color: #f0f0f0;
+}
+
+/* Styles for PAN approval details */
+#panApprovalDetails {
+  margin-top: 20px;
+}
+
+#panApprovalDetails .field {
+  margin-bottom: 10px;
+}
+
+#panApprovalDetails .checkbox {
+  margin-right: 10px;
+}
+
+#panApprovalDetails .button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#panApprovalDetails .button:hover {
+  background-color: #45a049;
+}
+
+/* Styles for Employee ID validation error messages */
+#employeeIdErrorMessage {
+  color: red;
+  font-weight: bold;
+}
+
+/* Styles for the 'Status' field */
+#statusField {
+  margin-top: 10px;
+}
+
+/* Styles for the checkbox and confirmation message */
+#confirmationMessage {
+  color: red;
+  font-weight: bold;
+}
+
+/* Styles for assignment flag and eIA interactions */
+#assignmentFlagCheckbox {
+  margin-right: 10px;
+}
+
+#eiaCheckbox {
+  margin-right: 10px;
+}
+
+#confirmationAlert {
+  color: red;
+  font-weight: bold;
+}
+
+#messageDisplay {
+  margin-top: 10px;
+}
+
+/* Styles for AML information input and update UI */
+#amlInformation {
+  margin-top: 20px;
+}
+
+#amlInformation .field {
+  margin-bottom: 10px;
+}
+
+/* Styles for the old policy reference input field */
+#oldPolicyReferenceField {
+  margin-top: 10px;
+}
+
+/* Styles for the 'Enrichment Details' button */
+#enrichmentDetailsButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#enrichmentDetailsButton:hover {
+  background-color: #45a049;
+}
+
+/* Styles for nominee fields and MWP Act checkbox */
+#mwpActCheckbox {
+  margin-right: 10px;
+}
+
+#nomineeNameField {
+  margin-top: 10px;
+}
+
+#nomineeBirthplaceField {
+  margin-top: 10px;
+}
+
+#nomineeDobField {
+  margin-top: 10px;
+}
+
+#nomineeRelationshipField {
+  margin-top: 10px;
+}
+
+/* Styles for 'Document ID' validation */
+#documentIdValidation {
+  margin-top: 10px;
+}
+
+/* Styles for the 'Previous Policy PAN Details' button */
+#previousPolicyPanDetailsButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#previousPolicyPanDetailsButton:hover {
+  background-color: #45a049;
+}
+
+/* Styles for search results view */
+#searchResults {
+  margin-top: 20px;
+}
+
+#searchResults .result {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Styles for duplicate contacts UI */
+#duplicateContacts {
+  margin-top: 20px;
+}
+
+#duplicateContacts .contact {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Styles for the 'MHR' field */
+#mhrField {
+  background-color: white;
+  color: black;
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 800;
+  position: absolute;
+  top: 220px;
+  left: 710px;
+}
+
+/* Styles for the 'Same Bank Dtls' button */
+#sameBankDtlsButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#sameBankDtlsButton:hover {
+  background-color: #45a049;
+}
+
+/* Styles for new input fields aligned horizontally */
+.newInputField {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Styles for the partner type selection field */
+#partnerTypeSelectionField {
+  margin-top: 10px;
+}
+
+/* Styles for the BI Date field and warning message */
+#biDateField {
+  margin-top: 10px;
+}
+
+#biDateWarningMessage {
+  color: red;
+  font-weight: bold;
+}
+
+/* Styles for PAN card validation */
+#panCardValidation {
+  margin-top: 10px;
+}
+
+#panCardValidation .inputField {
+  margin-bottom: 10px;
+}
+
+#panCardValidation .validationResult {
+  margin-top: 10px;
+}
+
+#panCardValidation .validationButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#panCardValidation .validationButton:hover {
+  background-color: #45a049;
+}
+
+/* Styles for the control component */
+#controlComponent {
+  margin-top: 20px;
+}
+
+/* Styles for the fresh proposal number field */
+#freshProposalNumberField {
+  background-color: gray;
+  color: black;
+  font-weight: bold;
+  font-style: plain;
+}
+
+/* Styles for dropdown list and navigation buttons */
+.dropdownList {
+  margin-top: 10px;
+}
+
+.nextButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.nextButton:hover {
+  background-color: #45a049;
+}
+
+.previousButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.previousButton:hover {
+  background-color: #45a049;
+}
+
+/* Styles for the 'Cancel' button */
+#cancelButton {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#cancelButton:hover {
+  background-color: #e53935;
+}
+
+/* Styles for navigation link/button */
+.navigationLink {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.navigationLink:hover {
+  text-decoration: underline;
+}
+
+/* Styles for the date input field and its prompt */
+#dateInputField {
+  background-color: gray;
+  color: black;
+}
+
+#dateInputPrompt {
+  font-style: plain;
+  font-weight: bold;
+}
+
+/* Styles for validation messages for the 'BI Received Date' field */
+#biReceivedDateValidationMessage {
+  color: red;
+  font-weight: bold;
+}
+
+/* Styles for consent information list and thumb impression input field */
+#consentInformationList {
+  margin-top: 10px;
+}
+
+#thumbImpressionInputField {
+  margin-top: 10px;
+}
+
+/* Styles for the save shortcut button */
+#saveShortcutBtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Styles for new UI elements */
+.newUiElement {
+  margin-top: 10px;
+}
+
+/* Styles for the 'Supervisor Approval' button and error messages */
+#supervisorApprovalButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#supervisorApprovalButton:hover {
+  background-color: #45a049;
+}
+
+#supervisorApprovalErrorMessage {
+  color: red;
+  font-weight: bold;
+}
+
+/* Styles for the dropdown list for home loan type */
+#homeLoanTypeDropdown {
+  background-color: gray;
+  text-align: right;
+}
+
+#homeLoanTypePrompt {
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 8px;
+}
+
+/* Styles for the dropdown list for BFL TA Segment */
+#bflTaSegmentDropdown {
+  background-color: gray;
+  color: black;
+  font-family: 'MS Sans Serif';
+  font-size: 8pt;
+  font-weight: medium;
+  width: 95px;
+}
+
+/* Styles for the 'Close' button */
+#closeButton {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#closeButton:hover {
+  background-color: #e53935;
+}
+
+/* Styles for the 'Exit' button */
+#exitButton {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#exitButton:hover {
+  background-color: #e53935;
+}
+
+/* Styles for the 'SPW Flag' checkbox and 'SPW Percentage' field */
+#spwFlagCheckbox {
+  margin-right: 10px;
+}
+
+#spwPercentageField {
+  margin-top: 10px;
+}
+
+/* Styles for the 'Child Covers' button */
+#childCoversButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#childCoversButton:hover {
+  background-color: #45a049;
+}
+
+/* Styles for the dropdown list in the CONTROL block */
+#controlDropdownList {
+  margin-top: 10px;
+}
+
+/* Styles for the 'SPW Freq' dropdown field */
+#spwFreqDropdownField {
+  background-color: white;
+  color: black;
+  text-align: right;
+}
+
+/* Styles for the dropdown list and its label */
+#percentageIncreaseDropdownList {
+  margin-top: 10px;
+}
+
+#percentageIncreaseLabel {
+  text-align: right;
+}
+
+/* Styles for the PAN input field and validation messages */
+#panInputField {
+  margin-top: 10px;
+}
+
+#panValidationMessage {
+  color: red;
+  font-weight: bold;
+}
+
+/* Styles for the warning message and input field for the actual employer name */
+#actualEmployerNameWarningMessage {
+  color: red;
+  font-weight: bold;
+}
+
+#actualEmployerNameInputField {
+  margin-top: 10px;
+}

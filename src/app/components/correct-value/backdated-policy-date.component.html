@@ -1,0 +1,5 @@
+<div>
+  <label for="backdatedPolicyDate">Backdated Policy Date:</label>
+  <input type="text" id="backdatedPolicyDate" [(ngModel)]="backdatedPolicyDate" (blur)="validateBackdatedPolicyDate()" placeholder="dd/mm/yyyy" />
+  <div *ngIf="validationMessage" class="validation-message">{{ validationMessage }}</div>
+</div>

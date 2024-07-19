@@ -1,0 +1,12 @@
+<div class="sub-id-code-validation">
+  <label for="subIdCode">Sub Id Code:</label>
+  <input type="text" id="subIdCode" [(ngModel)]="subIdCode" (blur)="validateSubIdCode()" />
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  <div *ngIf="agentFullName" class="agent-full-name">Agent Full Name: {{ agentFullName }}</div>
+  <div *ngIf="channelList.length > 0" class="channel-list">
+    <label for="channel">Channel:</label>
+    <select id="channel" [(ngModel)]="selectedChannel">
+      <option *ngFor="let channel of channelList" [value]="channel.internal_val">{{ channel.display_val }}</option>
+    </select>
+  </div>
+</div>

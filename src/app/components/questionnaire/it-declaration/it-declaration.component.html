@@ -1,0 +1,38 @@
+<div class="it-declaration-container">
+  <h2>IT Declaration</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="applicationNumber">Application Number:</label>
+      <input type="text" id="applicationNumber" [(ngModel)]="applicationNumber" name="applicationNumber" required>
+    </div>
+    <div class="form-group">
+      <label for="insuredPersonNumber">Insured Person Number:</label>
+      <input type="text" id="insuredPersonNumber" [(ngModel)]="insuredPersonNumber" name="insuredPersonNumber" required>
+    </div>
+    <div class="form-group">
+      <label for="contractId">Contract ID:</label>
+      <input type="text" id="contractId" [(ngModel)]="contractId" name="contractId" required>
+    </div>
+    <div class="form-group">
+      <label for="mandatoryStatus">Mandatory Status:</label>
+      <input type="text" id="mandatoryStatus" [(ngModel)]="mandatoryStatus" name="mandatoryStatus" required>
+    </div>
+    <div class="form-group">
+      <label for="passportProof">Passport Proof:</label>
+      <input type="text" id="passportProof" [(ngModel)]="passportProof" name="passportProof" required>
+    </div>
+    <div class="form-group">
+      <label for="nationality">Nationality:</label>
+      <input type="text" id="nationality" [(ngModel)]="nationality" name="nationality" required>
+    </div>
+    <div class="form-group">
+      <label for="ipNationality">IP Nationality:</label>
+      <input type="text" id="ipNationality" [(ngModel)]="ipNationality" name="ipNationality" required>
+    </div>
+    <div class="form-group">
+      <label for="propertyType">Property Type:</label>
+      <input type="text" id="propertyType" [(ngModel)]="propertyType" name="propertyType" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

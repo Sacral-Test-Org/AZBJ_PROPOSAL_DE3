@@ -1,0 +1,25 @@
+/* Style for the Previous Policy PAN Details button */
+.previous-policy-pan-details-button {
+  background-color: #007bff; /* Primary color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Padding for the button */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Inline-block display */
+  font-size: 16px; /* Font size */
+  margin: 4px 2px; /* Margin around the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Disabled state for the button */
+.previous-policy-pan-details-button:disabled {
+  background-color: #cccccc; /* Grey background for disabled state */
+  cursor: not-allowed; /* Not-allowed cursor on hover */
+}
+
+/* Hover effect for the button */
+.previous-policy-pan-details-button:hover:enabled {
+  background-color: #0056b3; /* Darker shade of primary color */
+}

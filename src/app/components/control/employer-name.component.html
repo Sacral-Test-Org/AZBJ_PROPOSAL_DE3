@@ -1,0 +1,6 @@
+<div *ngIf="isEmployerNameVisible">
+  <label for="employerName">Employer Name</label>
+  <select id="employerName" [(ngModel)]="selectedEmployerName" [disabled]="!isEmployerNameEnabled">
+    <option *ngFor="let employer of employerNames" [value]="employer">{{ employer }}</option>
+  </select>
+</div>

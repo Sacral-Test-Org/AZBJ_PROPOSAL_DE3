@@ -1,0 +1,14 @@
+<div class="surrogate-income-proof-list">
+  <h2>Surrogate Income Proof List</h2>
+  <ul>
+    <li *ngFor="let proof of surrogateIncomeProofs" (click)="selectProof(proof)">
+      {{ proof.name }}
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="selectedProof" class="proof-details">
+  <h3>Details for {{ selectedProof.name }}</h3>
+  <p>{{ selectedProof.details }}</p>
+  <!-- Add more detailed view elements as needed -->
+</div>

@@ -1,0 +1,13 @@
+<div class="image-container">
+  <img *ngIf="imageUrl" [src]="imageUrl" alt="Loaded Image" />
+</div>
+
+<script>
+  export class ControlImageComponent {
+    imageUrl: string;
+
+    displayImage(imageUrl: string): void {
+      this.imageUrl = imageUrl;
+    }
+  }
+</script>

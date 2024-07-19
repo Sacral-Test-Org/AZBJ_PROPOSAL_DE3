@@ -1,0 +1,17 @@
+<div>
+  <label for="payoutFrequency">Payout Frequency:</label>
+  <select id="payoutFrequency" [(ngModel)]="payoutFrequency" (change)="updatePaymentMethods()">
+    <option value="01">01</option>
+    <option value="2">2</option>
+    <option value="4">4</option>
+    <option value="12">12</option>
+    <!-- Add other options as needed -->
+  </select>
+</div>
+
+<div>
+  <label for="paymentMethod">Payment Method:</label>
+  <select id="paymentMethod" [(ngModel)]="selectedPaymentMethod" [disabled]="isPaymentMethodDisabled">
+    <option *ngFor="let method of paymentMethods" [value]="method">{{ method }}</option>
+  </select>
+</div>

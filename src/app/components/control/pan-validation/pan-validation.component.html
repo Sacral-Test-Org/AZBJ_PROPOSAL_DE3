@@ -1,0 +1,31 @@
+<div class="pan-validation-container">
+  <h2>PAN Card Validation</h2>
+  <form (ngSubmit)="validatePAN()">
+    <div class="form-group">
+      <label for="panCardNumber">PAN Card Number:</label>
+      <input type="text" id="panCardNumber" name="panCardNumber" [(ngModel)]="panCardNumber" required maxlength="10" pattern="^[A-Z]{3}[C,P,H,F,A,T,B,L,J,G][A-Z][0-9]{4}[A-Z]$" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Validate</button>
+  </form>
+
+  <div *ngIf="validationResult">
+    <h3>Validation Result</h3>
+    <p *ngIf="validationResult.valid">PAN is valid.</p>
+    <p *ngIf="!validationResult.valid">PAN is invalid: {{ validationResult.message }}</p>
+  </div>
+
+  <div *ngIf="personalDetails">
+    <h3>Personal Details</h3>
+    <p>First Name: {{ personalDetails.firstName }}</p>
+    <p>Middle Name: {{ personalDetails.middleName }}</p>
+    <p>Last Name: {{ personalDetails.lastName }}</p>
+    <p>Date of Birth: {{ personalDetails.dob | date }}</p>
+  </div>
+
+  <div *ngIf="showPartnerTypeSelection">
+    <h3>Select Partner Type</h3>
+    <select [(ngModel)]="selectedPartnerType" (change)="onPartnerTypeChange()" class="form-control">
+      <option *ngFor="let type of partnerTypes" [value]="type">{{ type }}</option>
+    </select>
+  </div>
+</div>

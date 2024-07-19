@@ -1,0 +1,14 @@
+<div class="cause-of-death-container">
+  <label for="causeOfDeath">Cause of Death:</label>
+  <input id="causeOfDeath" type="text" [(ngModel)]="causeOfDeath" (focus)="loadImage()" />
+
+  <div class="image-display">
+    <img [src]="imageSrc" alt="Cause of Death Image" *ngIf="imageSrc" />
+  </div>
+
+  <div class="prompt">
+    <p>Do you wish to add more members?</p>
+    <button (click)="handleAddMoreMembers(true)">Yes</button>
+    <button (click)="handleAddMoreMembers(false)">No</button>
+  </div>
+</div>

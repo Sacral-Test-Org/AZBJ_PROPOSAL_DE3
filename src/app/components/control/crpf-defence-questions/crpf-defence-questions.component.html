@@ -1,0 +1,13 @@
+<div class="crpf-defence-questions">
+  <h2>CRPF/Defence Questions</h2>
+  <div *ngIf="questions.length > 0; else noQuestions">
+    <ul>
+      <li *ngFor="let question of questions">
+        {{ question }}
+      </li>
+    </ul>
+  </div>
+  <ng-template #noQuestions>
+    <p>No questions available.</p>
+  </ng-template>
+</div>

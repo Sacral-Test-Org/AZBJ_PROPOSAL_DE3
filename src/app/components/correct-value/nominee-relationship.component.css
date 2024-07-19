@@ -1,0 +1,17 @@
+.nominee-relationship-dropdown {
+  font-family: 'MS Sans Serif';
+  font-size: 14px;
+  color: #333;
+  text-transform: uppercase;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.nominee-relationship-prompt {
+  font-family: 'MS Sans Serif';
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+  margin-right: 10px;
+}

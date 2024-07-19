@@ -1,0 +1,26 @@
+/* Styles for Health Status Input Field */
+.health-status-field {
+  width: 100%;
+  padding: 8px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styles for Age Died Input Field */
+.age-died-field {
+  width: 100%;
+  padding: 8px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styles for Validation Messages */
+.validation-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}

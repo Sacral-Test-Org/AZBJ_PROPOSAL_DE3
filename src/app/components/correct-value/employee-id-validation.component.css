@@ -1,0 +1,26 @@
+/* Employee ID Field Styles */
+
+.employee-id-field {
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  border: 1px solid #ccc;
+  padding: 5px;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.employee-id-field:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.employee-id-prompt {
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 10px;
+  vertical-align: middle;
+}

@@ -1,0 +1,35 @@
+<div class="incomplete-proposal-details">
+  <h2>Incomplete Proposal Details</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Select</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let detail of details">
+        <td><input type="checkbox" [(ngModel)]="detail.selected" /></td>
+        <td>{{ detail.info }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button (click)="deleteSelectedRows()">Delete</button>
+  <label for="detailsReceived">Details Received</label>
+  <select id="detailsReceived" [(ngModel)]="detailsReceived">
+    <option value="N">N</option>
+    <option value="5">5</option>
+    <option value="8">8</option>
+    <option value="No">No</option>
+  </select>
+  <button (click)="recheckDetails()">Recheck</button>
+  <button (click)="addRow()">Add Row</button>
+  <label for="proposalFormField">Proposal Form Field</label>
+  <select id="proposalFormField" [(ngModel)]="proposalFormField">
+    <option value="8">8</option>
+    <option value="10">10</option>
+    <option value="No">No</option>
+  </select>
+  <button (click)="saveDetails()">Save</button>
+  <button (click)="navigateBack()">Back</button>
+</div>

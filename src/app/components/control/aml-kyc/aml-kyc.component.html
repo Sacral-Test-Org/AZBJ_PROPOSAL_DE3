@@ -1,0 +1,69 @@
+<div class="aml-kyc-tab">
+  <form>
+    <div class="form-group">
+      <label for="panNumber">PAN Number:</label>
+      <input type="text" id="panNumber" name="panNumber" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="status">Status:</label>
+      <select id="status" name="status" class="form-control">
+        <option value="5">5</option>
+        <option value="8">8</option>
+        <option value="SL">SL</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="partner">Partner:</label>
+      <select id="partner" name="partner" class="form-control">
+        <option value="partner1">Partner 1</option>
+        <option value="partner2">Partner 2</option>
+        <option value="partner3">Partner 3</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="docType">Document Type:</label>
+      <input type="text" id="docType" name="docType" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+</div>
+
+<style>
+  .aml-kyc-tab {
+    padding: 20px;
+  }
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .form-group label {
+    width: 150px;
+  }
+  .form-control {
+    flex: 1;
+  }
+  #status {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 373px;
+    background-color: white;
+    color: black;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const statusDropdown = document.getElementById('status');
+    // Add your business logic here to show the status dropdown based on specific conditions
+    // For example:
+    // if (someCondition) {
+    //   statusDropdown.style.display = 'block';
+    // }
+  });
+</script>

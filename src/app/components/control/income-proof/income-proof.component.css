@@ -1,0 +1,17 @@
+/* Income Proof Section Styles */
+
+.income-proof-section {
+  background-color: white;
+  color: black;
+  text-align: right;
+  font-weight: bold;
+  position: absolute;
+  top: 42px;
+  left: 245px;
+  width: 95px;
+  height: 15px;
+}
+
+.income-proof-input {
+  text-transform: uppercase;
+}

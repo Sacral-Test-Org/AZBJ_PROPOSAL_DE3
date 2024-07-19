@@ -1,0 +1,48 @@
+<div class="aadhaar-details-container">
+  <h2>Aadhaar Details Verification</h2>
+  <div *ngIf="aadhaarDetails">
+    <div class="aadhaar-detail">
+      <label for="ipAadhaar">IP Aadhaar Number:</label>
+      <span id="ipAadhaar">{{ aadhaarDetails.ipAadhaar }}</span>
+    </div>
+    <div class="aadhaar-detail">
+      <label for="phAadhaar">PH Aadhaar Number:</label>
+      <span id="phAadhaar">{{ aadhaarDetails.phAadhaar }}</span>
+    </div>
+    <div class="aadhaar-detail">
+      <label for="moduleName">Module Name:</label>
+      <span id="moduleName">{{ aadhaarDetails.moduleName }}</span>
+    </div>
+    <div class="aadhaar-detail">
+      <label for="name">Name:</label>
+      <span id="name">{{ aadhaarDetails.name }}</span>
+    </div>
+    <div class="aadhaar-detail">
+      <label for="address">Address:</label>
+      <span id="address">{{ aadhaarDetails.address }}</span>
+    </div>
+    <div class="aadhaar-detail">
+      <label for="district">District:</label>
+      <span id="district">{{ aadhaarDetails.district }}</span>
+    </div>
+    <div class="aadhaar-detail">
+      <label for="state">State:</label>
+      <span id="state">{{ aadhaarDetails.state }}</span>
+    </div>
+    <div class="aadhaar-detail">
+      <label for="pinCode">Pin Code:</label>
+      <span id="pinCode">{{ aadhaarDetails.pinCode }}</span>
+    </div>
+    <div class="aadhaar-detail">
+      <label for="gender">Gender:</label>
+      <span id="gender">{{ aadhaarDetails.gender }}</span>
+    </div>
+    <div class="aadhaar-detail">
+      <label for="dateOfBirth">Date of Birth:</label>
+      <span id="dateOfBirth">{{ aadhaarDetails.dateOfBirth }}</span>
+    </div>
+  </div>
+  <div *ngIf="!aadhaarDetails">
+    <p>No Aadhaar details available.</p>
+  </div>
+</div>

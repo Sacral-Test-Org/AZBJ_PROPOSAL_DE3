@@ -1,0 +1,161 @@
+/* Styles for Age Proof Dropdown */
+.age-proof-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/* Styles for DOB input field */
+.dob-input {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/* Styles for PM_AGE display field */
+.pm-age-display {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+/* Styles for weight input field */
+.weight-input {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/* Styles for BMI display field */
+.bmi-display {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+/* Styles for Relationship Type Dropdown */
+.relationship-type-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/* Styles for Sum Assured Field */
+.sum-assured-field {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/* Styles for Height input field */
+.height-input {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+/* Styles for Height input field label */
+.height-input-label {
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Styles for Age Proof ID field */
+.age-proof-id-field {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  text-transform: uppercase;
+}
+
+/* Styles for Age Proof ID field label */
+.age-proof-id-label {
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Styles for Add Member button */
+.add-member-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.add-member-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for Age field */
+.age-field {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.age-field-label {
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+}

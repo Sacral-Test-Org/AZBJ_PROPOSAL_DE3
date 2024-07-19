@@ -1,0 +1,40 @@
+<div>
+  <label for="partnerType">Partner Type:</label>
+  <select id="partnerType" (change)="onPartnerTypeChange($event)">
+    <option value="IP">IP</option>
+    <option value="PH">PH</option>
+    <option value="5">5</option>
+    <option value="8">8</option>
+    <option value="10">10</option>
+    <option value="SL">SL</option>
+  </select>
+</div>
+
+<script>
+  import { Component } from '@angular/core';
+  import { Router } from '@angular/router';
+  import { HttpClient } from '@angular/common/http';
+  import { NGXLogger } from 'ngx-logger';
+
+  @Component({
+    selector: 'app-partner-type-dropdown',
+    templateUrl: './partner-type-dropdown.component.html',
+    styleUrls: ['./partner-type-dropdown.component.css']
+  })
+  export class PartnerTypeDropdownComponent {
+    constructor(private router: Router, private http: HttpClient, private logger: NGXLogger) {}
+
+    onPartnerTypeChange(event: any) {
+      const selectedValue = event.target.value;
+      this.logger.info('Partner type selected:', selectedValue);
+      this.router.navigate(['/pan-validation']);
+      this.executeTrigger();
+    }
+
+    executeTrigger() {
+      // Logic to execute the trigger associated with the button press event
+      this.logger.info('Executing trigger for PAN validation');
+      // Add your trigger logic here
+    }
+  }
+</script>

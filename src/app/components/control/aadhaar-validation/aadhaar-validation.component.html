@@ -1,0 +1,50 @@
+<div class="aadhaar-validation-container">
+  <h2>Aadhaar Validation</h2>
+  <form (ngSubmit)="validateAadhaar()">
+    <div class="form-group">
+      <label for="applicationNumber">Application Number</label>
+      <input type="text" id="applicationNumber" [(ngModel)]="applicationNumber" name="applicationNumber" required>
+    </div>
+    <div class="form-group">
+      <label for="aadhaarNumber">Aadhaar Number</label>
+      <input type="text" id="aadhaarNumber" [(ngModel)]="aadhaarNumber" name="aadhaarNumber" required [disabled]="!isAadhaarEnabled">
+    </div>
+    <div class="form-group">
+      <label for="newAadhaarNumber">New Aadhaar Number</label>
+      <input type="text" id="newAadhaarNumber" [(ngModel)]="newAadhaarNumber" name="newAadhaarNumber">
+    </div>
+    <div class="form-group">
+      <label for="dob">Date of Birth</label>
+      <input type="text" id="dob" [(ngModel)]="dob" name="dob" required>
+    </div>
+    <div class="form-group">
+      <label for="mobileNumber">Mobile Number</label>
+      <input type="text" id="mobileNumber" [(ngModel)]="mobileNumber" name="mobileNumber" required>
+    </div>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" [(ngModel)]="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="middleName">Middle Name</label>
+      <input type="text" id="middleName" [(ngModel)]="middleName" name="middleName">
+    </div>
+    <div class="form-group">
+      <label for="surname">Surname</label>
+      <input type="text" id="surname" [(ngModel)]="surname" name="surname" required>
+    </div>
+    <div class="form-group">
+      <label for="gender">Gender</label>
+      <select id="gender" [(ngModel)]="gender" name="gender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Verify PH Aadhaar</button>
+  </form>
+  <div *ngIf="validationResult">
+    <h3>Validation Result</h3>
+    <p>{{ validationResult }}</p>
+  </div>
+</div>

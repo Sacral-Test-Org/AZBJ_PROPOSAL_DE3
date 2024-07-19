@@ -1,0 +1,66 @@
+<div class="pan-details-container">
+  <div class="pan-details-form">
+    <div class="form-group">
+      <label for="panNumber">PAN Number</label>
+      <input type="text" id="panNumber" class="form-control" maxlength="100" [(ngModel)]="panDetails.panNumber" />
+    </div>
+    <div class="form-group">
+      <label for="panStatus">PAN Status</label>
+      <input type="text" id="panStatus" class="form-control" maxlength="2000" [(ngModel)]="panDetails.panStatus" />
+    </div>
+    <div class="form-group">
+      <label for="nameMatch">Name Match</label>
+      <input type="text" id="nameMatch" class="form-control" maxlength="2" [(ngModel)]="panDetails.nameMatch" />
+    </div>
+    <div class="form-group">
+      <label for="dobMatch">DOB Match</label>
+      <input type="text" id="dobMatch" class="form-control" maxlength="2" [(ngModel)]="panDetails.dobMatch" />
+    </div>
+  </div>
+  <div class="pan-details-scroll">
+    <div *ngFor="let record of panRecords" class="pan-record">
+      <p>{{ record.panNumber }}</p>
+      <p>{{ record.panStatus }}</p>
+      <p>{{ record.nameMatch }}</p>
+      <p>{{ record.dobMatch }}</p>
+    </div>
+  </div>
+</div>
+
+<style>
+.pan-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pan-details-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.form-control {
+  width: 300px;
+  text-align: center;
+}
+
+.pan-details-scroll {
+  max-height: 200px;
+  overflow-y: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.pan-record {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+</style>

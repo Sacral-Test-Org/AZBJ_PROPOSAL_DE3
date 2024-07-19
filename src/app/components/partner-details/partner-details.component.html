@@ -1,0 +1,56 @@
+<div class="partner-details-container">
+  <h2>Partner Details</h2>
+  <div *ngFor="let partner of partners; let i = index" *ngIf="i < 5">
+    <div class="partner-detail">
+      <label>Partner ID:</label>
+      <span>{{ partner.partnerId }}</span>
+    </div>
+    <div class="partner-detail">
+      <label>Full Name:</label>
+      <span>{{ partner.fullName }}</span>
+    </div>
+    <div class="partner-detail">
+      <label>Father's Name:</label>
+      <span>{{ partner.fathersName }}</span>
+    </div>
+    <div class="partner-detail">
+      <label>Spouse's Name:</label>
+      <span>{{ partner.spousesName }}</span>
+    </div>
+    <div class="partner-detail">
+      <label>Address:</label>
+      <span>{{ partner.address }}</span>
+    </div>
+    <div class="partner-detail">
+      <label>Telephone:</label>
+      <span>{{ partner.telephone }}</span>
+    </div>
+    <div class="partner-detail">
+      <label>Date of Birth:</label>
+      <span>{{ partner.dateOfBirth | date }}</span>
+    </div>
+  </div>
+  <div class="actions">
+    <button (click)="validate()">Validate</button>
+    <button (click)="exit()">Exit</button>
+  </div>
+  <div class="checkboxes">
+    <label *ngFor="let checkbox of checkboxes">
+      <input type="checkbox" [(ngModel)]="checkbox.checked" />
+      {{ checkbox.label }}
+    </label>
+  </div>
+  <div class="parameter-module">
+    <div>
+      <label>Parameter:</label>
+      <span>{{ parameter }}</span>
+    </div>
+    <div>
+      <label>Module:</label>
+      <span>{{ module }}</span>
+    </div>
+  </div>
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+</div>

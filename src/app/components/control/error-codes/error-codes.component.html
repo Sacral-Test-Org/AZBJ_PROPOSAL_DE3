@@ -1,0 +1,18 @@
+<div class="error-codes-section">
+  <table>
+    <thead>
+      <tr>
+        <th>ERR CODE</th>
+        <th>ERR DESCRIPTION</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let error of errors" (click)="navigateToItem(error)">
+        <td>{{ error.code }}</td>
+        <td>{{ error.description }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button (click)="exitSection()">Exit</button>
+  <input type="hidden" [value]="additionalErrorDescription" />
+</div>

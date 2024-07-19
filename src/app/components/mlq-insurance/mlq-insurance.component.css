@@ -1,0 +1,32 @@
+/* Ensure the form is visually consistent with the rest of the application */
+
+/* Style for the relationship type dropdown and its label */
+.relation-label {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.relation-dropdown {
+  width: 100%;
+  padding: 8px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Positioning the dropdown appropriately on the form */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Ensuring the form's appearance matches the specified design requirements */
+.form-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

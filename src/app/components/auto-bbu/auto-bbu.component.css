@@ -1,0 +1,29 @@
+/* Styles for Manual Underwriting Checkbox */
+.manual-underwriting-checkbox {
+  margin: 10px 0;
+}
+
+/* Styles for Reason Field */
+.reason-field {
+  background-color: gray;
+  color: black;
+  max-length: 100px;
+}
+
+/* Styles for Comments Field */
+.comments-field {
+  background-color: gray;
+  color: black;
+}
+
+/* Styles for enabled state */
+.field-enabled {
+  background-color: white;
+  color: black;
+}
+
+/* Styles for disabled state */
+.field-disabled {
+  background-color: lightgray;
+  color: darkgray;
+}

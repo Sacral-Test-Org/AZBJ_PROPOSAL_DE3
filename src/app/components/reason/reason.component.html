@@ -1,0 +1,57 @@
+<div class="reason-section">
+  <div *ngFor="let reason of reasons; let i = index" class="reason-record" [class.hidden]="i >= 9">
+    <div class="counter">{{ i + 1 }}</div>
+    <div class="reason-text" [ngStyle]="{'background-color': 'gray', 'font-weight': 'bold'}">
+      {{ reason.text }}
+    </div>
+    <div class="reason-checkbox" [ngStyle]="{'background-color': 'gray', 'font-weight': 'bold'}">
+      <input type="checkbox" [(ngModel)]="reason.checked" [checked]="reason.checked === 'Y'" (change)="reason.checked = $event.target.checked ? 'Y' : 'N'" />
+    </div>
+  </div>
+  <div class="reason-actions">
+    <textarea class="reason-comment" [(ngModel)]="reasonComment" maxlength="2000" rows="5" placeholder="Enter reason comment..."></textarea>
+    <button class="recheck-button" (click)="recheckReason()">RECHECK</button>
+    <button class="proceed-button" (click)="proceedWithReason()">PROCEED</button>
+  </div>
+</div>
+
+<style>
+  .reason-section {
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  .reason-record {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .counter {
+    width: 30px;
+    text-align: center;
+  }
+  .reason-text {
+    flex: 1;
+    padding: 5px;
+  }
+  .reason-checkbox {
+    width: 30px;
+    text-align: center;
+  }
+  .reason-actions {
+    margin-top: 20px;
+  }
+  .reason-comment {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .recheck-button, .proceed-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
+  .hidden {
+    display: none;
+  }
+</style>

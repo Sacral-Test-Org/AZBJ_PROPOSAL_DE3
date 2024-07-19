@@ -1,0 +1,40 @@
+<div class="pan-approval-container">
+  <h2>PAN Approval Details</h2>
+  <form>
+    <div class="form-group">
+      <label for="ipPanIssuanceDate">IP PAN Issuance Date</label>
+      <input type="text" id="ipPanIssuanceDate" name="ipPanIssuanceDate" placeholder="dd-mm-yyyy" [(ngModel)]="ipPanIssuanceDate" />
+      <input type="checkbox" id="ipPanDateUnavailable" name="ipPanDateUnavailable" [(ngModel)]="ipPanDateUnavailable" (change)="toggleIpPanDate()" /> IP PAN Date Unavailable
+    </div>
+    <div class="form-group">
+      <label for="phPanIssuanceDate">PH PAN Issuance Date</label>
+      <input type="text" id="phPanIssuanceDate" name="phPanIssuanceDate" placeholder="dd-mm-yyyy" [(ngModel)]="phPanIssuanceDate" />
+      <input type="checkbox" id="phPanDateUnavailable" name="phPanDateUnavailable" [(ngModel)]="phPanDateUnavailable" (change)="togglePhPanDate()" /> PH PAN Date Unavailable
+    </div>
+    <div class="form-group">
+      <label for="ageProof">Age Proof</label>
+      <input type="text" id="ageProof" name="ageProof" [(ngModel)]="ageProof" />
+    </div>
+    <div class="form-group">
+      <label for="ageProofId">Age Proof ID</label>
+      <input type="text" id="ageProofId" name="ageProofId" [(ngModel)]="ageProofId" />
+    </div>
+    <div class="form-group">
+      <label for="panIssuanceDate">PAN Issuance Date</label>
+      <input type="text" id="panIssuanceDate" name="panIssuanceDate" placeholder="dd-mm-yyyy" [(ngModel)]="panIssuanceDate" (blur)="validatePanIssuanceDate()" />
+      <div *ngIf="panIssuanceDateError" class="error">{{ panIssuanceDateError }}</div>
+    </div>
+    <div class="form-group">
+      <label for="uwReason">UW Reason</label>
+      <input type="text" id="uwReason" name="uwReason" [(ngModel)]="uwReason" />
+    </div>
+    <div class="form-group">
+      <label for="supervisorComments">Supervisor Comments</label>
+      <input type="text" id="supervisorComments" name="supervisorComments" [(ngModel)]="supervisorComments" />
+    </div>
+    <div class="form-group">
+      <button type="button" (click)="onSupervisorApproval()">Supervisor Approval</button>
+      <button type="button" (click)="onExit()">EXIT</button>
+    </div>
+  </form>
+</div>

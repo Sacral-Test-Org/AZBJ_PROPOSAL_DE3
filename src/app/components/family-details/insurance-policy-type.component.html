@@ -1,0 +1,14 @@
+<div>
+  <label for="insurancePolicyType">Select Insurance Policy Type:</label>
+  <select id="insurancePolicyType" [(ngModel)]="selectedPolicyType" (change)="onPolicyTypeChange()">
+    <option *ngFor="let type of policyTypes" [value]="type">{{ type }}</option>
+  </select>
+</div>
+
+<div *ngIf="selectedPolicyType">
+  <h3>Selected Policy Type: {{ selectedPolicyType }}</h3>
+  <div>
+    <!-- Display the field data from the image here -->
+    <img [src]="fieldDataImage" alt="Field Data Image" *ngIf="fieldDataImage" />
+  </div>
+</div>

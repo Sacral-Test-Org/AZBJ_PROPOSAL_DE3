@@ -1,0 +1,10 @@
+<div class="health-status-container">
+  <label for="healthStatusField">Health Status:</label>
+  <input id="healthStatusField" name="healthStatusField" [(ngModel)]="healthStatus" (blur)="validateHealthStatus()" (keydown.enter)="navigateToNextField()" />
+  <div *ngIf="healthStatus === 'G'" class="validation-message">
+    Health status updated to GOOD.
+  </div>
+
+  <label for="ageDiedField">Age Died:</label>
+  <input id="ageDiedField" name="ageDiedField" [(ngModel)]="ageDied" />
+</div>

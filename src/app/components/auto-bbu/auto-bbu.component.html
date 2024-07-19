@@ -1,0 +1,27 @@
+<div>
+  <label>
+    <input type="checkbox" id="manualUnderwriting" (change)="onManualUnderwritingChange($event)">
+    Manual Underwriting
+  </label>
+</div>
+<div>
+  <label for="reason">Reason</label>
+  <select id="reason" [disabled]="!isManualUnderwritingChecked" style="background-color: gray; color: black; max-length: 100px;">
+    <option value="SON">SON</option>
+    <option value="5">5</option>
+    <option value="8">8</option>
+    <option value="10">10</option>
+    <option value="SL">SL</option>
+    <option value="AUTO">AUTO</option>
+  </select>
+</div>
+<div>
+  <label for="comments">Comments</label>
+  <input type="text" id="comments" [disabled]="!isManualUnderwritingChecked">
+</div>
+<div>
+  <label>
+    <input type="checkbox" id="frequencyProposalForm" (change)="onFrequencyProposalFormChange($event)">
+    Frequency is as per Proposal Form
+  </label>
+</div>

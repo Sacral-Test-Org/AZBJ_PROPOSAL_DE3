@@ -1,0 +1,48 @@
+<div class="container">
+  <h2>Insert Family Details</h2>
+  <form (ngSubmit)="onSubmit()" #familyForm="ngForm">
+    <div class="form-group">
+      <label for="memberName">Member Name:</label>
+      <input type="text" id="memberName" class="form-control" required [(ngModel)]="family.memberName" name="memberName" #memberName="ngModel">
+      <div *ngIf="memberName.invalid && (memberName.dirty || memberName.touched)" class="alert alert-danger">
+        Member Name is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="memberType">Member Type:</label>
+      <select id="memberType" class="form-control" required [(ngModel)]="family.memberType" name="memberType" #memberType="ngModel">
+        <option *ngFor="let type of memberTypes" [value]="type">{{ type }}</option>
+      </select>
+      <div *ngIf="memberType.invalid && (memberType.dirty || memberType.touched)" class="alert alert-danger">
+        Member Type is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="healthStatus">Health Status:</label>
+      <input type="text" id="healthStatus" class="form-control" required [(ngModel)]="family.healthStatus" name="healthStatus" #healthStatus="ngModel">
+      <div *ngIf="healthStatus.invalid && (healthStatus.dirty || healthStatus.touched)" class="alert alert-danger">
+        Health Status is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" id="age" class="form-control" required [(ngModel)]="family.age" name="age" #age="ngModel">
+      <div *ngIf="age.invalid && (age.dirty || age.touched)" class="alert alert-danger">
+        Age is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="causeOfDeath">Cause of Death:</label>
+      <select id="causeOfDeath" class="form-control" [(ngModel)]="family.causeOfDeath" name="causeOfDeath">
+        <option *ngFor="let cause of causesOfDeath" [value]="cause">{{ cause }}</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="familyForm.invalid">Submit</button>
+    <button type="button" class="btn btn-secondary" (click)="onHelp()">Help</button>
+  </form>
+</div>

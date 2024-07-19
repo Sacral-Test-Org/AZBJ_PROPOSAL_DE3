@@ -1,0 +1,128 @@
+/* Styles for the CP Search Component */
+
+/* General Styles */
+input, select, button {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+/* Clear Button Styles */
+button.clear {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Gender Dropdown List Styles */
+select.gender {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Checkbox Styles */
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Styles for 'Update Occupation in Master CP' Checkbox */
+input[type="checkbox"].update-occupation {
+  margin-right: 10px;
+}
+
+/* Styles for Signature, Age Proof, and Address Proof Checkboxes */
+input[type="checkbox"].signature,
+input[type="checkbox"].age-proof,
+input[type="checkbox"].address-proof {
+  margin-right: 10px;
+}
+
+/* Styles for Signature Radio Button */
+input[type="radio"].signature {
+  margin-right: 10px;
+}
+
+/* Styles for Validation Messages */
+.validation-error {
+  color: red;
+  font-size: 12px;
+}
+
+/* Styles for Record Color Updates */
+.record-selected {
+  background-color: #d3ffd3;
+}
+
+.record-deselected {
+  background-color: #ffd3d3;
+}
+
+/* Styles for Warning Messages */
+.warning-message {
+  color: orange;
+  font-size: 14px;
+}
+
+/* Styles for Additional Proof Check Validation */
+.additional-proof-check {
+  color: blue;
+  font-size: 14px;
+}
+
+/* Styles for Navigation Elements */
+.navigation-element {
+  color: green;
+  font-size: 14px;
+}
+
+/* Styles for Selected and Unselected States */
+.selected-state {
+  background-color: #d3ffd3;
+}
+
+.unselected-state {
+  background-color: #ffd3d3;
+}
+
+/* Styles for CP_2, CP_3, CP_4, and CP_5 Checkboxes */
+input[type="checkbox"].cp-2,
+input[type="checkbox"].cp-3,
+input[type="checkbox"].cp-4,
+input[type="checkbox"].cp-5 {
+  margin-right: 10px;
+}
+
+/* Styles for CP Search Fields */
+input[name="date_of_birth"],
+input[name="gender"],
+input[name="first_name"],
+input[name="last_name"],
+input[name="partner_type"],
+input[name="POLICY_REF"],
+input[name="FATHER_NAME"],
+input[name="SPOUSE_NAME"] {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  padding: 8px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+/* Styles for Validation Messages */
+.validation-error {
+  color: red;
+  font-size: 12px;
+}

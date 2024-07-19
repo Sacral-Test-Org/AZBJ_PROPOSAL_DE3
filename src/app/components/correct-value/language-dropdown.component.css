@@ -1,0 +1,41 @@
+/* Styles for the language dropdown component */
+
+.language-dropdown {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.language-dropdown select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+}
+
+.language-dropdown select:focus {
+  border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.language-dropdown label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.language-dropdown .error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

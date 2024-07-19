@@ -1,0 +1,78 @@
+/* Voter ID Verification Form Styles */
+
+.voter-id-verification-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.voter-id-verification-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.voter-id-verification-form .form-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.voter-id-verification-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.voter-id-verification-form .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.voter-id-verification-form .form-group input:focus {
+  border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.voter-id-verification-form .form-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.voter-id-verification-form .form-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.voter-id-verification-form .form-actions button:hover {
+  background-color: #0056b3;
+}
+
+.voter-id-verification-form .form-actions .cancel-button {
+  background-color: #6c757d;
+}
+
+.voter-id-verification-form .form-actions .cancel-button:hover {
+  background-color: #5a6268;
+}
+
+.voter-id-verification-form .message {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #d9534f;
+}

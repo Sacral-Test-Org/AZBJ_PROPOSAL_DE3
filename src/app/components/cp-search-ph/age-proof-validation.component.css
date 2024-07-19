@@ -1,0 +1,35 @@
+/* Styles for Age Proof Validation Component */
+
+/* Style for error messages */
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Style for navigation prompt */
+.navigation-prompt {
+  color: blue;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* General container styling */
+.validation-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Style for validation checks */
+.validation-check {
+  margin-bottom: 10px;
+}
+
+/* Style for success messages */
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}

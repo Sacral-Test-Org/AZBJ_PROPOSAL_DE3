@@ -1,0 +1,9 @@
+<div class="previous-policy-details-image">
+  <h2>Previous Policy Details</h2>
+  <div *ngIf="imageSrc" class="image-container">
+    <img [src]="imageSrc" alt="Previous Policy Image" />
+  </div>
+  <div *ngIf="!imageSrc" class="no-image">
+    <p>No image available for the previous policy.</p>
+  </div>
+</div>

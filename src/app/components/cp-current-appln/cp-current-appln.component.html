@@ -1,0 +1,54 @@
+<div class="applicant-details">
+  <div class="detail-row">
+    <label>First Name:</label>
+    <span>{{ applicant.firstName }}</span>
+  </div>
+  <div class="detail-row">
+    <label>Middle Name:</label>
+    <span>{{ applicant.middleName }}</span>
+  </div>
+  <div class="detail-row">
+    <label>Last Name:</label>
+    <span>{{ applicant.lastName }}</span>
+  </div>
+  <div class="detail-row">
+    <label>Occupation:</label>
+    <span>{{ applicant.occupation }}</span>
+  </div>
+  <div class="detail-row">
+    <label>Father's Name:</label>
+    <span>{{ applicant.fathersName }}</span>
+  </div>
+  <div class="detail-row">
+    <label>Spouse's Name:</label>
+    <span>{{ applicant.spousesName }}</span>
+  </div>
+  <div class="detail-row">
+    <label>Gender:</label>
+    <span>{{ applicant.gender }}</span>
+  </div>
+  <div class="detail-row">
+    <label>Date of Birth:</label>
+    <span>{{ applicant.dateOfBirth | date:'dd/MM/yyyy' }}</span>
+  </div>
+  <div class="detail-row">
+    <label>Place of Birth:</label>
+    <span>{{ applicant.placeOfBirth }}</span>
+  </div>
+  <div class="detail-row">
+    <label>Permanent Address:</label>
+    <span>{{ applicant.permanentAddress }}</span>
+  </div>
+  <div class="detail-row" *ngIf="applicant.telephone">
+    <label>Telephone:</label>
+    <span>{{ applicant.telephone }}</span>
+  </div>
+  <div class="detail-row" *ngIf="applicant.mobile">
+    <label>Mobile:</label>
+    <span>{{ applicant.mobile }}</span>
+  </div>
+  <div class="detail-row" *ngIf="applicant.numberOfPolicies">
+    <label>Number of Policies:</label>
+    <span>{{ applicant.numberOfPolicies }}</span>
+  </div>
+</div>

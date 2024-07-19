@@ -1,0 +1,46 @@
+/* Styles for 'Same as LA' Checkbox and Address Fields */
+
+.same-as-la-checkbox {
+  margin: 10px 0;
+}
+
+.address-field {
+  margin-bottom: 15px;
+}
+
+/* Styles for Fund Apportionment Management */
+
+.fund-apportionment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fund-apportionment input[type='text'],
+.fund-apportionment input[type='number'] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.fund-apportionment button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.fund-apportionment button:hover {
+  background-color: #0056b3;
+}
+
+.fund-apportionment .delete-checkbox {
+  margin-right: 10px;
+}
+
+.fund-apportionment .total-fund-value {
+  font-weight: bold;
+  margin-top: 20px;
+}

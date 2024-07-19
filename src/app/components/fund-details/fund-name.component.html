@@ -1,0 +1,14 @@
+<div class="fund-name-container">
+  <label for="fundName">Fund Name:</label>
+  <input id="fundName" name="fundName" type="text" 
+         (focus)="onFocusFundName()" 
+         (blur)="onBlurFundName()" 
+         [(ngModel)]="fundName" 
+         [ngClass]="{'highlight': isFundNameFocused}" 
+         (ngModelChange)="onFundNameChange($event)" />
+  <div *ngIf="showFundList" class="fund-list">
+    <ul>
+      <li *ngFor="let fund of availableFunds" (click)="selectFund(fund)">{{ fund.fund_full_name }}</li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="fund-details-reset">
+  <button (click)="resetFundDetails()">RESET</button>
+</div>
+
+<script>
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { FundDetailsService } from 'src/app/services/fund-details.service';
+
+@Component({
+  selector: 'app-reset-fund-details',
+  templateUrl: './reset-fund-details.component.html',
+  styleUrls: ['./reset-fund-details.component.css']
+})
+export class ResetFundDetailsComponent {
+  constructor(private router: Router, private fundDetailsService: FundDetailsService) {}
+
+  resetFundDetails() {
+    // Navigate to the fund details section
+    this.router.navigate(['/fund-details']);
+
+    // Clear all fields related to fund details without validation
+    this.fundDetailsService.clearFundDetails();
+
+    // Set the fields to null
+    this.fundDetailsService.setField('CORRECT_APPORT', null);
+    this.fundDetailsService.setField('correct_fund_id', null);
+    this.fundDetailsService.setField('CORRECT_fundlist', null);
+
+    // Navigate to the first record in the fund details section
+    this.fundDetailsService.navigateToFirstRecord('AZBJ_FUND_DETAILS1');
+
+    // Navigate to the first record in the secondary fund details section
+    this.fundDetailsService.navigateToFirstRecord('AZBJ_FUND_DETAILS2');
+  }
+}
+</script>

@@ -1,0 +1,57 @@
+<div class="fund-details-container">
+  <!-- Input fields for apportionment percentage -->
+  <div class="apportionment-input">
+    <label for="apportionment">Apportionment Percentage:</label>
+    <input type="number" id="apportionment" name="apportionment" min="0" max="100" required>
+    <div class="error-message" *ngIf="apportionmentError">
+      Apportionment percentage should be between 0 and 100
+    </div>
+  </div>
+
+  <!-- Delete Fund Button and Message Display Area -->
+  <div class="delete-fund-section">
+    <button (click)="deleteFund()">Delete Fund</button>
+    <div class="message-display" *ngIf="deleteMessage">
+      {{ deleteMessage }}
+    </div>
+  </div>
+
+  <!-- Fund Details List -->
+  <div class="fund-details-list">
+    <table>
+      <thead>
+        <tr>
+          <th>Fund ID</th>
+          <th>Fund Name</th>
+          <th>Apportionment Percentage</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let fund of funds">
+          <td>{{ fund.fundId }}</td>
+          <td>{{ fund.fundName }}</td>
+          <td><input type="number" [(ngModel)]="fund.apportionment" min="0" max="100"></td>
+          <td><input type="checkbox" [(ngModel)]="fund.markedForDeletion"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Total Apportionment Value -->
+  <div class="total-apportionment">
+    <label>Total Apportionment:</label>
+    <span>{{ totalApportionment }}%</span>
+  </div>
+
+  <!-- Fund Name Field and LOV -->
+  <div class="fund-name-field">
+    <label for="fundName">Fund Name:</label>
+    <input type="text" id="fundName" name="fundName" readonly (dblclick)="openFundLov()">
+  </div>
+
+  <!-- Reset Button -->
+  <div class="reset-button">
+    <button (click)="resetFundDetails()">RESET</button>
+  </div>
+</div>

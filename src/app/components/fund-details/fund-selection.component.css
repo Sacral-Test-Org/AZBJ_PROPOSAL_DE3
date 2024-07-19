@@ -1,0 +1,72 @@
+/* CSS for Fund Selection Component */
+
+/* Style for the fund selection field */
+.fund-selection-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* Style for the fund list */
+.fund-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for each fund item */
+.fund-item {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.fund-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Style for the selected fund item */
+.fund-item.selected {
+  background-color: #d0e0f0;
+}
+
+/* Style for the fund name field */
+.fund-name-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+/* Style for the apportionment percentage input */
+.apportionment-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+/* Style for the total fund value display */
+.total-fund-value {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Style for the delete fund option */
+.delete-fund {
+  color: red;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.delete-fund:hover {
+  text-decoration: underline;
+}

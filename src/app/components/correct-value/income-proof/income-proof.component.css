@@ -1,0 +1,26 @@
+/* Styles for the Income Proof field and its prompt */
+
+.income-proof-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.income-proof-label {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.income-proof-select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.income-proof-select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

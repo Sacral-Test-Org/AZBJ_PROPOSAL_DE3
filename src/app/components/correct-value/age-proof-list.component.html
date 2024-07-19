@@ -1,0 +1,6 @@
+<div class="form-group">
+  <label for="ageProof">IP Age Proof</label>
+  <select id="ageProof" class="form-control" [(ngModel)]="selectedAgeProof" (change)="onAgeProofChange()">
+    <option *ngFor="let proof of ageProofOptions" [value]="proof">{{ proof }}</option>
+  </select>
+</div>

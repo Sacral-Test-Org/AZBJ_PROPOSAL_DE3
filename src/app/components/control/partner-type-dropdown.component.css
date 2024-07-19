@@ -1,0 +1,31 @@
+/* Styles for the partner-type-dropdown component */
+
+.dropdown {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.dropdown:focus {
+  border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.dropdown-option {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown-option:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-option:active {
+  background-color: #ddd;
+}

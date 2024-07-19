@@ -1,0 +1,45 @@
+/* Purpose: To apply specific visual attributes to the read-only text field. */
+
+/* Make the text field read-only and apply specific styles */
+.readonly-text-field {
+  background-color: #f5f5f5; /* Light grey background */
+  border: 1px solid #ccc; /* Light grey border */
+  color: #333; /* Dark grey text color */
+  padding: 8px; /* Padding inside the text field */
+  font-size: 14px; /* Font size */
+  font-family: Arial, sans-serif; /* Font family */
+  cursor: not-allowed; /* Cursor style to indicate read-only */
+}
+
+/* Apply focus styles to load relevant data from an image file */
+.readonly-text-field:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1); /* Blue shadow to indicate focus */
+}
+
+/* Apply styles for navigation to the Apportionment field */
+.readonly-text-field:focus + .apportionment-field {
+  border-color: #66afe9; /* Blue border color for the next field */
+}
+
+/* Apply specific visual attributes based on the current block and item */
+.current-block-item {
+  font-weight: bold; /* Bold text for current block and item */
+  color: #007bff; /* Blue text color */
+}
+
+/* Display the image in the designated area */
+.image-display-area {
+  width: 100%; /* Full width */
+  height: auto; /* Auto height */
+  margin-top: 10px; /* Margin at the top */
+  border: 1px solid #ddd; /* Light grey border */
+  padding: 5px; /* Padding inside the image area */
+  text-align: center; /* Center align the image */
+}
+
+/* Ensure the image fits within the designated area */
+.image-display-area img {
+  max-width: 100%; /* Maximum width */
+  height: auto; /* Auto height */
+}

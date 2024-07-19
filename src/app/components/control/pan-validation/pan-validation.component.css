@@ -1,0 +1,59 @@
+/* Styles for PAN validation component */
+
+/* Style for the input field */
+input.pan-input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style for the validation result display area */
+.validation-result {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+/* Style for the validation button */
+button.validate-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.validate-btn:hover {
+  background-color: #45a049;
+}
+
+/* Style for error messages */
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Style for PAN validation field */
+.pan-validation-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Style for the entire PAN validation component */
+.pan-validation-component {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

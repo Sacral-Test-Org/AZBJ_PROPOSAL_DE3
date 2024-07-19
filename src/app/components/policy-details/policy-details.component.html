@@ -1,0 +1,48 @@
+<div class="policy-details">
+  <h2>Policy Details</h2>
+  <div class="detail-item">
+    <label>Partner ID:</label>
+    <span>{{ policyDetails.partnerId }}</span>
+  </div>
+  <div class="detail-item">
+    <label>Policy Reference:</label>
+    <span>{{ policyDetails.policyRef }}</span>
+  </div>
+  <div class="detail-item">
+    <label>Status:</label>
+    <span>{{ policyDetails.contractStatus }}</span>
+  </div>
+  <div class="detail-item">
+    <label>Role:</label>
+    <span>{{ policyDetails.roleType }}</span>
+  </div>
+  <div class="detail-item">
+    <label>Sum Assured:</label>
+    <span>{{ policyDetails.sumAssured }}</span>
+  </div>
+  <div class="detail-item">
+    <label>Start Date:</label>
+    <span>{{ policyDetails.startDate | date: 'dd/MM/yyyy' }}</span>
+  </div>
+  <div class="detail-item">
+    <label>Risk Date:</label>
+    <span>{{ policyDetails.riskDate | date: 'dd/MM/yyyy' }}</span>
+  </div>
+  <div class="detail-item">
+    <label>Product:</label>
+    <span>{{ policyDetails.productId }}</span>
+  </div>
+  <div class="detail-item">
+    <label>Rated Up:</label>
+    <span>{{ policyDetails.ratedUp }}</span>
+  </div>
+  <div class="detail-item">
+    <label>Reason:</label>
+    <span>{{ policyDetails.reason }}</span>
+  </div>
+  <div class="detail-item">
+    <label>Value:</label>
+    <span>{{ policyDetails.value }}</span>
+  </div>
+  <button (click)="onViewImages()">View Images</button>
+</div>

@@ -1,0 +1,10 @@
+<div class="image-container">
+  <div *ngIf="imageUrl; else errorTemplate">
+    <img [src]="imageUrl" alt="Age Died Image" />
+  </div>
+  <ng-template #errorTemplate>
+    <div class="error-message">
+      {{ errorMessage }}
+    </div>
+  </ng-template>
+</div>

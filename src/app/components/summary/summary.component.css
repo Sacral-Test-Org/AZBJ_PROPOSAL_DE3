@@ -1,0 +1,42 @@
+/* Style for Premium Frequency Dropdown */
+.premium-frequency-dropdown {
+  position: absolute;
+  top: 50px; /* Adjust as per design specifications */
+  left: 20px; /* Adjust as per design specifications */
+  width: 200px;
+  height: 30px;
+  font-size: 14px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  pointer-events: none; /* Make it read-only */
+}
+
+/* Style for Gender Field Input */
+.gender-field {
+  position: absolute;
+  top: 100px; /* Adjust as per design specifications */
+  left: 20px; /* Adjust as per design specifications */
+  width: 200px;
+  height: 30px;
+  font-size: 14px;
+  text-transform: uppercase; /* Convert input to uppercase */
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  pointer-events: none; /* Make it read-only */
+}
+
+/* Style for Renewal Payment Field */
+.renewal-payment-field {
+  position: absolute;
+  top: 150px; /* Adjust as per design specifications */
+  left: 20px; /* Adjust as per design specifications */
+  width: 200px;
+  height: 30px;
+  font-size: 14px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  pointer-events: none; /* Make it read-only */
+}

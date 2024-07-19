@@ -1,0 +1,60 @@
+/* Styling for Document Name and Signature Confidence Percentage fields */
+.read-only-field {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-family: Tahoma, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Styling for Exit Button */
+.exit-button {
+  position: absolute;
+  top: 272px;
+  left: 306px;
+  width: 110px;
+  height: 20px;
+  background-color: gray;
+  color: black;
+  font-family: Tahoma, sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styling for Master Signature Button */
+.master-signature-button {
+  position: absolute;
+  top: 272px;
+  left: 426px;
+  width: 150px;
+  height: 20px;
+  background-color: gray;
+  color: black;
+  font-family: Tahoma, sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styling for the table and rows */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-family: Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  color: black;
+}

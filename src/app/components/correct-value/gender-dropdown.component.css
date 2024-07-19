@@ -1,0 +1,29 @@
+/* Styles for the gender dropdown component */
+
+/* Ensure the dropdown is right-justified */
+.gender-dropdown-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px 0;
+}
+
+/* Style for the label */
+.gender-dropdown-label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Style for the select element */
+.gender-dropdown-select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Ensure the dropdown is positioned correctly on the form */
+.nominee-health-dtls-tab .gender-dropdown-container {
+  position: absolute;
+  top: 50px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+}

@@ -1,0 +1,498 @@
+/* Style for the Correct Value component */
+
+/* Style for the dropdown according to the specified requirements */
+.dropdown {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+/* Style for the list of image paths */
+.image-path-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style for the selected image path display area */
+.selected-image-path {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Style for the Employee ID field */
+.employee-id-field {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+  padding: 5px;
+}
+
+/* Style for the 'Agent Type' dropdown list */
+.agent-type-dropdown {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Style for the 'Sub IC Code' field */
+.sub-ic-code-field {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+  padding: 5px;
+}
+
+/* Style for the 'Broker Model' dropdown list */
+.broker-model-dropdown {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+  padding: 5px;
+}
+
+/* Style for the referral code input field */
+.referral-code-input {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+/* Style for the backdated policy date input field and validation messages */
+.backdated-policy-date-field {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+.validation-message {
+  color: red;
+  font-weight: bold;
+}
+
+/* Style for the nationality field */
+.nationality-field {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the prompt 'Citizenship' */
+.citizenship-prompt {
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Style for the 'Resi. Country' dropdown list */
+.resi-country-dropdown {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the gender selection dropdown */
+.gender-dropdown {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for dynamically enabled/disabled fields and error messages */
+.enabled-field {
+  background-color: #e0ffe0;
+}
+.disabled-field {
+  background-color: #ffe0e0;
+}
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+/* Style for the input field and prompt 'Place' */
+.input-field {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+.prompt-place {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Style for the 'IP Age Proof' field */
+.ip-age-proof-field {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the 'City/District' field */
+.city-district-field {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+  padding: 5px;
+}
+
+/* Style for the list format for residence proof information */
+.residence-proof-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style for the 'ADD AREA/PINCODE' button */
+.add-area-pincode-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Style for the input field for City/District information */
+.city-district-input {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the input field and label for the delivery place */
+.delivery-place-input {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+.delivery-place-label {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Style for the dropdown list for selecting a residence proof type */
+.residence-proof-dropdown {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the checkbox */
+.checkbox {
+  margin: 10px 0;
+}
+
+/* Style for the Father's Name Input Field, Marital Status Dropdown, PIN Input Field, and Spouse's Name Input Field */
+.fathers-name-field, .marital-status-dropdown, .pin-input-field, .spouses-name-field {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the 'Education' field and its prompt */
+.education-field {
+  background-color: #fff;
+  color: #000;
+  width: 95px;
+  height: 15px;
+}
+.education-prompt {
+  text-align: right;
+  font-weight: bold;
+  font-family: 'MS Sans Serif';
+}
+
+/* Style for the spouse and father fields, error message display area, and visual attributes of the current item */
+.spouse-field, .father-field, .error-message-display, .current-item-visual {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the profession description field and the list of professions */
+.profession-description-field, .list-of-professions {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the 'Income Proof' field and its prompt */
+.income-proof-field {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+.income-proof-prompt {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Style for the dropdown list for assessee types */
+.assessee-types-dropdown {
+  background-color: #fff;
+  color: #000;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+/* Style for the dropdown field and its prompt for the relationship of the nominee */
+.nominee-relationship-dropdown {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+.nominee-relationship-prompt {
+  text-align: right;
+  font-weight: bold;
+  font-family: 'MS Sans Serif';
+}
+
+/* Style for the error message for 'IP Relation' field */
+.ip-relation-error-message {
+  color: red;
+  font-weight: bold;
+}
+
+/* Style for the dropdown list and its label for 'Annuity Frequency' */
+.annuity-frequency-dropdown {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+.annuity-frequency-label {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Style for the premium finance field */
+.premium-finance-field {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the 'Cover Type' dropdown field */
+.cover-type-dropdown {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the input field for the premium value */
+.premium-value-input {
+  background-color: #fff;
+  color: #000;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+/* Style for the dropdown list and error message */
+.dropdown-list, .error-message {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the dropdown list for 'Type of Loan' */
+.type-of-loan-dropdown {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the witness date input field */
+.witness-date-input {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the 'PH Signature' button */
+.ph-signature-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Style for the 'Annuity Type' dropdown field and its label */
+.annuity-type-dropdown {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+.annuity-type-label {
+  text-align: right;
+  font-weight: bold;
+  font-family: 'MS Sans Serif';
+}
+
+/* Style for the dropdown list for 'LA Study Standard' */
+.la-study-standard-dropdown {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the money back option list */
+.money-back-option-list {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the mobile number field and error message */
+.mobile-number-field {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+.mobile-number-error-message {
+  color: red;
+  font-weight: bold;
+}
+
+/* Style for the gender field based on the current block and item */
+.gender-field {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the warning message and sum assured field */
+.warning-message, .sum-assured-field {
+  color: red;
+  font-weight: bold;
+}
+
+/* Style for the error messages and input field for the GSTN Number */
+.gstn-number-error-message, .gstn-number-input {
+  color: red;
+  font-weight: bold;
+}
+
+/* Style for the phone number field and tooltips */
+.phone-number-field {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+.tooltip, .hint {
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+/* Style for the title selection field */
+.title-selection-field {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the Verify IP Aadhaar Button and Aadhaar Input Field */
+.verify-ip-aadhaar-button, .aadhaar-input-field {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Style for the employer name input field and related messages */
+.employer-name-input-field, .prompt-message {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for field highlights related to 'Sub Id Code' validation */
+.sub-id-code-valid {
+  background-color: #e0ffe0;
+}
+.sub-id-code-invalid {
+  background-color: #ffe0e0;
+}
+
+/* Style for the dropdown list for 'Sub IC Pan' */
+.sub-ic-pan-dropdown {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the surrogate income proof list and detailed view components */
+.surrogate-income-proof-list, .detailed-view-components {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the 'Account Type' field */
+.account-type-field {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+  position: absolute;
+  top: 73px;
+  left: 740px;
+}
+
+/* Style for the Accumulate Checkbox and Percentage Input Field */
+.accumulate-checkbox, .percentage-input-field {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the display item 'SP_SUB_IC_NAME' */
+.sp-sub-ic-name-display {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the 'EXIT' button */
+.exit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Style for the gender dropdown field in the 'NOMINEE_HEALTH_DTLS' tab page */
+.nominee-gender-dropdown {
+  background-color: #fff;
+  color: #000;
+  padding: 5px;
+}
+
+/* Style for the 'Annuity Option' field */
+.annuity-option-field {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Segoe UI', 'Demilight', 'Plain';
+  font-size: 900;
+  position: absolute;
+  top: 51px;
+  left: 580px;
+  width: 91px;
+  height: 15px;
+}
+
+/* Style for the button and fields for displaying the rate details */
+.fetch-rate-details-button, .rate-details-fields {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}

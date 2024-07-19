@@ -1,0 +1,27 @@
+<div class="sso-fund-details">
+  <h2>SSO Fund Details</h2>
+  <form>
+    <div *ngFor="let fund of ssoFunds">
+      <input type="hidden" [value]="fund.fundId" />
+      <div>
+        <label>Fund Name:</label>
+        <input type="text" [value]="fund.fundName" readonly />
+      </div>
+      <div>
+        <label>Apportionment Percentage:</label>
+        <input type="number" [(ngModel)]="fund.apportionment" />
+      </div>
+      <div>
+        <label>Delete:</label>
+        <input type="checkbox" [(ngModel)]="fund.delete" />
+      </div>
+    </div>
+    <div>
+      <label>Total Fund Value:</label>
+      <input type="text" [value]="totalFundValue" readonly />
+    </div>
+    <button type="button" (click)="onDeleteSSOFundClick()">DELETE SSO & FUND</button>
+    <button type="button" (click)="onResetClick()">RESET</button>
+  </form>
+  <app-correct-apportionment-validation></app-correct-apportionment-validation>
+</div>

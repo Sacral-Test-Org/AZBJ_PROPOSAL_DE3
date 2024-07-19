@@ -1,0 +1,28 @@
+/* Signature Area Styling */
+.signature-area {
+  background-color: white;
+  width: 536px;
+  height: 143px;
+  overflow: auto;
+  border: 1px solid #ccc;
+}
+
+/* Horizontal and Vertical Scrollbars */
+.signature-area::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.signature-area::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+.signature-area::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Radio Button 'NA' Hidden by Default */
+.radio-na {
+  display: none;
+}

@@ -1,0 +1,45 @@
+<div class="fund-details-container">
+  <h2>Fund Details</h2>
+  <div class="filters">
+    <label for="productCode">Product Code:</label>
+    <input type="text" id="productCode" [(ngModel)]="productCode" (ngModelChange)="filterFunds()" />
+
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate" [(ngModel)]="startDate" (ngModelChange)="filterFunds()" />
+
+    <label for="endDate">End Date:</label>
+    <input type="date" id="endDate" [(ngModel)]="endDate" (ngModelChange)="filterFunds()" />
+  </div>
+
+  <div class="fund-list">
+    <table>
+      <thead>
+        <tr>
+          <th>Fund ID</th>
+          <th>Fund Name</th>
+          <th>Apportionment (%)</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let fund of funds">
+          <td>{{ fund.FUND_ID }}</td>
+          <td>{{ fund.fund_full_name }}</td>
+          <td><input type="number" [(ngModel)]="fund.apportionment" (ngModelChange)="updateApportionment(fund)" /></td>
+          <td><input type="checkbox" [(ngModel)]="fund.markedForDeletion" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="total-apportionment">
+    <label>Total Apportionment:</label>
+    <span>{{ totalApportionment }}%</span>
+  </div>
+
+  <button (click)="deleteSelectedFunds()">Delete Selected Funds</button>
+
+  <div class="image-display">
+    <app-fund-details-image [fundId]="selectedFundId"></app-fund-details-image>
+  </div>
+</div>

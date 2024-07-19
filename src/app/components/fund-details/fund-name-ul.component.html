@@ -1,0 +1,11 @@
+<div>
+  <input 
+    type="text" 
+    id="fundNameUL" 
+    [value]="selectedFundName" 
+    readonly 
+    (dblclick)="openFundSelection()" 
+    (focus)="loadImage()" 
+    (blur)="clearVisualAttributes()" 
+  />
+</div>

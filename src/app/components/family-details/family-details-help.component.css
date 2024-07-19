@@ -1,0 +1,37 @@
+/* Styles for the help information component */
+
+.help-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.help-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.help-content {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.help-sample {
+  font-family: monospace;
+  background-color: #eef;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+.help-list {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.help-list-item {
+  margin-bottom: 5px;
+}

@@ -1,0 +1,24 @@
+/* CSS styles for the SIP control component */
+
+/* Dropdown list for 'Proof Type' field */
+.proof-type-dropdown {
+  position: absolute;
+  left: 30px;
+  top: 75px;
+  width: 62px;
+  height: 21px;
+  background-color: white;
+  color: black;
+  font-family: Tahoma;
+  font-size: 8px;
+  font-weight: 300; /* demilight weight */
+}
+
+/* Prompt for the dropdown list */
+.proof-type-prompt {
+  font-weight: bold;
+  font-style: normal; /* plain style */
+  position: absolute;
+  left: -67px; /* offset for attachment */
+  top: -24px; /* offset for alignment */
+}

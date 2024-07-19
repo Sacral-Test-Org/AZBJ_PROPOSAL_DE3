@@ -1,0 +1,77 @@
+<div class="policy-member-form">
+  <!-- Age Proof Dropdown -->
+  <div class="form-group">
+    <label for="ageProof">Age Proof</label>
+    <select id="ageProof" class="form-control">
+      <option value="5">5</option>
+      <option value="8">8</option>
+      <option value="No">No</option>
+    </select>
+  </div>
+
+  <!-- Date of Birth Input and Age Display -->
+  <div class="form-group">
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" class="form-control" (change)="calculateAge()">
+  </div>
+  <div class="form-group">
+    <label for="pmAge">Age</label>
+    <input type="number" id="pmAge" class="form-control" readonly>
+  </div>
+
+  <!-- Weight Input and BMI Display -->
+  <div class="form-group">
+    <label for="weight">Weight (kg)</label>
+    <input type="number" id="weight" class="form-control" step="0.1" (change)="calculateBMI()">
+  </div>
+  <div class="form-group">
+    <label for="bmi">BMI</label>
+    <input type="number" id="bmi" class="form-control" readonly>
+  </div>
+
+  <!-- Add Covers Checkbox -->
+  <div class="form-group">
+    <label for="addCovers">Add Covers</label>
+    <input type="checkbox" id="addCovers" (change)="toggleAddCovers()">
+  </div>
+
+  <!-- Relationship Type Dropdown and Sum Assured Field -->
+  <div class="form-group">
+    <label for="relationshipType">Relationship Type</label>
+    <select id="relationshipType" class="form-control" (change)="updateCoverCode()">
+      <!-- Options will be populated dynamically -->
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="sumAssured">Sum Assured</label>
+    <input type="number" id="sumAssured" class="form-control">
+  </div>
+
+  <!-- Height Input Field -->
+  <div class="form-group">
+    <label for="height" class="form-label">Ht(cm)</label>
+    <input type="number" id="height" class="form-control" step="0.1" maxlength="5" style="background-color: gray; color: black;" (change)="navigateToWeight()">
+  </div>
+
+  <!-- Delete Member Button -->
+  <div class="form-group">
+    <button id="deleteMember" class="btn btn-danger" (click)="deleteMember()">Delete Member</button>
+  </div>
+
+  <!-- Age Proof ID Field -->
+  <div class="form-group">
+    <label for="ageProofId" class="form-label">Age Proof ID</label>
+    <input type="text" id="ageProofId" class="form-control" maxlength="20" style="text-transform: uppercase;" (change)="navigateToMemberRelation()">
+  </div>
+
+  <!-- Add Member Button -->
+  <div class="form-group">
+    <button id="addMember" class="btn btn-primary" (click)="addMember()">Add Member</button>
+  </div>
+
+  <!-- Age Field -->
+  <div class="form-group">
+    <label for="age" class="form-label">Age</label>
+    <input type="number" id="age" class="form-control" readonly (blur)="navigateToHeight()">
+  </div>
+</div>

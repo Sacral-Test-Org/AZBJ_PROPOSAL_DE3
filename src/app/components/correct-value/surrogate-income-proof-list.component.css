@@ -1,0 +1,40 @@
+/* Styles for the surrogate income proof list component */
+
+/* Container for the list */
+.surrogate-income-proof-list {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual list items */
+.surrogate-income-proof-item {
+  padding: 12px;
+  margin: 8px 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for list items */
+.surrogate-income-proof-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Selected item style */
+.surrogate-income-proof-item.selected {
+  background-color: #e0f7fa;
+  border-color: #00acc1;
+}
+
+/* Error message style */
+.error-message {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-top: 8px;
+}

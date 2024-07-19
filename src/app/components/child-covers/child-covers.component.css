@@ -1,0 +1,84 @@
+/* Add Child Button Styles */
+.add-child-btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Delete Button Styles */
+.delete-btn {
+  background-color: #f44336; /* Red */
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Child Cover Records List Styles */
+.child-cover-records {
+  list-style-type: none;
+  padding: 0;
+}
+
+.child-cover-records li {
+  padding: 8px;
+  margin-bottom: 4px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Child's Date of Birth Input Field Styles */
+.child-dob-input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Child's Age Display Area Styles */
+.child-age-display {
+  font-size: 16px;
+  color: #333;
+  margin-top: 8px;
+}
+
+/* Exit Button Style */
+.exit-btn {
+  background-color: #008CBA; /* Blue */
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Child Covers View Styles */
+.child-covers-view {
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

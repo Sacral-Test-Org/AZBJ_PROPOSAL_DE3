@@ -1,0 +1,59 @@
+/* Styles for Add Covers Component */
+
+/* Container for the Add Covers section */
+.add-covers-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Checkbox styling */
+.add-covers-checkbox {
+  margin-right: 10px;
+}
+
+/* Button styling */
+.add-covers-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-covers-button:hover {
+  background-color: #0056b3;
+}
+
+/* Input field styling */
+.add-covers-input {
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Label styling */
+.add-covers-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Error message styling */
+.add-covers-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}

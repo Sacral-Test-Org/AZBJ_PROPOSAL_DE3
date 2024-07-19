@@ -1,0 +1,44 @@
+/* Styles for the partner type dropdown component */
+
+/* General styles for the dropdown */
+.partner-type-dropdown {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Disabled state styles */
+.partner-type-dropdown:disabled {
+  background-color: #f9f9f9;
+  color: #999;
+  cursor: not-allowed;
+}
+
+/* Styles for the form fields based on partner type */
+.field-disabled {
+  background-color: #f9f9f9;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.field-enabled {
+  background-color: #fff;
+  color: #000;
+  cursor: text;
+}
+
+/* Styles for clearing values */
+.clear-value {
+  display: none;
+}
+
+/* Styles for rural/urban flag */
+.rural-flag {
+  background-color: #e0f7fa;
+}
+
+.urban-flag {
+  background-color: #fff3e0;
+}

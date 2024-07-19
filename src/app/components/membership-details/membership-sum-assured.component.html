@@ -1,0 +1,12 @@
+<div class="membership-sum-assured-container">
+  <label for="membershipSumAssured">Membership Sum Assured:</label>
+  <input
+    type="text"
+    id="membershipSumAssured"
+    [value]="membershipSumAssured | uppercase"
+    readonly
+    style="background-color: white; text-transform: uppercase;"
+    (keydown.arrowleft)="navigateToPrevious()"
+    (keydown.arrowright)="navigateToNext()"
+  />
+</div>

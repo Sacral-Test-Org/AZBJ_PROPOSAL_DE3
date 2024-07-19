@@ -1,0 +1,9 @@
+<div class="view-images-container">
+  <button (click)="onViewImages()">View Images</button>
+  <div *ngIf="imageUrls.length > 0">
+    <div *ngFor="let url of imageUrls">
+      <img [src]="url" alt="Policy Image" />
+    </div>
+  </div>
+  <button (click)="onBack()">Back</button>
+</div>

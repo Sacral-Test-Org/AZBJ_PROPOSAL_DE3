@@ -1,0 +1,24 @@
+
+/* Styling for the Exit button in the Policy Details Others section */
+
+.exit-button {
+  font-family: Arial, sans-serif; /* Font style */
+  font-size: 16px; /* Font size */
+  color: #ffffff; /* Font color */
+  background-color: #007bff; /* Button background color */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Padding for the button */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline from text */
+  display: inline-block; /* Display as inline-block */
+  margin: 4px 2px; /* Margin around the button */
+  cursor: pointer; /* Cursor pointer on hover */
+  border-radius: 4px; /* Rounded corners */
+  position: absolute; /* Positioning */
+  top: 20px; /* Vertical position */
+  right: 20px; /* Horizontal position */
+}
+
+.exit-button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}

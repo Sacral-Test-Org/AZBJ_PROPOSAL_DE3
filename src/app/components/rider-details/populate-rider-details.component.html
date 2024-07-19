@@ -1,0 +1,28 @@
+<div class="rider-details-container">
+  <h2>Rider Details</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Cover Code</th>
+        <th>Cover Description</th>
+        <th>Sum Assured</th>
+        <th>Premium Term</th>
+        <th>Benefit Term</th>
+        <th>Entry Age</th>
+        <th>Rider Partner</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let rider of riderDetails">
+        <td>{{ rider.coverCode }}</td>
+        <td>{{ rider.coverDescription }}</td>
+        <td>{{ rider.sumAssured }}</td>
+        <td>{{ rider.premiumTerm }}</td>
+        <td>{{ rider.benefitTerm }}</td>
+        <td>{{ rider.entryAge }}</td>
+        <td>{{ rider.riderPartner }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button (click)="populateRiderDetails()">POPULATE</button>
+</div>

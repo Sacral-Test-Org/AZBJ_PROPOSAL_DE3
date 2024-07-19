@@ -1,0 +1,22 @@
+/* Styles for Sub Id Code Validation Component */
+
+/* Highlight field in red if Sub Id Code does not match */
+.invalid-sub-id {
+  border: 2px solid red;
+}
+
+/* Highlight field in green if Sub Id Code matches */
+.valid-sub-id {
+  border: 2px solid green;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+/* Channel list styling */
+.channel-list {
+  margin-top: 10px;
+}

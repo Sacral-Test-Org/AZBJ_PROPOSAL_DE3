@@ -1,0 +1,13 @@
+<div>
+  <label for="fundSelectionField">Select Fund:</label>
+  <select id="fundSelectionField" (change)="onFundSelect($event)">
+    <option *ngFor="let fund of availableFunds" [value]="fund.FUND_ID">
+      {{ fund.fund_full_name }}
+    </option>
+  </select>
+</div>
+
+<div>
+  <label for="fundNameField">Fund Name:</label>
+  <input id="fundNameField" type="text" [value]="selectedFundName" readonly />
+</div>

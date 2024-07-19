@@ -1,0 +1,21 @@
+<div>
+  <form>
+    <div>
+      <label for="correctValue">Correct Value:</label>
+      <input type="text" id="correctValue" name="correctValue" [(ngModel)]="correctValue" (ngModelChange)="validateCorrectValue()" />
+    </div>
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+    <div *ngIf="navigateToAnswerDescription">
+      <label for="answerDescription">Answer Description:</label>
+      <input type="text" id="answerDescription" name="answerDescription" [(ngModel)]="answerDescription" />
+    </div>
+    <div *ngIf="navigateToNextRecord">
+      <p>Moving to the next record...</p>
+    </div>
+    <div *ngIf="navigateToSave">
+      <button (click)="save()">Save</button>
+    </div>
+  </form>
+</div>

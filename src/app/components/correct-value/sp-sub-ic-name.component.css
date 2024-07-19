@@ -1,0 +1,42 @@
+/* Styling for the display item SP_SUB_IC_NAME within the AGENT tab */
+
+/* Ensure the input is always uppercase */
+#sp-sub-ic-name {
+  text-transform: uppercase;
+}
+
+/* Style for the list of values when displayed */
+#sp-sub-ic-name-lov {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+
+#sp-sub-ic-name-lov ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sp-sub-ic-name-lov li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+#sp-sub-ic-name-lov li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Ensure the display item is visible and enabled */
+#sp-sub-ic-name[disabled] {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+/* Editable state */
+#sp-sub-ic-name:enabled {
+  background-color: white;
+  border: 1px solid #ced4da;
+}

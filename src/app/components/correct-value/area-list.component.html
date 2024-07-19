@@ -1,0 +1,8 @@
+<div *ngIf="areas && areas.length > 0">
+  <ul>
+    <li *ngFor="let area of areas">{{ area }}</li>
+  </ul>
+</div>
+<div *ngIf="!areas || areas.length === 0">
+  <p>No areas available.</p>
+</div>

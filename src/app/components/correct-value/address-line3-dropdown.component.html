@@ -1,0 +1,18 @@
+<div>
+  <label for="addressLine3">Address Line 3:</label>
+  <input 
+    type="text" 
+    id="addressLine3" 
+    name="addressLine3" 
+    maxlength="100" 
+    (input)="addressLine3.value = addressLine3.value.toUpperCase()" 
+    (dblclick)="showDropdown()"
+    [(ngModel)]="addressLine3Value"
+    required
+  />
+  <div *ngIf="showDropdownList" class="dropdown">
+    <ul>
+      <li *ngFor="let place of places" (click)="selectPlace(place)">{{ place }}</li>
+    </ul>
+  </div>
+</div>

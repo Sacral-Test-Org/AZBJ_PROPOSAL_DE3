@@ -1,0 +1,39 @@
+/* Styles for nominee fields component */
+
+/* Error message styles */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Input field styles */
+input[disabled] {
+  background-color: #f0f0f0;
+  color: #a0a0a0;
+}
+
+/* General input field styles */
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Multi-nominee control styles */
+.multi-nominee-control {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.multi-nominee-control label {
+  margin-bottom: 5px;
+}
+
+.multi-nominee-control input {
+  margin-bottom: 5px;
+}

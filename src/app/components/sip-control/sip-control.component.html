@@ -1,0 +1,58 @@
+<div class="sip-control">
+  <h2>SIP Control Records</h2>
+  <form>
+    <div class="form-group">
+      <label for="fieldValue">Field Value</label>
+      <input type="text" id="fieldValue" name="fieldValue" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label for="proofType">Surrogate Proof Type</label>
+      <select id="proofType" name="proofType" class="form-control" style="position: absolute; left: 30px; top: 75px; width: 62px; height: 21px; background-color: white; color: black; font-family: Tahoma; font-size: 8px; font-weight: 300;">
+        <option value="IP">IP</option>
+        <option value="5">5</option>
+        <option value="8">8</option>
+        <option value="10">10</option>
+        <option value="SL">SL</option>
+      </select>
+      <label for="proofType" style="font-weight: bold; font-style: normal; position: absolute; left: -67px; top: -24px;">Surrogate Proof Type</label>
+    </div>
+
+    <div class="form-group">
+      <label for="proofDescription">Proof Description</label>
+      <input type="text" id="proofDescription" name="proofDescription" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label for="documentDate">Document Date</label>
+      <input type="date" id="documentDate" name="documentDate" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label for="derivedIncome">Derived Income</label>
+      <input type="text" id="derivedIncome" name="derivedIncome" class="form-control" readonly />
+    </div>
+
+    <div class="form-group">
+      <label for="derivedTasaValue">Derived Tasa Value</label>
+      <input type="text" id="derivedTasaValue" name="derivedTasaValue" class="form-control" readonly />
+    </div>
+
+    <div class="form-group">
+      <label for="insuredDob">Insured Person's Date of Birth</label>
+      <input type="date" id="insuredDob" name="insuredDob" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label for="policyholderDob">Policyholder's Date of Birth</label>
+      <input type="date" id="policyholderDob" name="policyholderDob" class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label for="policyDate">Policy Date</label>
+      <input type="date" id="policyDate" name="policyDate" class="form-control" />
+    </div>
+
+    <button type="button" class="btn btn-primary" (click)="calculateEntryAgeAndDeriveSurrogate()">Calculate Entry Age and Derive Surrogate Value</button>
+  </form>
+</div>

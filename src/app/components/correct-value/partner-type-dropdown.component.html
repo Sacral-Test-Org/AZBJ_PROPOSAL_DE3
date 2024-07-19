@@ -1,0 +1,9 @@
+<div class="partner-type-dropdown">
+  <label for="partnerType">Partner Type:</label>
+  <select id="partnerType" [(ngModel)]="partnerType" (change)="onPartnerTypeChange()">
+    <option value="">Select Partner Type</option>
+    <option value="I">Individual</option>
+    <option value="O">Organization</option>
+    <!-- Add other partner types as needed -->
+  </select>
+</div>

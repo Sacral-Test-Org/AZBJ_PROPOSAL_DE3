@@ -1,0 +1,15 @@
+<div class="fund-apportionment">
+  <h2>Fund Apportionment</h2>
+  <div *ngFor="let fund of funds">
+    <label for="fund-{{fund.id}}">{{fund.name}}</label>
+    <input type="number" id="fund-{{fund.id}}" [(ngModel)]="fund.apportionment" (change)="validateApportionment(fund)" />
+    <span *ngIf="fund.apportionmentError" class="error">{{fund.apportionmentError}}</span>
+  </div>
+  <div class="total-fund-value">
+    <label>Total Fund Value:</label>
+    <span>{{totalFundValue}}</span>
+  </div>
+  <div class="navigation">
+    <button (click)="navigateToNextSection()" [disabled]="!isApportionmentValid">Next</button>
+  </div>
+</div>

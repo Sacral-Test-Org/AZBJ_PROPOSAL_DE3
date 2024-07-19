@@ -1,0 +1,18 @@
+<div class="receipt-details-container">
+  <h2>Receipt Details</h2>
+  <div class="receipt-list">
+    <div class="receipt-item" *ngFor="let receipt of receipts" (click)="selectReceipt(receipt)">
+      <p><strong>Receipt Number:</strong> {{ receipt.receiptNumber }}</p>
+      <p><strong>Amount:</strong> {{ receipt.amount | currency }}</p>
+      <p><strong>Date Received:</strong> {{ receipt.dateReceived | date }}</p>
+      <p><strong>Cheque Status:</strong> {{ receipt.chequeStatus }}</p>
+      <p><strong>Premium Payer:</strong> {{ receipt.premiumPayer }}</p>
+      <p><strong>Branch Code:</strong> {{ receipt.branchCode }}</p>
+      <p><strong>Branch Name:</strong> {{ receipt.branchName }}</p>
+      <p><strong>Branch State:</strong> {{ receipt.branchState }}</p>
+    </div>
+  </div>
+  <div class="total-amount">
+    <p><strong>Total Amount:</strong> {{ getTotalAmount() | currency }}</p>
+  </div>
+</div>

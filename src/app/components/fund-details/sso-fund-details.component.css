@@ -1,0 +1,75 @@
+/* Styling for the SSO Fund Details component */
+
+/* General styling for the SSO Fund Details section */
+.sso-fund-details {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Styling for the fund list table */
+.sso-fund-details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.sso-fund-details th, .sso-fund-details td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.sso-fund-details th {
+  background-color: #f2f2f2;
+}
+
+/* Styling for the apportionment input field */
+.sso-fund-details input[type='number'] {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Styling for the delete checkbox */
+.sso-fund-details input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+/* Styling for the buttons */
+.sso-fund-details .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.sso-fund-details .btn-delete {
+  background-color: #d9534f;
+  color: white;
+}
+
+.sso-fund-details .btn-reset {
+  background-color: #5bc0de;
+  color: white;
+}
+
+/* Styling for validation messages */
+.validation-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Positioning for the delete checkbox within the form */
+.delete-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+/* Ensuring the delete checkbox is visible and correctly positioned */
+.delete-checkbox input[type='checkbox'] {
+  margin-right: 5px;
+}

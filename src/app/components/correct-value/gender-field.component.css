@@ -1,0 +1,32 @@
+/* Gender Field Component CSS */
+
+/* Ensure the field is read-only and visually distinct */
+.gender-field {
+  background-color: #f0f0f0; /* Light grey background to indicate read-only */
+  border: 1px solid #ccc; /* Light border */
+  padding: 8px; /* Some padding for better appearance */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 14px; /* Standard font size */
+  color: #333; /* Dark text color */
+}
+
+/* Dropdown arrow styling */
+.gender-field::after {
+  content: '\25BC'; /* Downward arrow */
+  float: right; /* Position to the right */
+  margin-right: 8px; /* Some space from the edge */
+  color: #666; /* Grey color for the arrow */
+}
+
+/* Disabled state to prevent user interaction */
+.gender-field[disabled] {
+  cursor: not-allowed; /* Not-allowed cursor */
+  opacity: 0.6; /* Slightly faded to indicate disabled state */
+}
+
+/* Focus state for better accessibility */
+.gender-field:focus {
+  outline: none; /* Remove default outline */
+  border-color: #66afe9; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.6); /* Blue shadow on focus */
+}

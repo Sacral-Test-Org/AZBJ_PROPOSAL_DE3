@@ -1,0 +1,64 @@
+<div class="previous-policy-details">
+  <h2>Previous Policy Details</h2>
+  <form>
+    <!-- Policy/Proposal Numbers -->
+    <div class="form-group">
+      <label for="policyNumber">Policy/Proposal Number</label>
+      <input type="text" id="policyNumber" name="policyNumber" maxlength="50" (focus)="loadFieldFromImage('policyNumber')" />
+    </div>
+
+    <!-- Insurance Company -->
+    <div class="form-group">
+      <label for="insuranceCompany">Insurance Company</label>
+      <input type="text" id="insuranceCompany" name="insuranceCompany" maxlength="50" (focus)="loadFieldFromImage('insuranceCompany')" />
+    </div>
+
+    <!-- Amount of Insurance -->
+    <div class="form-group">
+      <label for="amountOfInsurance">Amount of Insurance</label>
+      <input type="text" id="amountOfInsurance" name="amountOfInsurance" maxlength="15" pattern="[0-9]*" (focus)="loadFieldFromImage('amountOfInsurance')" />
+    </div>
+
+    <!-- Status -->
+    <div class="form-group">
+      <label for="status">Status</label>
+      <input type="text" id="status" name="status" maxlength="50" (focus)="loadFieldFromImage('status')" />
+    </div>
+
+    <!-- IP Type -->
+    <div class="form-group">
+      <label for="ipType">IP Type</label>
+      <select id="ipType" name="ipType" (focus)="loadFieldFromImage('ipType')">
+        <option value="IP">IP</option>
+        <option value="5">5</option>
+        <option value="8">8</option>
+        <option value="10">10</option>
+        <option value="N">N</option>
+        <option value="SL">SL</option>
+      </select>
+    </div>
+
+    <!-- Buttons -->
+    <div class="form-group">
+      <button type="button" (click)="addPolicy()">Add</button>
+      <button type="button" (click)="updatePolicy()">Update</button>
+      <button type="button" (click)="deletePolicy()" style="background-color: gray; color: black; font-weight: bold;">Delete</button>
+    </div>
+  </form>
+
+  <!-- Navigation -->
+  <div class="navigation">
+    <button type="button" (click)="navigateToPrevious()">Previous</button>
+    <button type="button" (click)="navigateToNext()">Next</button>
+  </div>
+
+  <!-- Insurance Company Image -->
+  <div class="insurance-company-image">
+    <insurance-company-image></insurance-company-image>
+  </div>
+
+  <!-- Insurance Amount Display -->
+  <div class="insurance-amount">
+    <insurance-amount></insurance-amount>
+  </div>
+</div>

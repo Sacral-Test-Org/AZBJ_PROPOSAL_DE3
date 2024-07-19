@@ -1,0 +1,35 @@
+<div class="portfolio-strategy-validation">
+  <h2>Portfolio Strategy Validation</h2>
+  <form (ngSubmit)="validatePortfolioStrategy()">
+    <div class="form-group">
+      <label for="portfolioStrategy">Portfolio Strategy:</label>
+      <input type="text" id="portfolioStrategy" [(ngModel)]="portfolioStrategy" name="portfolioStrategy" required>
+    </div>
+    <div class="form-group">
+      <label for="frequency">Frequency:</label>
+      <input type="number" id="frequency" [(ngModel)]="frequency" name="frequency" required>
+    </div>
+    <div class="form-group">
+      <label for="productDefinition">Product Definition:</label>
+      <input type="text" id="productDefinition" [(ngModel)]="productDefinition" name="productDefinition" required>
+    </div>
+    <div class="form-group">
+      <label for="productCode">Product Code:</label>
+      <input type="number" id="productCode" [(ngModel)]="productCode" name="productCode" required>
+    </div>
+    <div class="form-group">
+      <label for="packageCode">Package Code:</label>
+      <input type="text" id="packageCode" [(ngModel)]="packageCode" name="packageCode" required>
+    </div>
+    <button type="submit">Validate</button>
+  </form>
+
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+
+  <div *ngIf="validationResult" class="validation-result">
+    <h3>Validation Result:</h3>
+    <p>{{ validationResult }}</p>
+  </div>
+</div>

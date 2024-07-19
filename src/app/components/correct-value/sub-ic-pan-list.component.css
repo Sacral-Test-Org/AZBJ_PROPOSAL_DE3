@@ -1,0 +1,30 @@
+/* Styles for the list of predefined values for the 'Sub IC Pan' field */
+
+.sub-ic-pan-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sub-ic-pan-list li {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.sub-ic-pan-list li:last-child {
+  border-bottom: none;
+}
+
+.sub-ic-pan-list li:hover {
+  background-color: #f5f5f5;
+}
+
+.sub-ic-pan-list li.selected {
+  background-color: #007bff;
+  color: white;
+}

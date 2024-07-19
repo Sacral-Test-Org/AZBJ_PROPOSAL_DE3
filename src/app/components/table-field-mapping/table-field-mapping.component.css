@@ -1,0 +1,63 @@
+/* Styles for the table field mapping component */
+
+/* General styles for the form fields */
+.field-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.field-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.field-container input, .field-container select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styles for the buttons */
+.hidden-button {
+  display: none;
+}
+
+/* Styles for the Manual BBU checkbox */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Styles for the BBU Reason field */
+.bbu-reason-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.bbu-reason-container input {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  pointer-events: none;
+}
+
+/* Styles for the LOVs */
+.lov-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.lov-container select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

@@ -1,0 +1,21 @@
+<div class="child-covers-container">
+  <h2>Child Covers</h2>
+  <button (click)="addChild()">Add Child</button>
+  <button (click)="deleteChildCovers()">Delete</button>
+  <button (click)="exitChildCovers()">Exit</button>
+
+  <div *ngFor="let child of childCovers; let i = index">
+    <div>
+      <label for="childName{{i}}">Child Name:</label>
+      <input id="childName{{i}}" [(ngModel)]="child.childName" />
+    </div>
+    <div>
+      <label for="childDob{{i}}">Date of Birth:</label>
+      <input id="childDob{{i}}" [(ngModel)]="child.childDob" (change)="calculateChildAge(child)" placeholder="dd/mm/yyyy" />
+    </div>
+    <div>
+      <label for="childAge{{i}}">Age:</label>
+      <input id="childAge{{i}}" [(ngModel)]="child.childAge" readonly />
+    </div>
+  </div>
+</div>

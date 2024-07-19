@@ -1,0 +1,56 @@
+/* Style for the PAN approval component */
+
+/* Style for the checkboxes */
+.checkbox {
+  margin: 10px 0;
+}
+
+/* Style for the PAN issuance date fields */
+.date-field {
+  width: 200px;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+/* Style for the error messages */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Style for the input fields */
+.input-field {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+/* Style for the exit button */
+.exit-button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.exit-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Style for the Supervisor Approval button */
+.supervisor-approval-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.supervisor-approval-button:hover {
+  background-color: #45a049;
+}

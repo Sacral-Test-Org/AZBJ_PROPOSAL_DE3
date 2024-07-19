@@ -1,0 +1,28 @@
+/* CSS styles for Pin Code Input Field */
+.pin-code-input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* CSS styles for List of Valid Pin Codes, States, and Districts */
+.pin-code-list {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.pin-code-list-item {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.pin-code-list-item:hover {
+  background-color: #f1f1f1;
+}

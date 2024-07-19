@@ -1,0 +1,191 @@
+/* General Styles for Proposal Form Component */
+
+/* Navigation Buttons */
+button.left-btn {
+  background-color: gray;
+  text-align: center;
+  font-weight: bold;
+}
+
+button.right-btn {
+  background-color: gray;
+  text-align: center;
+  font-weight: bold;
+}
+
+button.up-btn {
+  background-color: gray;
+  text-align: center;
+  font-weight: bold;
+}
+
+button.down-btn {
+  background-color: gray;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Zoom Controls */
+button.zoom-in-btn, button.zoom-out-btn, button.zoom-reset-btn {
+  background-color: lightgray;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Skip Button */
+button.skip-btn {
+  background-color: lightblue;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Image View Buttons */
+button.view-image-btn, button.view-all-images-btn {
+  background-color: lightgreen;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Validate Button */
+button.validate-btn {
+  background-color: lightcoral;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Save Button */
+button.save-btn:disabled {
+  background-color: lightgray;
+  text-align: center;
+  font-weight: bold;
+}
+
+button.save-btn:enabled {
+  background-color: lightyellow;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Exit Button */
+button.exit-btn {
+  background-color: lightpink;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* DE1 Records Checkbox */
+input[type="checkbox"].de1-records-checkbox {
+  margin: 10px;
+}
+
+/* Image Display Area */
+.image-display {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Smooth Scrolling */
+.image-display {
+  scroll-behavior: smooth;
+}
+
+/* Personal Details Fields */
+.personal-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Policy Details Fields */
+.policy-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Verification Status Fields */
+.verification-status {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Additional Details Fields */
+.additional-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Status and Flag Displays */
+.status-flags {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Previous Policy Details Fields */
+.previous-policy-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Summary Section */
+.summary-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Rider Details Fields */
+.rider-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Fund Name Field */
+.fund-name-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* LOV Styles */
+.lov {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Incomplete Proposal Details Fields */
+.incomplete-proposal-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* STP Case Details Fields */
+.stp-case-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Proposal Deposit Field */
+.proposal-deposit-field {
+  background-color: white;
+  color: black;
+  font-family: "MS Sans Serif";
+  padding: 5px;
+  margin-bottom: 20px;
+}

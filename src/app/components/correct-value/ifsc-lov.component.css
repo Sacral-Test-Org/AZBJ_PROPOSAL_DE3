@@ -1,0 +1,65 @@
+/* Styles for the LOV prompt for selecting the correct IFSC code */
+
+.lov-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lov-header {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.lov-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.lov-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.lov-item:hover {
+  background-color: #f1f1f1;
+}
+
+.lov-item:last-child {
+  border-bottom: none;
+}
+
+.lov-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.lov-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.lov-button:hover {
+  background-color: #0056b3;
+}
+
+.lov-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

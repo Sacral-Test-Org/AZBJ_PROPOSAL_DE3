@@ -1,0 +1,92 @@
+<div class="correct-value-container">
+  <h2>Correct Value Section</h2>
+
+  <div class="image-display">
+    <img [src]="currentImage" alt="Current Item Image" *ngIf="currentImage" />
+  </div>
+
+  <div class="dropdown-container">
+    <label for="skip-reason">Skip Reason:</label>
+    <select id="skip-reason" [(ngModel)]="selectedSkipReason">
+      <option *ngFor="let reason of skipReasons" [value]="reason">{{ reason }}</option>
+    </select>
+  </div>
+
+  <div class="image-paths">
+    <label for="image-path">Select Image Path:</label>
+    <select id="image-path" [(ngModel)]="selectedImagePath">
+      <option *ngFor="let path of imagePaths" [value]="path">{{ path }}</option>
+    </select>
+  </div>
+
+  <div class="employee-id">
+    <label for="employee-id">Employee ID:</label>
+    <input type="text" id="employee-id" [(ngModel)]="employeeId" (dblclick)="fetchEmployeeIdList()" />
+  </div>
+
+  <div class="agent-type">
+    <label for="agent-type">Agent Type:</label>
+    <select id="agent-type" [(ngModel)]="selectedAgentType">
+      <option value="8">8</option>
+      <option value="10">10</option>
+      <option value="SL">No</option>
+    </select>
+  </div>
+
+  <div class="error-message" *ngIf="errorMessage">
+    <p>{{ errorMessage }}</p>
+  </div>
+
+  <div class="sub-ic-code">
+    <label for="sub-ic-code">Sub IC Code:</label>
+    <input type="text" id="sub-ic-code" [(ngModel)]="subIcCode" />
+  </div>
+
+  <button (click)="handleScrutinyFailure()">Scrutiny Failure</button>
+
+  <div class="lead-by">
+    <label for="lead-by">Lead By:</label>
+    <input type="text" id="lead-by" (dblclick)="fetchAgentList()" />
+  </div>
+
+  <div class="broker-model">
+    <label for="broker-model">Type of Broker Model:</label>
+    <select id="broker-model" [(ngModel)]="selectedBrokerModel">
+      <option value="5">5</option>
+      <option value="8">8</option>
+      <option value="10">10</option>
+      <option value="LA">LA</option>
+      <option value="No">No</option>
+    </select>
+  </div>
+
+  <div class="nationality">
+    <label for="nationality">Nationality:</label>
+    <select id="nationality" [(ngModel)]="selectedNationality">
+      <option value="IP">IP</option>
+      <option value="SON">SON</option>
+      <option value="5">5</option>
+      <option value="8">8</option>
+      <option value="10">10</option>
+      <option value="LA">LA</option>
+      <option value="SL">SL</option>
+    </select>
+  </div>
+
+  <div class="city-district">
+    <label for="city-district">City/District:</label>
+    <input type="text" id="city-district" [(ngModel)]="cityDistrict" />
+  </div>
+
+  <div class="area-free-text">
+    <label for="area-free-text">Area (Free Text):</label>
+    <input type="text" id="area-free-text" [(ngModel)]="areaFreeText" />
+  </div>
+
+  <div class="witness-date">
+    <label for="witness-date">Witness Date:</label>
+    <input type="date" id="witness-date" [(ngModel)]="witnessDate" />
+  </div>
+
+  <button (click)="handleNextTab()">Next Tab</button>
+</div>

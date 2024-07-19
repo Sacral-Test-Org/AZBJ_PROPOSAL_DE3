@@ -1,0 +1,19 @@
+<div class="aadhaar-validation">
+  <h2>Aadhaar Validation</h2>
+  <form (ngSubmit)="validateAadhaar()">
+    <div class="form-group">
+      <label for="ageProofId">Age Proof ID</label>
+      <input type="text" id="ageProofId" [(ngModel)]="ageProofId" name="ageProofId" required />
+    </div>
+    <div class="form-group">
+      <label for="ageProofType">Age Proof Type</label>
+      <select id="ageProofType" [(ngModel)]="ageProofType" name="ageProofType" required>
+        <option value="">Select Type</option>
+        <option value="Pan Card">Pan Card</option>
+        <option value="AC">AC</option>
+        <option value="ACS">ACS</option>
+      </select>
+    </div>
+    <button type="submit">Validate</button>
+  </form>
+</div>

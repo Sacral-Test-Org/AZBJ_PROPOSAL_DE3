@@ -1,0 +1,52 @@
+<div class="questionnaire-container">
+  <h2>Questionnaire Details</h2>
+  <form>
+    <!-- Fields for entering answers, question descriptions, member names, and other related details -->
+    <div class="form-group">
+      <label for="memberName">Member Name:</label>
+      <input type="text" id="memberName" name="memberName" [(ngModel)]="memberName" disabled />
+    </div>
+    <div class="form-group">
+      <label for="questionDesc">Question Description:</label>
+      <input type="text" id="questionDesc" name="questionDesc" [(ngModel)]="questionDesc" disabled />
+    </div>
+    <div class="form-group">
+      <label for="ans1">Answer:</label>
+      <input type="text" id="ans1" name="ans1" [(ngModel)]="ans1" (blur)="handleAns1Blur()" />
+    </div>
+    <div class="form-group">
+      <label for="correctValue">Correct Value:</label>
+      <input type="text" id="correctValue" name="correctValue" [(ngModel)]="correctValue" maxlength="1" />
+    </div>
+    <div class="form-group">
+      <label for="ansDesc">Answer Description:</label>
+      <textarea id="ansDesc" name="ansDesc" [(ngModel)]="ansDesc" maxlength="500"></textarea>
+    </div>
+    <!-- Buttons for entering answers and populating questions -->
+    <div class="form-group">
+      <button type="button" (click)="enterAnswers()">Enter Answers</button>
+      <button type="button" (click)="populateQuestions()">Populate Questions</button>
+    </div>
+    <!-- Error message display area -->
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+    <!-- Navigation controls for moving through records -->
+    <div class="navigation-controls">
+      <button type="button" (click)="navigateToPreviousRecord()">Previous</button>
+      <button type="button" (click)="navigateToNextRecord()">Next</button>
+    </div>
+    <!-- Display images based on question ID and sub-question values -->
+    <div class="image-display" *ngIf="questionImage">
+      <img [src]="questionImage" alt="Questionnaire Image" />
+    </div>
+    <!-- IT Declaration button -->
+    <div class="form-group">
+      <button type="button" (click)="handleITDeclaration()">IT Declaration</button>
+    </div>
+    <!-- Save button -->
+    <div class="form-group">
+      <button type="button" (click)="saveQuestionnaireAnswers()">Save</button>
+    </div>
+  </form>
+</div>

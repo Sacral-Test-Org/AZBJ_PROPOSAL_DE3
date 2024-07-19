@@ -1,0 +1,27 @@
+/* Styling for the Next Tab button */
+
+.next-tab-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+
+.next-tab-button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.next-tab-button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}

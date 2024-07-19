@@ -1,0 +1,33 @@
+<div class="product-id-validation">
+  <form>
+    <div class="form-group">
+      <label for="productId">Product ID:</label>
+      <input type="text" id="productId" name="productId" [(ngModel)]="productId" (change)="onProductIdChange()" required>
+    </div>
+
+    <div class="form-group">
+      <label for="packageCode">Package Code:</label>
+      <input type="text" id="packageCode" name="packageCode" [(ngModel)]="packageCode" readonly>
+    </div>
+
+    <div class="form-group">
+      <label for="premium">Premium:</label>
+      <input type="text" id="premium" name="premium" [(ngModel)]="premium" (focus)="onPremiumFocus()" required>
+    </div>
+
+    <div class="form-group">
+      <label for="portfolioStrategy">Portfolio Strategy:</label>
+      <input type="text" id="portfolioStrategy" name="portfolioStrategy" [(ngModel)]="portfolioStrategy" (focus)="onPortfolioStrategyFocus()" required>
+    </div>
+
+    <div class="form-group">
+      <label for="solutionName">Solution Name:</label>
+      <input type="text" id="solutionName" name="solutionName" [(ngModel)]="solutionName" [disabled]="!isSolutionNameEnabled">
+    </div>
+
+    <div class="form-group">
+      <label for="unitLinkTab">Unit Link Tab:</label>
+      <input type="checkbox" id="unitLinkTab" name="unitLinkTab" [(ngModel)]="isUnitLinkTabEnabled" disabled>
+    </div>
+  </form>
+</div>

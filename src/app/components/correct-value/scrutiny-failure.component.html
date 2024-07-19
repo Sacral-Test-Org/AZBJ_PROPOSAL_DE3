@@ -1,0 +1,57 @@
+<div>
+  <button (click)="initiateScrutinyFailure()">Initiate Scrutiny Failure</button>
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+</div>
+
+<script>
+import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { NgxLoggerLevel, LoggerService } from 'ngx-logger';
+
+@Component({
+  selector: 'app-scrutiny-failure',
+  templateUrl: './scrutiny-failure.component.html',
+  styleUrls: ['./scrutiny-failure.component.css']
+})
+export class ScrutinyFailureComponent {
+  applicationNumber: string = '';
+  userId: string = '';
+  errorMessage: string = '';
+
+  constructor(private http: HttpClient, private logger: LoggerService) {}
+
+  initiateScrutinyFailure() {
+    this.errorMessage = '';
+
+    if (!this.applicationNumber) {
+      this.errorMessage = 'Application number cannot be null.';
+      return;
+    }
+
+    if (!this.userId.startsWith('UU')) {
+      this.errorMessage = 'Not an Authorized ID.';
+      return;
+    }
+
+    const params = {
+      RES_TYPE: 'QC',
+      RES_appln: this.applicationNumber
+    };
+
+    this.http.post('/api/scrutiny-failure', params).subscribe(
+      response => {
+        this.logger.log(NgxLoggerLevel.INFO, 'Scrutiny failure process initiated successfully.', response);
+      },
+      error => {
+        this.logger.log(NgxLoggerLevel.ERROR, 'Error initiating scrutiny failure process.', error);
+      }
+    );
+  }
+}
+</script>
+
+<style>
+.error-message {
+  color: red;
+}
+</style>

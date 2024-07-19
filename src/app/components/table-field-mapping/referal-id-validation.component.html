@@ -1,0 +1,12 @@
+<div>
+  <label for="referalId">Referal Id:</label>
+  <input type="text" id="referalId" [(ngModel)]="referalId" (blur)="validateReferalId()" />
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  <div *ngIf="warningMessage" class="warning-message">{{ warningMessage }}</div>
+  <div *ngIf="showLOV">
+    <label for="lov">Select from List of Values:</label>
+    <select id="lov" [(ngModel)]="selectedLOV">
+      <option *ngFor="let item of lovItems" [value]="item.branch_code">{{ item.branch_name }}</option>
+    </select>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div>
+  <button (click)="viewNomineeDetails()">Nominee Details</button>
+  <div *ngIf="imageVisible">
+    <img [src]="imagePath" alt="Nominee Image" />
+  </div>
+  <div *ngIf="!imageVisible">
+    <p>Image not available for this version.</p>
+  </div>
+</div>

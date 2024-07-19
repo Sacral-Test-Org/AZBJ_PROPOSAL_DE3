@@ -1,0 +1,85 @@
+/* Styles for the validation component */
+
+/* General container styling */
+.validation-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 20px 0;
+}
+
+/* Header styling */
+.validation-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Validation result styling */
+.validation-result {
+  margin-top: 15px;
+}
+
+/* Error message styling */
+.validation-error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Warning message styling */
+.validation-warning {
+  color: orange;
+  font-weight: bold;
+}
+
+/* Success message styling */
+.validation-success {
+  color: green;
+  font-weight: bold;
+}
+
+/* Button styling */
+.validation-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.validation-button:hover {
+  background-color: #0056b3;
+}
+
+/* Form field styling */
+.validation-form-field {
+  margin-bottom: 15px;
+}
+
+.validation-form-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.validation-form-field input,
+.validation-form-field select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .validation-container {
+    padding: 10px;
+  }
+
+  .validation-button {
+    width: 100%;
+    padding: 15px;
+  }
+}

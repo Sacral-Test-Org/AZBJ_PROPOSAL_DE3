@@ -1,0 +1,56 @@
+/* E-KYC Verification Component Styles */
+
+/* General form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Input field styling */
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Label styling */
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Container styling */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Header styling */
+h1 {
+  color: #007bff;
+  margin-bottom: 20px;
+}

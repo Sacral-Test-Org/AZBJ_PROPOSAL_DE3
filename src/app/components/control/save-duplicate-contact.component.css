@@ -1,0 +1,21 @@
+/* Styling for the Save button */
+.save-button {
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Get the element to line up correctly */
+  font-size: 16px; /* Increase font size */
+  margin: 4px 2px; /* Some margin */
+  cursor: pointer; /* Pointer/hand icon */
+  border-radius: 12px; /* Rounded corners */
+}
+
+/* Styling for the Error Message */
+.error-message {
+  color: red; /* Red text */
+  font-weight: bold; /* Bold text */
+  margin-top: 10px; /* Some top margin */
+}

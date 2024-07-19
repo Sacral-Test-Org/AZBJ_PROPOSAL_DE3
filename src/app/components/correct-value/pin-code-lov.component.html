@@ -1,0 +1,9 @@
+<div class="pin-code-lov">
+  <h3>Select Pin Code</h3>
+  <input type="text" placeholder="Search..." [(ngModel)]="searchText" />
+  <ul>
+    <li *ngFor="let pin of pinCodes | filter:searchText" (click)="selectPinCode(pin)">
+      {{ pin.pincode }} - {{ pin.state }} - {{ pin.district }}
+    </li>
+  </ul>
+</div>

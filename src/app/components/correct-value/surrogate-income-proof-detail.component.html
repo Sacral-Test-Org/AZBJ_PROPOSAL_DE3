@@ -1,0 +1,11 @@
+<div class="surrogate-income-proof-detail">
+  <h2>Surrogate Income Proof Detail</h2>
+  <div *ngIf="selectedProofType">
+    <h3>{{ selectedProofType.name }}</h3>
+    <p>{{ selectedProofType.description }}</p>
+    <!-- Add more details as needed -->
+  </div>
+  <div *ngIf="!selectedProofType">
+    <p>Please select a surrogate income proof type from the list.</p>
+  </div>
+</div>

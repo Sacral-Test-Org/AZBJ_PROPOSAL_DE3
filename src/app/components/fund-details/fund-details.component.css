@@ -1,0 +1,276 @@
+/* Purpose: To style the error messages and input fields */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.input-field {
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Purpose: To style the delete fund button and messages */
+.delete-fund-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.message-display {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Purpose: To style the 'FUND_NAME_UL' field */
+.fund-name-ul {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Purpose: To style the warning messages and input fields */
+.warning-message {
+  color: orange;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Purpose: To style the dropdown or selection component for displaying the list of funds */
+.fund-dropdown {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+/* Purpose: To style the user interface for viewing, inserting, and updating fund details */
+.fund-details-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fund-details-form input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+/* Purpose: To apply the distinct visual attribute when the "Fund Name" field is in focus */
+.fund-name-focused {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Purpose: To style the validation messages and confirmation alerts for the 'Correct' field in the fund details section */
+.validation-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.confirmation-alert {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 10px;
+  border: 1px solid #ffcc00;
+  margin-top: 10px;
+}
+
+/* Purpose: To style the SSO fund details UI */
+.sso-fund-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sso-fund-details input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+/* Purpose: To style the checkbox and navigation elements for fund validation */
+.checkbox {
+  margin-right: 10px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Purpose: To style the warning messages for apportionment percentage validation */
+.apportionment-warning {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Purpose: To style the "RESET" button in the Fund Details form */
+.reset-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Purpose: To style the UI elements for managing solution product details */
+.solution-product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.solution-product-details input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+/* Purpose: To style the UI elements for managing fund details */
+.fund-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fund-list input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.total-fund-value {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Purpose: To style the warning messages and input fields */
+.warning-message {
+  color: orange;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.input-field {
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Purpose: To style the warning messages for apportionment percentage validation */
+.apportionment-warning {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Purpose: To style the "Fund Name" field and the LOV component */
+.fund-name-field {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.lov-component {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+/* Purpose: To style the warning messages and input fields */
+.warning-message {
+  color: orange;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.input-field {
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Purpose: To apply specific visual attributes to the read-only text field */
+.read-only-text-field {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Purpose: To style the fund details component */
+.fund-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fund-details input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+/* Purpose: To style the warning messages for apportionment percentage validation */
+.apportionment-warning {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Purpose: To style the "Fund Name" field and the LOV component */
+.fund-name-field {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.lov-component {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+/* Purpose: To style the warning messages and input fields */
+.warning-message {
+  color: orange;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.input-field {
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Purpose: To apply specific visual attributes to the read-only text field */
+.read-only-text-field {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 14px;
+}

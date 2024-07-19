@@ -1,0 +1,74 @@
+/* Style for the residence proof list component */
+.residence-proof-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.residence-proof-list li {
+  padding: 8px;
+  margin-bottom: 4px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.residence-proof-list li.selected {
+  background-color: #e0f7fa;
+}
+
+.residence-proof-list li .edit-button,
+.residence-proof-list li .delete-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.residence-proof-list li .edit-button:hover,
+.residence-proof-list li .delete-button:hover {
+  background-color: #f1f1f1;
+}
+
+.residence-proof-list li .edit-input {
+  flex-grow: 1;
+  margin-right: 8px;
+  padding: 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.residence-proof-list li .save-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.residence-proof-list li .save-button:hover {
+  background-color: #218838;
+}
+
+.residence-proof-list li .cancel-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.residence-proof-list li .cancel-button:hover {
+  background-color: #c82333;
+}
+
+.hidden {
+  display: none;
+}

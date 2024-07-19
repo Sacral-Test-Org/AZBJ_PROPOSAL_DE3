@@ -1,0 +1,41 @@
+/* Styles for the AML_KYC tab to ensure a consistent layout */
+.aml-kyc-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Style the partner selection list */
+.partner-dropdown {
+  width: 200px;
+  height: 30px;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.partner-dropdown option {
+  padding: 5px;
+}
+
+/* Style the customer status dropdown list */
+.customer-status-dropdown {
+  width: 200px;
+  height: 30px;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  left: 373px;
+}
+
+.customer-status-dropdown option {
+  padding: 5px;
+}
